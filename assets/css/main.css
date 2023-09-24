@@ -74,19 +74,19 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #7f7f90;
+  color: #000;
   text-transform: uppercase;
-  font-family: var(--font-default);
+  font-family: var(--font-secondary);
 }
 
 .section-header p {
   margin: 0;
-  font-size: 48px;
+  font-size: 20px;
   font-weight: 400;
   font-family: var(--font-primary);
 }
@@ -771,6 +771,39 @@ section {
 
 
 
+
+
+
+/*--------------------------------------------------------------
+# Our Clients
+--------------------------------------------------------------*/
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #e96b56;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #e96b56;
+}
+
+.clients .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
 
 
 /*--------------------------------------------------------------
