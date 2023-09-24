@@ -1,9 +1,6 @@
 /**
-* Template Name: Yummy
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+*  Name: ASTM 
+* Author: Yongseong
 */
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -187,39 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       1200: {
         slidesPerView: 3,
-      }
-    }
-  });
-
-  /**
-   * Gallery Slider
-   */
-  new Swiper('.gallery-slider', {
-    speed: 400,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      992: {
-        slidesPerView: 5,
-        spaceBetween: 20
       }
     }
   });
