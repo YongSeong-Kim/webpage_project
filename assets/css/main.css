@@ -22,6 +22,7 @@
   --color-default: #212529;
   --color-primary: #ce1212;
   --color-secondary: #37373f;
+  --color-company: #c87bdd;
 }
 
 /* Smooth scroll behavior */
@@ -763,16 +764,8 @@ section {
 }
 
 .events .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: var(--color-company);
 }
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # Our Clients
@@ -787,11 +780,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #e96b56;
+  border: 1px solid var(--color-company);;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e96b56;
+  background-color: var(--color-company);
 }
 
 .clients .swiper-slide img {
