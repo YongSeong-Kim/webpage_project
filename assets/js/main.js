@@ -133,6 +133,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
+   * Hero carousel indicators
+   */
+  console.log(1);
+  let heroCarouselIndicators = select("#hero-carousel-indicators")
+  console.log(2);
+  let heroCarouselItems = select('#heroCarousel .carousel-item', true)
+  console.log(3);
+  heroCarouselItems.forEach((item, index) => {
+    (index === 0) ?
+    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
+  });
+
+  /**
    * Scroll top button
    */
   const scrollTop = document.querySelector('.scroll-top');
