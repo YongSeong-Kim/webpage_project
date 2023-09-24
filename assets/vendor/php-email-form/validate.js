@@ -72,7 +72,7 @@
       }
     })
     .catch((error) => {
-      displayError(thisForm, error);
+      displayError(thisForm, 'Please contact this email tedsskim@hanmail.net directly');
     });
   }
 
