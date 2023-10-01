@@ -95,7 +95,7 @@ section {
 .section-header .introduction {
   margin: 10;
   padding-top: 40px;
-  font-size: 15px;
+  font-size: 20px;
   text-align: start;
   /* font-weight: 400;
   font-family: var(--font-primary); */
@@ -1461,7 +1461,7 @@ section {
 }
 
 .quality-title h6 {
-  font-size: 15px;
+  font-size: 20px;
   /* letter-spacing: 1px; */
   font-weight: bold;
   /* margin: 0;
@@ -1473,7 +1473,7 @@ section {
 
 .quality-title p {
   margin: 0;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
   font-family: var(--font-secondary);
 }
