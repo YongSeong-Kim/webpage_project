@@ -707,6 +707,15 @@ progress {
   height: auto;
 }
 
+.img-fluid-container {
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 430px;
+  height: 330px;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: var(--bs-body-bg);
