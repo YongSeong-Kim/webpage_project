@@ -42,32 +42,33 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="/home/Yongseong/astm_web/webpage_project/index.html"
+      <a href="index.html"
         class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>ASTM</h1>
+        <img class="logo-img logo-img--astm" src="assets/img/company_logo/astm_logo_transparent_trim.png" alt="ASTM Engineering" loading="lazy">
+        <img class="logo-img logo-img--bstm" src="assets/img/company_logo/bstm_logo_transparent_trim.png" alt="BSTM" loading="lazy">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/about.html">About</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/product.html">Product</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/equipment.html">Equipment</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/contact.html">Contact</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="product.html" data-i18n="nav.product">Product</a></li>
+          <li><a href="equipment.html" data-i18n="nav.equipment">Equipment</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar-language" class="navbar navbar-language">
         <li class="language">
           <a href="#">
-            <span>Language</span>
+            <span data-i18n="ui.language">Language</span>
             <i class="bi bi-chevron-down dropdown-indicator"></i>
           </a>
           <ul>
-            <li><a href="#">Kor</a></li>
-            <li><a href="#">Eng</a></li>
-            <li><a href="#">JAP</a></li>
+            <li><a href="#" data-set-lang="ko">Kor</a></li>
+            <li><a href="#" data-set-lang="en">Eng</a></li>
+            <li><a href="#" data-set-lang="ja">Ja</a></li>
           </ul>
         </li>
       </nav>
@@ -90,12 +91,12 @@
             style="background-image: url(assets/img/slide/unsplash.jpg); background-position: 0px -200px;">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to ASTM</h2>
-                <p class="animate__animated animate__fadeInUp">Our company is a manufacturing firm that specializes in
+                <h2 class="animate__animated animate__fadeInDown" data-i18n="hero.welcome">Welcome to ASTM</h2>
+                <p class="animate__animated animate__fadeInUp" data-i18n="hero.subtitle">Our company is a manufacturing firm that specializes in
                   meeting various customer demands by producing and
                   processing parts for CCTV and motorcycle applications</p>
-                <a href="/home/Yongseong/astm_web/webpage_project/about.html"
-                  class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                <a href="about.html"
+                  class="btn-get-started animate__animated animate__fadeInUp" data-i18n="hero.read_more">Read More</a>
               </div>
             </div>
           </div>
@@ -143,7 +144,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About Us</h2>
+          <h2 data-i18n="section.about_us">About Us</h2>
         </div>
 
         <div class="row gy-4">
@@ -153,15 +154,15 @@
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
+              <p class="fst-italic" data-i18n="index.about.vision">
                 Our vision is to become a leader in innovation and quality in the global manufacturing industry.We aim
                 to gain our customers' trust through a customer-centric approach and cutting-edge technology, leading
                 industrial innovation, and pursuing sustainable growth.
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> Maximize Customer Satisfaction</li>
-                <li><i class="bi bi-check2-all"></i> Improve Production Efficiency</li>
-                <li><i class="bi bi-check2-all"></i> Innovative Product Development</li>
+                <li><i class="bi bi-check2-all"></i> <span data-i18n="index.about.b1">Maximize Customer Satisfaction</span></li>
+                <li><i class="bi bi-check2-all"></i> <span data-i18n="index.about.b2">Improve Production Efficiency</span></li>
+                <li><i class="bi bi-check2-all"></i> <span data-i18n="index.about.b3">Innovative Product Development</span></li>
               </ul>
               <!-- <p>
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -185,7 +186,7 @@
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Products</h2>
+          <h2 data-i18n="section.products">Products</h2>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -241,7 +242,7 @@
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Equipments</h2>
+          <h2 data-i18n="section.equipments">Equipments</h2>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -250,7 +251,7 @@
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/equipment/cnc.jpg); background-size: contain;
               background-repeat: no-repeat; background-position: center">
-              <h3>For CNC</h3>
+              <h3 data-i18n="index.equip.cnc">For CNC</h3>
               <!-- <div class="price align-self-start">$99</div>
               <p class="description">
                 Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim
@@ -261,7 +262,7 @@
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/equipment/Machining.jpg); background-size: contain;
               background-repeat: no-repeat; background-position: center;">
-              <h3>For Machining</h3>
+              <h3 data-i18n="index.equip.machining">For Machining</h3>
               <!-- <div class="price align-self-start">$289</div>
               <p class="description">
                 In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut
@@ -272,7 +273,7 @@
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/equipment/gundrill.jpg); background-size: contain;
               background-repeat: no-repeat">
-              <h3>For Gundrill</h3>
+              <h3 data-i18n="index.equip.gundrill">For Gundrill</h3>
               <!-- <div class="price align-self-start">$499</div>
               <p class="description">
                 Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam
@@ -293,7 +294,7 @@
       <div class="container">
 
         <div class="section-header">
-          <h2>Clients</h2>
+          <h2 data-i18n="section.clients">Clients</h2>
         </div>
 
         <div class="clients-slider swiper">
@@ -323,8 +324,8 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div>
-            <h4>Address</h4>
-            <p>
+            <h4 data-i18n="footer.address">Address</h4>
+            <p data-i18n="footer.address_value" data-i18n-html>
               140-25, Neungheodae-ro 625beon-gil, Namdong-gu<br>
               Incheon, Republic of Korea
             </p>
@@ -335,10 +336,10 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Contact</h4>
+            <h4 data-i18n="footer.contact">Contact</h4>
             <p>
-              <strong>Phone:</strong> +82 010 9077 2445<br>
-              <strong>Email:</strong> tedsskim@hanmail.net<br>
+              <strong><span data-i18n="footer.phone">Phone</span>:</strong> +82 010 9077 2445<br>
+              <strong><span data-i18n="footer.email">Email</span>:</strong> tedsskim@hanmail.net<br>
             </p>
           </div>
         </div>
@@ -346,15 +347,15 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-clock icon"></i>
           <div>
-            <h4>Opening Hours</h4>
+            <h4 data-i18n="footer.opening_hours">Opening Hours</h4>
             <p>
-              <strong>Mon-Sund: </strong> 07AM- 08PM
+              <strong><span data-i18n="footer.mon_sun">Mon-Sun</span>: </strong> 07AM- 08PM
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
+          <h4 data-i18n="footer.follow_us">Follow Us</h4>
           <div class="social-links d-flex">
             <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -369,7 +370,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>ASTM</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>ASTM</span></strong>. <span data-i18n="footer.rights">All Rights Reserved</span>
       </div>
       <div class="credits">
         Designed by Yongseong
@@ -393,6 +394,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

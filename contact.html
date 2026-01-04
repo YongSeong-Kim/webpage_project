@@ -49,27 +49,29 @@
         class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>ASTM</h1>
+        <img class="logo-img logo-img--astm" src="assets/img/company_logo/astm_logo_transparent_trim.png" alt="ASTM Engineering" loading="lazy">
+        <img class="logo-img logo-img--bstm" src="assets/img/company_logo/bstm_logo_transparent_trim.png" alt="BSTM" loading="lazy">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/about.html">About</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/product.html">Product</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/equipment.html">Equipment</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/contact.html">Contact</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/product.html" data-i18n="nav.product">Product</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/equipment.html" data-i18n="nav.equipment">Equipment</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar-language" class="navbar navbar-language">
         <li class="language">
           <a href="#">
-            <span>Language</span>
+            <span data-i18n="ui.language">Language</span>
             <i class="bi bi-chevron-down dropdown-indicator"></i>
           </a>
           <ul>
-            <li><a href="#">Kor</a></li>
-            <li><a href="#">Eng</a></li>
+            <li><a href="#" data-set-lang="ko">Ko</a></li>
+            <li><a href="#" data-set-lang="en">En</a></li>
+            <li><a href="#" data-set-lang="ja">Ja</a></li>
           </ul>
         </li>
       </nav>
@@ -87,10 +89,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Contact</h2>
+          <h2 data-i18n="breadcrumb.contact">Contact</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Contact</li>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li data-i18n="breadcrumb.contact">Contact</li>
           </ol>
         </div>
 
@@ -102,7 +104,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h1>Contact</h1>
+          <h1 data-i18n="contact.title">Contact</h1>
         </div>
 
         <div class="mb-3">
@@ -117,8 +119,8 @@
             <div class="info-item  d-flex align-items-center">
               <!-- <i class="icon bi bi-map flex-shrink-0"></i> -->
               <div>
-                <h3>Our Address</h3>
-                <p>140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea</p>
+                <h3 data-i18n="contact.our_address">Our Address</h3>
+                <p data-i18n="contact.address_line">140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -127,7 +129,7 @@
             <div class="info-item d-flex align-items-center">
               <!-- <i class="icon bi bi-envelope flex-shrink-0"></i> -->
               <div>
-                <h3>Email Us</h3>
+                <h3 data-i18n="contact.email_us">Email Us</h3>
                 <p>tedsskim@hanmail.net</p>
               </div>
             </div>
@@ -137,7 +139,7 @@
             <div class="info-item  d-flex align-items-center">
               <!-- <i class="icon bi bi-telephone flex-shrink-0"></i> -->
               <div>
-                <h3>Call Us</h3>
+                <h3 data-i18n="contact.call_us">Call Us</h3>
                 <p>+82 10 9077 2445</p>
               </div>
             </div>
@@ -147,8 +149,8 @@
             <div class="info-item  d-flex align-items-center">
               <!-- <i class="icon bi bi-share flex-shrink-0"></i> -->
               <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Mon-Sun:</strong> 07AM - 08PM;
+                <h3 data-i18n="contact.opening_hours">Opening Hours</h3>
+                <div><strong><span data-i18n="footer.mon_sun">Mon-Sun</span>:</strong> 07AM - 08PM;
                 </div>
               </div>
             </div>
@@ -159,24 +161,24 @@
         <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
           <div class="row">
             <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-i18n="contact.form.name" data-i18n-attr="placeholder" required>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-i18n="contact.form.email" data-i18n-attr="placeholder" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-i18n="contact.form.subject" data-i18n-attr="placeholder" required>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" data-i18n="contact.form.message" data-i18n-attr="placeholder" required></textarea>
           </div>
           <div class="my-3">
-            <div class="loading">Loading</div>
+            <div class="loading" data-i18n="contact.form.loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="sent-message" data-i18n="contact.form.sent">Your message has been sent. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit" data-i18n="contact.form.send">Send Message</button></div>
         </form><!--End Contact Form -->
 
       </div>
@@ -192,8 +194,8 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div>
-            <h4>Address</h4>
-            <p>
+            <h4 data-i18n="footer.address">Address</h4>
+            <p data-i18n="footer.address_value" data-i18n-html>
               140-25, Neungheodae-ro 625beon-gil, Namdong-gu<br>
               Incheon, Republic of Korea<br>
             </p>
@@ -204,10 +206,10 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Contact</h4>
+            <h4 data-i18n="footer.contact">Contact</h4>
             <p>
-              <strong>Phone:</strong> +82 010 9077 2445<br>
-              <strong>Email:</strong> tedsskim@hanmail.net<br>
+              <strong><span data-i18n="footer.phone">Phone</span>:</strong> +82 010 9077 2445<br>
+              <strong><span data-i18n="footer.email">Email</span>:</strong> tedsskim@hanmail.net<br>
             </p>
           </div>
         </div>
@@ -215,15 +217,15 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-clock icon"></i>
           <div>
-            <h4>Opening Hours</h4>
+            <h4 data-i18n="footer.opening_hours">Opening Hours</h4>
             <p>
-              <strong>Mon-Sund: </strong> 07AM- 08PM
+              <strong><span data-i18n="footer.mon_sun">Mon-Sun</span>: </strong> 07AM- 08PM
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
+          <h4 data-i18n="footer.follow_us">Follow Us</h4>
           <div class="social-links d-flex">
             <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -237,7 +239,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>ASTM</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>ASTM</span></strong>. <span data-i18n="footer.rights">All Rights Reserved</span>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -265,6 +267,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

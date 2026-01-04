@@ -48,28 +48,29 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>ASTM</h1>
+        <img class="logo-img logo-img--astm" src="assets/img/company_logo/astm_logo_transparent_trim.png" alt="ASTM Engineering" loading="lazy">
+        <img class="logo-img logo-img--bstm" src="assets/img/company_logo/bstm_logo_transparent_trim.png" alt="BSTM" loading="lazy">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/about.html">About</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/product.html">Product</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/equipment.html">Equipment</a></li>
-          <li><a href="/home/Yongseong/astm_web/webpage_project/contact.html">Contact</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/product.html" data-i18n="nav.product">Product</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/equipment.html" data-i18n="nav.equipment">Equipment</a></li>
+          <li><a href="/home/Yongseong/astm_web/webpage_project/contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar-language" class="navbar navbar-language">
         <li class="language">
           <a href="#">
-            <span>Language</span>
+            <span data-i18n="ui.language">Language</span>
             <i class="bi bi-chevron-down dropdown-indicator"></i>
           </a>
           <ul>
-            <li><a href="#">Kor</a></li>
-            <li><a href="#">Eng</a></li>
-            <li><a href="#">JAP</a></li>
+            <li><a href="#" data-set-lang="ko">Ko</a></li>
+            <li><a href="#" data-set-lang="en">En</a></li>
+            <li><a href="#" data-set-lang="ja">Ja</a></li>
           </ul>
         </li>
       </nav>
@@ -86,10 +87,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>About</h2>
+          <h2 data-i18n="breadcrumb.about">About</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>About</li>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li data-i18n="breadcrumb.about">About</li>
           </ol>
         </div>
 
@@ -101,8 +102,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About</h2>
-          <p class="introduction"> Our company is a manufacturing firm that specializes in meeting various customer demands by producing and
+          <h2 data-i18n="about.intro.title">About</h2>
+          <p class="introduction" data-i18n="about.intro.body"> Our company is a manufacturing firm that specializes in meeting various customer demands by producing and
             processing parts for  various applications. We utilize a range of techniques, including sheet
             metal fabrication and machining, to create high-quality components and provide customized solutions for our
             customers' projects. With our expertise and know-how, we establish efficient and precise production
@@ -116,25 +117,25 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Quality Policy</h2>
+          <h2 data-i18n="about.quality.title">Quality Policy</h2>
         </div>
 
         <div class="quality-title">
-          <h6>Customer-Centric Quality</h6>
-          <p>Our company places the customer at the forefront of our operations, striving to manufacture products that
+          <h6 data-i18n="about.quality.1.title">Customer-Centric Quality</h6>
+          <p data-i18n="about.quality.1.body">Our company places the customer at the forefront of our operations, striving to manufacture products that
             meet and exceed their expectations. Quality is one of our core values.</p>
         </div>
 
         <div class="quality-title">
-          <h6>Adherence to Stringent Quality Standards</h6>
-          <p>All products undergo rigorous testing and inspection to comply with strict quality standards and
+          <h6 data-i18n="about.quality.2.title">Adherence to Stringent Quality Standards</h6>
+          <p data-i18n="about.quality.2.body">All products undergo rigorous testing and inspection to comply with strict quality standards and
             regulations. This ensures the delivery of reliable products to our customers and prevents unnecessary
             defects.</p>
         </div>
 
         <div class="quality-title">
-          <h6>Continuous Quality Improvement</h6>
-          <p>We are committed to the continuous improvement of quality. We promote research and development to enhance
+          <h6 data-i18n="about.quality.3.title">Continuous Quality Improvement</h6>
+          <p data-i18n="about.quality.3.body">We are committed to the continuous improvement of quality. We promote research and development to enhance
             products and processes, leveraging customer feedback to enhance quality.</p>
         </div>
 
@@ -175,8 +176,8 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div>
-            <h4>Address</h4>
-            <p>
+            <h4 data-i18n="footer.address">Address</h4>
+            <p data-i18n="footer.address_value" data-i18n-html>
               140-25, Neungheodae-ro 625beon-gil, Namdong-gu<br>
               Incheon, Republic of Korea
             </p>
@@ -187,10 +188,10 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Contact</h4>
+            <h4 data-i18n="footer.contact">Contact</h4>
             <p>
-              <strong>Phone:</strong> +82 010 9077 2445<br>
-              <strong>Email:</strong> tedsskim@hanmail.net<br>
+              <strong><span data-i18n="footer.phone">Phone</span>:</strong> +82 010 9077 2445<br>
+              <strong><span data-i18n="footer.email">Email</span>:</strong> tedsskim@hanmail.net<br>
             </p>
           </div>
         </div>
@@ -198,15 +199,15 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-clock icon"></i>
           <div>
-            <h4>Opening Hours</h4>
+            <h4 data-i18n="footer.opening_hours">Opening Hours</h4>
             <p>
-              <strong>Mon-Sund: </strong> 07AM- 08PM
+              <strong><span data-i18n="footer.mon_sun">Mon-Sun</span>: </strong> 07AM- 08PM
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
+          <h4 data-i18n="footer.follow_us">Follow Us</h4>
           <div class="social-links d-flex">
             <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -221,7 +222,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>ASTM</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>ASTM</span></strong>. <span data-i18n="footer.rights">All Rights Reserved</span>
       </div>
       <div class="credits">
         Designed by Yongseong
@@ -244,6 +245,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
