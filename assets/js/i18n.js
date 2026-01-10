@@ -25,9 +25,10 @@
       "section.equipments": "Equipments",
       "section.clients": "Clients",
 
-      "hero.welcome": "Welcome to ASTM",
+      "hero.welcome": "Welcome to ASTM & BSTM",
+      // NOTE: Keep this as a single quoted string. Use <br> for line breaks (index.html uses data-i18n-html).
       "hero.subtitle":
-        "Our company is a manufacturing firm that specializes in meeting various customer demands by producing and processing parts for CCTV and motorcycle applications",
+        "Our company specializes in metal manufacturing, meeting diverse customer demands through advanced production and processing.<br><strong>ASTM Engineering</strong> delivers precision CNC machining and CNC turning solutions.<br><strong>BSTM Sheet Metal</strong> provides sheet metal fabrication, welding, and painting.",
       "hero.read_more": "Read More",
 
       "index.about.vision":
@@ -39,6 +40,8 @@
       "index.equip.cnc": "For CNC",
       "index.equip.machining": "For Machining",
       "index.equip.gundrill": "For Gundrill",
+      "index.equip.pega357": "AMADA PEGA-357",
+      "index.equip.rg100": "AMADA RG-100",
 
       "footer.address": "Address",
       "footer.address_value": "140-25, Neungheodae-ro 625beon-gil, Namdong-gu<br>Incheon, Republic of Korea",
@@ -70,6 +73,8 @@
         "We are committed to the continuous improvement of quality. We promote research and development to enhance products and processes, leveraging customer feedback to enhance quality.",
 
       "product.filter.all": "All",
+      "product.filter.astm": "ASTM",
+      "product.filter.bstm": "BSTM",
 
       "contact.title": "Contact",
       "contact.our_address": "Our Address",
@@ -98,9 +103,9 @@
       "section.equipments": "설비",
       "section.clients": "고객사",
 
-      "hero.welcome": "ASTM에 오신 것을 환영합니다",
+      "hero.welcome": "ASTM & BSTM에 오신 것을 환영합니다",
       "hero.subtitle":
-        "당사는 CCTV 및 오토바이용 부품을 생산·가공하여 다양한 고객 요구를 충족하는 제조 전문 기업입니다.",
+        "당사는 금속 생산·가공 전문 기업으로, 첨단 생산 및 가공 기술을 통해 다양한 고객 요구에 대응합니다.<br><strong>ASTM Engineering</strong>은 정밀 CNC 머시닝 및 CNC 선반(턴닝) 솔루션을 제공합니다.<br><strong>BSTM Sheet Metal</strong>은 판금 가공, 용접, 도장을 제공합니다.",
       "hero.read_more": "더 보기",
 
       "index.about.vision":
@@ -112,6 +117,8 @@
       "index.equip.cnc": "CNC용",
       "index.equip.machining": "가공용",
       "index.equip.gundrill": "건드릴용",
+      "index.equip.pega357": "AMADA PEGA-357",
+      "index.equip.rg100": "AMADA RG-100",
 
       "footer.address": "주소",
       "footer.address_value": "대한민국 인천광역시 남동구<br>능허대로625번길 140-25",
@@ -143,6 +150,8 @@
         "지속적인 품질 개선을 위해 연구개발을 추진하고, 고객 피드백을 반영하여 제품과 공정을 개선합니다.",
 
       "product.filter.all": "전체",
+      "product.filter.astm": "ASTM",
+      "product.filter.bstm": "BSTM",
 
       "contact.title": "문의",
       "contact.our_address": "주소",
@@ -171,9 +180,9 @@
       "section.equipments": "設備",
       "section.clients": "取引先",
 
-      "hero.welcome": "ASTMへようこそ",
+      "hero.welcome": "ASTM & BSTMへようこそ",
       "hero.subtitle":
-        "当社はCCTVおよびオートバイ向け部品の製造・加工を通じて、多様なお客様のニーズに対応する製造会社です。",
+        "当社は金属製造の専門企業として、先進的な生産・加工により多様なお客様のニーズに対応します。<br><strong>ASTM Engineering</strong>は高精度のCNCマシニングおよびCNC旋盤ソリューションを提供します。<br><strong>BSTM Sheet Metal</strong>は板金加工、溶接、塗装を提供します。",
       "hero.read_more": "もっと見る",
 
       "index.about.vision":
@@ -185,6 +194,8 @@
       "index.equip.cnc": "CNC用",
       "index.equip.machining": "加工用",
       "index.equip.gundrill": "ガンドリル用",
+      "index.equip.pega357": "AMADA PEGA-357",
+      "index.equip.rg100": "AMADA RG-100",
 
       "footer.address": "住所",
       "footer.address_value": "大韓民国 仁川広域市 南洞区<br>能許大路625番ギル 140-25",
@@ -216,6 +227,8 @@
         "品質の継続的改善に取り組み、研究開発を推進し、お客様のフィードバックを活用して製品とプロセスを改善します。",
 
       "product.filter.all": "すべて",
+      "product.filter.astm": "ASTM",
+      "product.filter.bstm": "BSTM",
 
       "contact.title": "お問い合わせ",
       "contact.our_address": "住所",

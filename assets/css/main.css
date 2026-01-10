@@ -267,6 +267,22 @@ section {
   .header {
     height: 70px;
   }
+
+  .header .logo img {
+    max-height: 44px;
+  }
+
+  .header .logo .logo-img {
+    height: 44px;
+  }
+
+  .header .logo .logo-img--astm {
+    height: 36px;
+  }
+
+  .header .logo .logo-img--bstm {
+    height: 44px;
+  }
 }
 
 .header.sticked {
@@ -275,22 +291,26 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 52px;
   margin-right: 6px;
 }
 
 /* Header logo (ASTM + BSTM) */
 .header .logo .logo-img {
-  height: 40px;
+  height: 46px;
   width: auto;
   max-height: none;
   margin-right: 4px;
   display: block;
 }
 
-/* BSTM 로고는 원본 비율상 글자가 커 보이기 쉬워서 약간 낮춰 균형 맞춤 */
+/* 로고별 시각적 크기 보정 */
+.header .logo .logo-img--astm {
+  height: 40px;
+}
+
 .header .logo .logo-img--bstm {
-  height: 32px;
+  height: 52px;
 }
 
 .header .logo .logo-img:last-child {
@@ -889,9 +909,10 @@ section {
 
 #hero p {
   width: 80%;
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 1.45;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 18px auto;
   color: #ffffff;
 }
 
@@ -999,11 +1020,16 @@ section {
   #hero .carousel-item {
     height: 90vh;
   }
+
+  #hero p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1024px) {
   #hero p {
-    width: 50%;
+    width: 70%;
+    max-width: 980px;
   }
 
   #hero .carousel-control-prev,
@@ -1160,6 +1186,19 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio .img-fluid-container {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .portfolio .img-fluid-container {
+    height: 240px;
+  }
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
