@@ -75,6 +75,7 @@
       "product.filter.all": "All",
       "product.filter.astm": "ASTM",
       "product.filter.bstm": "BSTM",
+      "product.category.sheet_metal": "Sheet Metal",
 
       "contact.title": "Contact",
       "contact.our_address": "Our Address",
@@ -152,6 +153,7 @@
       "product.filter.all": "전체",
       "product.filter.astm": "ASTM",
       "product.filter.bstm": "BSTM",
+      "product.category.sheet_metal": "판금",
 
       "contact.title": "문의",
       "contact.our_address": "주소",
@@ -229,6 +231,7 @@
       "product.filter.all": "すべて",
       "product.filter.astm": "ASTM",
       "product.filter.bstm": "BSTM",
+      "product.category.sheet_metal": "板金",
 
       "contact.title": "お問い合わせ",
       "contact.our_address": "住所",

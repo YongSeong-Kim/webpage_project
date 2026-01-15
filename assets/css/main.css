@@ -1193,9 +1193,32 @@ section {
   display: block;
 }
 
+.portfolio .img-fluid-container--contain {
+  object-fit: contain;
+  padding: 16px;
+  background: #fff;
+}
+
+.portfolio .portfolio-caption {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.2px;
+}
+
 @media (max-width: 576px) {
   .portfolio .img-fluid-container {
     height: 240px;
+  }
+
+  .portfolio .img-fluid-container--contain {
+    padding: 12px;
+  }
+
+  .portfolio .portfolio-caption {
+    margin-top: 8px;
+    font-size: 14px;
   }
 }
 
@@ -1243,6 +1266,8 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(84, 84, 84, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.28);
+  border-radius: 6px;
 }
 
 .portfolio .portfolio-wrap::before {

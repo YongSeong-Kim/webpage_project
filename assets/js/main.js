@@ -270,28 +270,31 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
-    console.log(1)
     if (portfolioContainer) {
-      console.log(2)
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        getSortData: {
+          mctOrder: function(itemElem) {
+            const v = itemElem.getAttribute('data-mct-order');
+            return v ? parseInt(v, 10) : 9999;
+          }
+        }
       });
-      console.log(3)
       let portfolioFilters = select('#portfolio-flters li', true);
-      console.log(4)
       on('click', '#portfolio-flters li', function(e) {
-        console.log(5)
         e.preventDefault();
-        console.log(6)
         portfolioFilters.forEach(function(el) {
-          console.log(7)
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
+        const filterValue = this.getAttribute('data-filter');
+        const sortBy = (filterValue === '.filter-app') ? 'mctOrder' : 'original-order';
         portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
+          filter: filterValue,
+          sortBy,
+          sortAscending: true
         });
       }, true);
     }
