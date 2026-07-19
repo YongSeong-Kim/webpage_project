@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ASTM</title>
+  <title>ASTM - Research & Development</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -27,14 +27,11 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css?v=20260115" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260714c" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Yummy
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Name: Astm Engineering
+  * Author: Yongseong
   ======================================================== -->
 </head>
 
@@ -45,7 +42,6 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Image logo is used below -->
         <img class="logo-img logo-img--astm" src="assets/img/company_logo/ASTM_LOGO_copy_trim.png" alt="ASTM Engineering" loading="lazy">
         <img class="logo-img logo-img--bstm" src="assets/img/company_logo/bstm_sheetmetal.png" alt="BSTM Sheet Metal" loading="lazy">
       </a>
@@ -54,7 +50,7 @@
         <ul>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
           <li><a href="product.html" data-i18n="nav.product">Product</a></li>
-          <li><a href="research.html" data-i18n="nav.research">R&amp;D</a></li>
+          <li><a href="research.html" class="active" data-i18n="nav.research">R&amp;D</a></li>
           <li><a href="equipment.html" data-i18n="nav.equipment">Equipment</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
@@ -68,8 +64,8 @@
               <i class="bi bi-chevron-down dropdown-indicator"></i>
             </a>
             <ul>
-              <li><a href="#" data-set-lang="ko">Ko</a></li>
-              <li><a href="#" data-set-lang="en">En</a></li>
+              <li><a href="#" data-set-lang="ko">Kor</a></li>
+              <li><a href="#" data-set-lang="en">Eng</a></li>
               <li><a href="#" data-set-lang="ja">Ja</a></li>
             </ul>
           </li>
@@ -88,15 +84,27 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2 data-i18n="breadcrumb.equipment">Equipment</h2>
+          <h2 data-i18n="breadcrumb.research">Research &amp; Development</h2>
           <ol>
             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-            <li data-i18n="breadcrumb.equipment">Equipment</li>
+            <li data-i18n="breadcrumb.research">Research &amp; Development</li>
           </ol>
         </div>
 
       </div>
     </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Research Intro ======= -->
+    <section class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2 data-i18n="research.intro.title">Precision Gear R&amp;D</h2>
+          <p data-i18n="research.intro.body">
+            We design and develop precision gear and reducer assemblies—harmonic, cycloid, and planetary—to meet demanding industrial applications.
+          </p>
+        </div>
+      </div>
+    </section><!-- End Research Intro -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -106,133 +114,102 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active" data-i18n="product.filter.all">All</li>
-              <li data-filter=".filter-astm" data-i18n="product.filter.astm">ASTM</li>
-              <li data-filter=".filter-bstm" data-i18n="product.filter.bstm">BSTM</li>
+              <li data-filter=".filter-harmonic" data-i18n="research.filter.harmonic">Harmonic Gear</li>
+              <li data-filter=".filter-cycloid" data-i18n="research.filter.cycloid">Cycloid Gear</li>
+              <li data-filter=".filter-planetary" data-i18n="research.filter.planetary">Planetary Gear</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-astm">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-harmonic">
             <div class="portfolio-wrap">
-              <img src="assets/img/equipment/cnc.png" class="img-fluid-container" alt="CNC">
+              <img src="assets/img/research/harmonic_gear_1.PNG" class="img-fluid-container img-fluid-container--contain" alt="Harmonic Gear 1">
               <div class="portfolio-info">
-                <h4>CNC TURNING CENTER</h4>
-                <p>ASTM</p>
+                <h4 data-i18n="research.filter.harmonic">Harmonic Gear</h4>
+                <p>R&amp;D</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/equipment/cnc.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CNC"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/research/harmonic_gear_1.PNG" data-gallery="researchGallery" class="research-lightbox" data-i18n-title="research.filter.harmonic" title="Harmonic Gear" data-description=".research-desc-harmonic"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
-            <div class="portfolio-caption">CNC TURNING CENTER</div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-astm">
-            <div class="portfolio-wrap">
-              <img src="assets/img/equipment/Machine.jpg" class="img-fluid-container" alt="Machine">
-              <div class="portfolio-info">
-                <h4>MACHINING CENTER</h4>
-                <p>ASTM</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/equipment/Machine.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Machine"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-caption">MACHINING CENTER</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-astm">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-harmonic">
             <div class="portfolio-wrap">
-              <img src="assets/img/equipment/gundrill.jpg" class="img-fluid-container" alt="Gundrill">
+              <img src="assets/img/research/harmonic_gear_2.PNG" class="img-fluid-container img-fluid-container--contain" alt="Harmonic Gear 2">
               <div class="portfolio-info">
-                <h4>GUN DRILL MACHINE</h4>
-                <p>ASTM</p>
+                <h4 data-i18n="research.filter.harmonic">Harmonic Gear</h4>
+                <p>R&amp;D</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/equipment/gundrill.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gundrill"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/research/harmonic_gear_2.PNG" data-gallery="researchGallery" class="research-lightbox" data-i18n-title="research.filter.harmonic" title="Harmonic Gear" data-description=".research-desc-harmonic"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
-            <div class="portfolio-caption">GUN DRILL MACHINE</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bstm">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cycloid">
             <div class="portfolio-wrap">
-              <img src="assets/img/equipment/trumpf-laser_machine.png" class="img-fluid-container" alt="TRUMPF Laser Machine">
+              <img src="assets/img/research/20250120_cycloid_gear_1.PNG" class="img-fluid-container img-fluid-container--contain" alt="Cycloid Gear 1">
               <div class="portfolio-info">
-                <h4>TRUMPF LASER MACHINE</h4>
-                <p>BSTM</p>
+                <h4 data-i18n="research.filter.cycloid">Cycloid Gear</h4>
+                <p>R&amp;D</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/equipment/trumpf-laser_machine.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="TRUMPF LASER MACHINE"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/research/20250120_cycloid_gear_1.PNG" data-gallery="researchGallery" class="research-lightbox" data-i18n-title="research.filter.cycloid" title="Cycloid Gear" data-description=".research-desc-cycloid"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
-            <div class="portfolio-caption">TRUMPF LASER MACHINE</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bstm">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cycloid">
             <div class="portfolio-wrap">
-              <img src="assets/img/equipment/amada-pega-337.png" class="img-fluid-container" alt="AMADA PEGA-357">
+              <img src="assets/img/research/20250120-cycloid_gear_2.PNG" class="img-fluid-container img-fluid-container--contain" alt="Cycloid Gear 2">
               <div class="portfolio-info">
-                <h4>AMADA PEGA-357</h4>
-                <p>BSTM</p>
+                <h4 data-i18n="research.filter.cycloid">Cycloid Gear</h4>
+                <p>R&amp;D</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/equipment/amada-pega-337.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AMADA PEGA-357"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/research/20250120-cycloid_gear_2.PNG" data-gallery="researchGallery" class="research-lightbox" data-i18n-title="research.filter.cycloid" title="Cycloid Gear" data-description=".research-desc-cycloid"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
-            <div class="portfolio-caption">AMADA PEGA-357</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bstm">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-planetary">
             <div class="portfolio-wrap">
-              <img src="assets/img/equipment/amada-rg-100.png" class="img-fluid-container" alt="AMADA RG-100">
+              <img src="assets/img/research/planetary_gear_1.PNG" class="img-fluid-container img-fluid-container--contain" alt="Planetary Gear 1">
               <div class="portfolio-info">
-                <h4>AMADA RG-100</h4>
-                <p>BSTM</p>
+                <h4 data-i18n="research.filter.planetary">Planetary Gear</h4>
+                <p>R&amp;D</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/equipment/amada-rg-100.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AMADA RG-100"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/research/planetary_gear_1.PNG" data-gallery="researchGallery" class="research-lightbox" data-i18n-title="research.filter.planetary" title="Planetary Gear" data-description=".research-desc-planetary"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
-            <div class="portfolio-caption">AMADA RG-100</div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bstm">
-            <div class="portfolio-wrap">
-              <img src="assets/img/equipment/press_machine.png" class="img-fluid-container img-fluid-container--contain" alt="Press Machine">
-              <div class="portfolio-info">
-                <h4>PEM PRESS MACHINE</h4>
-                <p>BSTM</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/equipment/press_machine.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Press Machine"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-caption">PEM PRESS MACHINE</div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bstm">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-planetary">
             <div class="portfolio-wrap">
-              <img src="assets/img/equipment/welding_robot.jpg" class="img-fluid-container img-fluid-container--contain" alt="Welding Robot">
+              <img src="assets/img/research/planetary_gear_2.PNG" class="img-fluid-container img-fluid-container--contain" alt="Planetary Gear 2">
               <div class="portfolio-info">
-                <h4>WELDING ROBOT</h4>
-                <p>BSTM</p>
+                <h4 data-i18n="research.filter.planetary">Planetary Gear</h4>
+                <p>R&amp;D</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/equipment/welding_robot.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="WELDING ROBOT"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/research/planetary_gear_2.PNG" data-gallery="researchGallery" class="research-lightbox" data-i18n-title="research.filter.planetary" title="Planetary Gear" data-description=".research-desc-planetary"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
-            <div class="portfolio-caption">WELDING ROBOT</div>
           </div>
 
         </div>
 
+        <!-- Description sources for GLightbox (translated via i18n) -->
+        <div class="research-desc research-desc-harmonic d-none" data-i18n="research.desc.harmonic" data-i18n-html></div>
+        <div class="research-desc research-desc-cycloid d-none" data-i18n="research.desc.cycloid" data-i18n-html></div>
+        <div class="research-desc research-desc-planetary d-none" data-i18n="research.desc.planetary" data-i18n-html></div>
+
       </div>
     </section><!-- End Portfolio Section -->
-
-
-
 
   </main><!-- End #main -->
 
@@ -278,9 +255,6 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4 data-i18n="footer.follow_us">Follow Us</h4>
           <div class="social-links d-flex">
-            <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
             <a href="https://www.linkedin.com/in/seungsoo-kim-92091b19" class="linkedin"><i
                 class="bi bi-linkedin"></i></a>
           </div>
@@ -299,7 +273,6 @@
     </div>
 
   </footer><!-- End Footer -->
-  <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -315,8 +288,8 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/i18n.js?v=20260714"></script>
-  <script src="assets/js/main.js?v=20260115"></script>
+  <script src="assets/js/i18n.js?v=20260714d"></script>
+  <script src="assets/js/main.js?v=20260714"></script>
 
 </body>
 

@@ -309,6 +309,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
+   * Research R&D lightbox (image + side description)
+   */
+  let researchLightbox = null;
+  function initResearchLightbox() {
+    if (researchLightbox && typeof researchLightbox.destroy === 'function') {
+      researchLightbox.destroy();
+      researchLightbox = null;
+    }
+    if (!document.querySelector('.research-lightbox')) return;
+
+    researchLightbox = GLightbox({
+      selector: '.research-lightbox',
+      descPosition: 'right',
+      moreLength: 0
+    });
+  }
+  initResearchLightbox();
+  window.addEventListener('astm:langchange', initResearchLightbox);
+
+  /**
    * Animation on scroll function and init
    */
   function aos_init() {

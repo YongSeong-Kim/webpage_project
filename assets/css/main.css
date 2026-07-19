@@ -1786,3 +1786,51 @@ Make all right containers behave like the left ones
     left: 0%;
   }
 } */
+
+/*--------------------------------------------------------------
+# Research lightbox description (GLightbox side panel)
+--------------------------------------------------------------*/
+@media (min-width: 769px) {
+  .glightbox-clean .gslide-description.description-right {
+    max-width: 420px;
+  }
+
+  .glightbox-clean .description-right .gdesc-inner {
+    padding: 28px 26px;
+    background: #fff;
+  }
+
+  .glightbox-clean .description-right .gslide-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    color: #1a1a1a;
+    letter-spacing: -0.01em;
+  }
+
+  .glightbox-clean .description-right .gslide-desc {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #3a3a3a;
+  }
+
+  .glightbox-clean .description-right .gslide-desc p {
+    margin: 0 0 1em;
+  }
+
+  .glightbox-clean .description-right .gslide-desc p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.glightbox-mobile .glightbox-container .gslide-desc p {
+  margin: 0 0 0.85em;
+  line-height: 1.7;
+}
+
+.glightbox-mobile .glightbox-container .gslide-desc p:last-child {
+  margin-bottom: 0;
+}
+
