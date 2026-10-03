@@ -1198,6 +1198,19 @@ section {
   margin-top: 25px;
 }
 
+.contact .php-email-form .captcha-message {
+  display: none;
+  color: #fff;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .h-captcha {
+  margin-top: 16px;
+}
+
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
