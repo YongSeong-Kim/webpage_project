@@ -21,9 +21,19 @@
         displayError(thisForm, 'The form action property is not set!');
         return;
       }
-      thisForm.querySelector('.loading').classList.add('d-block');
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
+
+      // hCaptcha를 풀지 않았으면 보내지 않는다 (Web3Forms 스팸 방지)
+      let captchaMessage = thisForm.querySelector('.captcha-message');
+      if (captchaMessage) captchaMessage.classList.remove('d-block');
+      let captcha = thisForm.querySelector('textarea[name=h-captcha-response]');
+      if (thisForm.querySelector('.h-captcha') && (!captcha || !captcha.value)) {
+        if (captchaMessage) captchaMessage.classList.add('d-block');
+        return;
+      }
+
+      thisForm.querySelector('.loading').classList.add('d-block');
 
       let formData = new FormData( thisForm );
 
@@ -50,25 +60,21 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
+    // Web3Forms는 {"success": true/false, "message": "..."} JSON으로 답한다
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      headers: {'Accept': 'application/json'}
     })
-    .then(response => {
-      if( response.ok ) {
-        return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
-    })
+    .then(response => response.json())
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.success) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
+        thisForm.reset();
+        if (typeof hcaptcha !== "undefined") hcaptcha.reset();
       } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+        throw new Error(data.message || 'Form submission failed');
       }
     })
     .catch((error) => {

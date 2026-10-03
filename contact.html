@@ -163,7 +163,12 @@
 
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <form action="https://api.web3forms.com/submit" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <!-- Web3Forms: 문의 내용을 astmengineering1@gmail.com 으로 보낸다. 키는 그 메일로 발급받은 것 -->
+          <input type="hidden" name="access_key" value="c3a91d2e-c6f6-4ec5-9663-2d3e3f3c4a1c">
+          <input type="hidden" name="from_name" value="ASTM 홈페이지 문의">
+          <!-- 스팸 방지 1: 사람에게는 안 보이는 칸. 봇이 체크하면 Web3Forms가 버린다 -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
           <div class="row">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-i18n="contact.form.name" data-i18n-attr="placeholder" required>
@@ -178,9 +183,12 @@
           <div class="form-group">
             <textarea class="form-control" name="message" rows="5" placeholder="Message" data-i18n="contact.form.message" data-i18n-attr="placeholder" required></textarea>
           </div>
+          <!-- 스팸 방지 2: hCaptcha (Web3Forms 무료 플랜) -->
+          <div class="h-captcha" data-captcha="true"></div>
           <div class="my-3">
             <div class="loading" data-i18n="contact.form.loading">Loading</div>
             <div class="error-message"></div>
+            <div class="captcha-message" data-i18n="contact.form.captcha">Please complete the captcha.</div>
             <div class="sent-message" data-i18n="contact.form.sent">Your message has been sent. Thank you!</div>
           </div>
           <div class="text-center"><button type="submit" data-i18n="contact.form.send">Send Message</button></div>
@@ -271,6 +279,7 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/i18n.js?v=20260714"></script>

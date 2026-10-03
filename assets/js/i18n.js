@@ -111,6 +111,7 @@
       "contact.form.message": "Message",
       "contact.form.loading": "Loading",
       "contact.form.sent": "Your message has been sent. Thank you!",
+      "contact.form.captcha": "Please complete the captcha.",
       "contact.form.send": "Send Message",
     },
     ko: {
@@ -211,6 +212,7 @@
       "contact.form.message": "내용",
       "contact.form.loading": "전송 중",
       "contact.form.sent": "메시지가 전송되었습니다. 감사합니다!",
+      "contact.form.captcha": "자동 입력 방지(캡차)를 확인해 주세요.",
       "contact.form.send": "메시지 보내기",
     },
     ja: {
@@ -311,6 +313,7 @@
       "contact.form.message": "本文",
       "contact.form.loading": "送信中",
       "contact.form.sent": "メッセージを送信しました。ありがとうございます。",
+      "contact.form.captcha": "キャプチャを完了してください。",
       "contact.form.send": "送信",
     },
   };
