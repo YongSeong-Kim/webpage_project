@@ -1847,3 +1847,32 @@ Make all right containers behave like the left ones
   margin-bottom: 0;
 }
 
+
+/* Floating quote button (all pages except contact) */
+.quote-float {
+  position: fixed;
+  right: 15px;
+  bottom: 70px;
+  z-index: 99998;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.quote-float:hover {
+  background: #ec2727;
+  color: #fff;
+}
+
+#hero .btn-quote {
+  margin-right: 10px;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}

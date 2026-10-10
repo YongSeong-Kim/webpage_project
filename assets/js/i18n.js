@@ -27,10 +27,11 @@
       "section.equipments": "Equipments",
       "section.clients": "Clients",
 
-      "hero.welcome": "Welcome to ASTM & BSTM",
+      "hero.welcome": "20 Years of CNC Machining & Sheet Metal",
       // NOTE: Keep this as a single quoted string. Use <br> for line breaks (index.html uses data-i18n-html).
       "hero.subtitle":
-        "Our company specializes in metal manufacturing, meeting diverse customer demands through advanced production and processing.<br><strong>ASTM Engineering</strong> delivers precision CNC machining and CNC turning solutions.<br><strong>BSTM Sheet Metal</strong> provides sheet metal fabrication, welding, and painting.",
+        "Precision parts from one shop in Incheon, Korea.<br><strong>ASTM Engineering</strong>: CNC turning, machining center (MCT) milling and gun drilling.<br><strong>BSTM Sheet Metal</strong>: laser cutting, bending, welding and painting.<br>Send us your drawing and we will reply with a quote.",
+      "cta.quote": "Request a Quote",
       "hero.read_more": "Read More",
 
       "index.about.vision":
@@ -129,9 +130,10 @@
       "section.equipments": "설비",
       "section.clients": "고객사",
 
-      "hero.welcome": "ASTM & BSTM에 오신 것을 환영합니다",
+      "hero.welcome": "20년 CNC·MCT 정밀가공 · 판금 원스톱",
       "hero.subtitle":
-        "당사는 금속 생산·가공 전문 기업으로, 첨단 생산 및 가공 기술을 통해 다양한 고객 요구에 대응합니다.<br><strong>ASTM Engineering</strong>은 정밀 CNC 머시닝 및 CNC 선반(턴닝) 솔루션을 제공합니다.<br><strong>BSTM Sheet Metal</strong>은 판금 가공, 용접, 도장을 제공합니다.",
+        "인천 남동구, 가공과 판금을 한 곳에서 합니다.<br><strong>ASTM엔지니어링</strong>: CNC 선반, 머시닝센터(MCT), 건드릴 가공<br><strong>BSTM</strong>: 레이저 절단, 절곡, 용접, 도장<br>도면을 보내주시면 견적을 드립니다.",
+      "cta.quote": "견적 문의",
       "hero.read_more": "더 보기",
 
       "index.about.vision":
@@ -230,9 +232,10 @@
       "section.equipments": "設備",
       "section.clients": "取引先",
 
-      "hero.welcome": "ASTM & BSTMへようこそ",
+      "hero.welcome": "CNC加工・板金20年",
       "hero.subtitle":
-        "当社は金属製造の専門企業として、先進的な生産・加工により多様なお客様のニーズに対応します。<br><strong>ASTM Engineering</strong>は高精度のCNCマシニングおよびCNC旋盤ソリューションを提供します。<br><strong>BSTM Sheet Metal</strong>は板金加工、溶接、塗装を提供します。",
+        "韓国・仁川で、切削加工と板金を一か所で。<br><strong>ASTM Engineering</strong>：CNC旋盤、マシニングセンタ（MCT）、ガンドリル加工<br><strong>BSTM Sheet Metal</strong>：レーザー切断、曲げ、溶接、塗装<br>図面をお送りいただければお見積りいたします。",
+      "cta.quote": "お見積り依頼",
       "hero.read_more": "もっと見る",
 
       "index.about.vision":
