@@ -1876,3 +1876,8 @@ Make all right containers behave like the left ones
   background: var(--color-primary);
   border-color: var(--color-primary);
 }
+
+/* Keep the form clear of the fixed header when opened via contact.html#contact-form */
+#contact-form {
+  scroll-margin-top: 110px;
+}

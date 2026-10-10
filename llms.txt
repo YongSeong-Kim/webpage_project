@@ -17,7 +17,7 @@
 - [Products](http://astm-eng.com/product.html): machined and sheet metal parts
 - [Equipment](http://astm-eng.com/equipment.html): machine list
 - [R&D](http://astm-eng.com/research.html): gear reducer development
-- [Contact / Request a quote](http://astm-eng.com/contact.html): send drawing, quantity and lead time
+- [Contact / Request a quote](http://astm-eng.com/contact.html): inquiry form
 
 ## Contact
 - Address: 140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea
