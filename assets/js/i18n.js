@@ -31,6 +31,10 @@
       // NOTE: Keep this as a single quoted string. Use <br> for line breaks (index.html uses data-i18n-html).
       "hero.subtitle":
         "Our company specializes in metal manufacturing, meeting diverse customer demands through advanced production and processing.<br><strong>ASTM Engineering</strong> delivers precision CNC machining and CNC turning solutions.<br><strong>BSTM Sheet Metal</strong> provides sheet metal fabrication, welding, and painting.",
+      "cta.quote": "Contact Us",
+      "hero2.title": "Building parts with our customers for 20 years",
+      "hero2.subtitle":
+        "From CNC turning, machining center milling and gun drilling to laser cutting, bending and welding.<br>We make machined parts and sheet metal parts in one place, so schedules and quality are managed together.<br>With 20 years of experience, we build every part with care, including the first one you send us.",
       "hero.read_more": "Read More",
 
       "index.about.vision":
@@ -132,6 +136,10 @@
       "hero.welcome": "ASTM & BSTM에 오신 것을 환영합니다",
       "hero.subtitle":
         "당사는 금속 생산·가공 전문 기업으로, 첨단 생산 및 가공 기술을 통해 다양한 고객 요구에 대응합니다.<br><strong>ASTM Engineering</strong>은 정밀 CNC 머시닝 및 CNC 선반(턴닝) 솔루션을 제공합니다.<br><strong>BSTM Sheet Metal</strong>은 판금 가공, 용접, 도장을 제공합니다.",
+      "cta.quote": "문의하기",
+      "hero2.title": "20년 동안 고객과 함께 만들어 왔습니다",
+      "hero2.subtitle":
+        "CNC 선반, 머시닝센터, 건드릴 가공부터 레이저 절단, 절곡, 용접까지.<br>가공 부품과 판금 부품을 한 곳에서 만들기 때문에 일정과 품질을 함께 챙깁니다.<br>20년 동안 쌓아 온 경험으로, 처음 맡기시는 부품도 꼼꼼하게 만듭니다.",
       "hero.read_more": "더 보기",
 
       "index.about.vision":
@@ -233,6 +241,10 @@
       "hero.welcome": "ASTM & BSTMへようこそ",
       "hero.subtitle":
         "当社は金属製造の専門企業として、先進的な生産・加工により多様なお客様のニーズに対応します。<br><strong>ASTM Engineering</strong>は高精度のCNCマシニングおよびCNC旋盤ソリューションを提供します。<br><strong>BSTM Sheet Metal</strong>は板金加工、溶接、塗装を提供します。",
+      "cta.quote": "お問い合わせ",
+      "hero2.title": "20年間、お客様とともにものづくりを続けてきました",
+      "hero2.subtitle":
+        "CNC旋盤、マシニングセンタ、ガンドリル加工から、レーザー切断、曲げ、溶接まで。<br>切削部品と板金部品を一か所でつくるため、納期と品質をまとめて管理します。<br>20年の経験で、初めてご依頼いただく部品も丁寧におつくりします。",
       "hero.read_more": "もっと見る",
 
       "index.about.vision":
