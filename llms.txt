@@ -1,0 +1,25 @@
+# ASTM Engineering (ASTM엔지니어링) · BSTM Sheet Metal
+
+> Contract manufacturer in Namdong-gu, Incheon, Republic of Korea. ASTM Engineering does CNC turning, machining center (MCT) milling and gun drilling. BSTM Sheet Metal does laser cutting, bending, welding and painting. Both companies work as one shop, so customers can order machined parts and sheet metal parts together. About 20 years in CNC machining.
+
+인천 남동구의 금속 가공 업체입니다. ASTM엔지니어링은 CNC 선반, 머시닝센터(MCT), 건드릴 가공을, BSTM은 레이저 절단, 절곡, 용접, 도장을 합니다. 가공과 판금을 한 곳에서 맡길 수 있습니다.
+
+## Services
+- CNC turning (CNC 선반 가공)
+- Machining center / MCT milling (머시닝센터 가공)
+- Gun drilling (건드릴 가공)
+- Sheet metal: TRUMPF laser cutting, AMADA bending, PEM press, welding robot, painting (판금: 레이저, 절곡, 용접, 도장)
+- R&D: precision gear reducers (harmonic, cycloid, planetary)
+
+## Pages
+- [Home](http://astm-eng.com/): overview
+- [About](http://astm-eng.com/about.html): company introduction and quality policy
+- [Products](http://astm-eng.com/product.html): machined and sheet metal parts
+- [Equipment](http://astm-eng.com/equipment.html): machine list
+- [R&D](http://astm-eng.com/research.html): gear reducer development
+- [Contact / Request a quote](http://astm-eng.com/contact.html): send drawing, quantity and lead time
+
+## Contact
+- Address: 140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea
+- Email: astmengineering1@gmail.com
+- Languages: Korean, English, Japanese (website)
