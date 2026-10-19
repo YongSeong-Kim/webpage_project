@@ -1,0 +1,31 @@
+# main에 올리면 Cloudflare Pages(astm-eng)로 배포한다.
+# 시크릿: CLOUDFLARE_API_TOKEN (Pages 편집 권한). 계정 ID는 비밀값이 아니라 아래에 그대로 둔다.
+name: deploy
+
+env:
+  CLOUDFLARE_ACCOUNT_ID: 467650f3b76abfec9f413e6daba9932e
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 올릴 파일만 모으기
+        run: |
+          mkdir dist
+          git archive HEAD | tar -x -C dist
+          rm -rf dist/.github dist/.gitignore dist/README.md dist/deploy.sh dist/docs
+      - name: Pages 프로젝트가 없으면 만들기
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npx --yes wrangler@3 pages project create astm-eng --production-branch=main || true
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=astm-eng --branch=main

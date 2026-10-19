@@ -28,4 +28,4 @@ Allow: /
 User-agent: Yeti
 Allow: /
 
-Sitemap: http://astm-eng.com/sitemap.xml
+Sitemap: https://astm-eng.com/sitemap.xml

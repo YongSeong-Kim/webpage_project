@@ -12,12 +12,12 @@
 - R&D: precision gear reducers (harmonic, cycloid, planetary)
 
 ## Pages
-- [Home](http://astm-eng.com/): overview
-- [About](http://astm-eng.com/about.html): company introduction and quality policy
-- [Products](http://astm-eng.com/product.html): machined and sheet metal parts
-- [Equipment](http://astm-eng.com/equipment.html): machine list
-- [R&D](http://astm-eng.com/research.html): gear reducer development
-- [Contact / Request a quote](http://astm-eng.com/contact.html): inquiry form
+- [Home](https://astm-eng.com/): overview
+- [About](https://astm-eng.com/about.html): company introduction and quality policy
+- [Products](https://astm-eng.com/product.html): machined and sheet metal parts
+- [Equipment](https://astm-eng.com/equipment.html): machine list
+- [R&D](https://astm-eng.com/research.html): gear reducer development
+- [Contact / Request a quote](https://astm-eng.com/contact.html): inquiry form
 
 ## Contact
 - Address: 140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea

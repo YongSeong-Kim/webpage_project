@@ -1,25 +1,22 @@
 # webpage_project for ASTM
 
-ASTM 회사 홈페이지 (http://astm-eng.com) 소스. 정적 HTML이고, 한·영·일 전환은 `assets/js/i18n.js`가 한다.
+ASTM 회사 홈페이지 (https://astm-eng.com) 소스. 정적 HTML이고, 한·영·일 전환은 `assets/js/i18n.js`가 한다.
 
 ## 운영 구성
 
 | 항목 | 서비스 | 메모 |
 |---|---|---|
 | 도메인 등록 | **가비아** | astm-eng.com, 만료 2027-10-10 |
-| 네임서버(DNS) | **Cafe24** | 가비아에서 네임서버를 `ns1/ns2.cafe24.com`(.co.kr)으로 지정. DNS 레코드는 Cafe24에서 관리 |
-| 호스팅 | **Cafe24 웹호스팅** | 10G 광아우토반 FullSSD Plus, PHP 7.4. 서버 `203.245.44.31`, 홈페이지 폴더 `~/www`. 2026-10-03 연장 (기존 만료 2026-11-01) |
+| 네임서버(DNS) | **Cloudflare** (무료) | 가비아에서 네임서버를 Cloudflare로 지정. 메일 MX는 그대로 Cafe24 메일(`mw-002.cafe24.com`). 예전에는 Cafe24 네임서버 |
+| 호스팅 | **Cloudflare Pages** (무료) | 프로젝트 `astm-eng`. 예전 Cafe24 웹호스팅(서버 `203.245.44.31`, `~/www`)은 만료 때까지 백업으로 두고 연장하지 않는다 |
 | 문의 폼 | **Web3Forms** | 회사 업무용 Gmail로 로그인해 만든 폼 "ASTM 홈페이지 문의". 무료 월 250건 |
-| SSL(https) | 미설정 (보류) | https로 접속하면 `*.cafe24.com` 인증서가 나와 오류. 비용 때문에 보류. 할 때는 PHP 8로 바꾸고 Cafe24 SSL Basic(연 0원, 설치비 11,000원 1회) |
+| SSL(https) | **Cloudflare** (무료) | 인증서 자동 발급·갱신. http로 오면 https로 넘긴다 |
 
 ## 배포
 
-```bash
-./deploy.sh
-```
+main에 올리면 GitHub Actions(`.github/workflows/deploy.yml`)가 Cloudflare Pages로 배포한다. 시크릿 `CLOUDFLARE_API_TOKEN`(Pages 편집 권한)이 필요하다. 계정 ID는 워크플로에 적혀 있다. 올리지 않는 파일: `.github/`, `.gitignore`, `README.md`, `deploy.sh`, `docs/`.
 
-main의 커밋된 파일만 올린다. 서버 `www`를 `~/deploy_backups/`에 백업(최근 3개)하고, 바뀔 목록을 보여 준 뒤 `y`를 눌러야 올린다.
-Cafe24 서버에는 rsync, md5sum이 없어서 perl(Digest::MD5)로 파일을 비교하고 tar를 ssh로 보낸다. 비밀번호는 Cafe24 FTP/SSH 비밀번호다.
+`deploy.sh`는 예전 Cafe24 서버용이다. Cafe24 호스팅이 끝나면 지운다.
 
 ## 문의 폼 (Web3Forms)
 
@@ -30,6 +27,7 @@ Cafe24 서버에는 rsync, md5sum이 없어서 perl(Digest::MD5)로 파일을 �
 
 ## 변경 이력
 
+- 2026-10-19: 무료로 https를 쓰려고 Cloudflare(DNS·Pages)로 옮김. 사이트 안의 주소를 모두 https로 바꿈. Firebase Hosting도 비교했지만 전송량 제한(월 10GB)이 있고, 메일 전달·Workers를 같은 곳에서 무료로 쓸 수 있어 Cloudflare로 정함.
 - 2026-10-03: 문의 폼을 Web3Forms로 교체 (#27). 템플릿 PHP 폼(`forms/contact.php`)은 받는 주소가 `contact@example.com`이고 라이브러리가 없어 처음부터 동작하지 않았다(실사이트 502). PHP를 쓰지 않고 스팸도 막으려고 Web3Forms + 허니팟 + hCaptcha를 골랐다. `forms/` 폴더 삭제.
 - 2026-10-03: 배포 스크립트 `deploy.sh` 추가 (#28). 그 전에는 파일을 손으로 올렸다.
 - 2026-10-03 확인: 이 시점에 레포 main과 실사이트 파일이 같았다 (#26 하모닉 R&D 페이지까지 반영).
