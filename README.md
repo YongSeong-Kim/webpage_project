@@ -14,7 +14,7 @@ ASTM 회사 홈페이지 (https://astm-eng.com) 소스. 정적 HTML이고, 한·
 
 ## 배포
 
-main에 올리면 GitHub Actions(`.github/workflows/deploy.yml`)가 Cloudflare Pages로 배포한다. 시크릿 `CLOUDFLARE_API_TOKEN`(Pages 편집 권한), `CLOUDFLARE_ACCOUNT_ID`가 필요하다. 올리지 않는 파일: `.github/`, `.gitignore`, `README.md`, `deploy.sh`, `docs/`.
+main에 올리면 GitHub Actions(`.github/workflows/deploy.yml`)가 Cloudflare Pages로 배포한다. 시크릿 `CLOUDFLARE_API_TOKEN`(Pages 편집 권한)이 필요하다. 계정 ID는 워크플로에 적혀 있다. 올리지 않는 파일: `.github/`, `.gitignore`, `README.md`, `deploy.sh`, `docs/`.
 
 `deploy.sh`는 예전 Cafe24 서버용이다. Cafe24 호스팅이 끝나면 지운다.
 
