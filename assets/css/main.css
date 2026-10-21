@@ -2074,7 +2074,69 @@ Make all right containers behave like the left ones
 .automation .auto-btn-line { border: 2px solid #fff; color: #fff; }
 .automation .auto-btn-line:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
 
+
+.automation .auto-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e3dee6;
+  border-radius: 14px;
+  padding: 32px;
+  margin-bottom: 64px;
+}
+
+.automation .auto-feature img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.automation .auto-feature h3,
+.automation .auto-subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--auto-ink);
+  margin-bottom: 16px;
+}
+
+.automation .auto-feature ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.automation .auto-feature li {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--auto-ink);
+  padding: 5px 0;
+}
+
+.automation .auto-feature li i {
+  color: var(--auto-purple);
+  font-size: 18px;
+}
+
+.automation .auto-feature-note {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--auto-muted);
+  margin-bottom: 20px;
+}
+
+.automation .auto-btn-purple { background: var(--auto-purple); color: #fff; }
+.automation .auto-btn-purple:hover { background: #5c1b50; color: #fff; }
+.automation .auto-step-now { border: 2px solid var(--auto-purple); }
+
 @media (max-width: 768px) {
+  .automation .auto-feature { grid-template-columns: minmax(0, 1fr); padding: 20px; gap: 20px; }
   .automation { padding: 56px 0; }
   .automation .auto-intro h3 { font-size: 26px; }
   .automation .auto-intro p { font-size: 16px; }
