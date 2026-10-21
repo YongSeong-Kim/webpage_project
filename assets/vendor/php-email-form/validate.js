@@ -78,7 +78,7 @@
       }
     })
     .catch((error) => {
-      displayError(thisForm, 'Please contact us directly at tedsskim@hanmail.net or astmengineering1@gmail.com');
+      displayError(thisForm, 'Please contact us directly at tedsskim@hanmail.net or sskim@astm-eng.com');
     });
   }
 
