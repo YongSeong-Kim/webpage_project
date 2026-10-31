@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #7a2964;
   --color-secondary: #37373f;
   --color-company: #c87bdd;
   --color-balck: #000
@@ -746,7 +746,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(206, 18, 18, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, rgba(122, 41, 100, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -767,7 +767,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(206, 18, 18, 0.7);
+  border: 5px solid rgba(122, 41, 100, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
