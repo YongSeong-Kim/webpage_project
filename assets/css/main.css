@@ -1881,3 +1881,36 @@ Make all right containers behave like the left ones
 #contact-form {
   scroll-margin-top: 110px;
 }
+
+/*--------------------------------------------------------------
+# About page (company / CEO / factory / quality)
+--------------------------------------------------------------*/
+.ab-sec { padding: 72px 0; background: #fff; }
+.ab-tint { background: #f6f4f6; }
+.ab-wrap { max-width: 1080px; }
+.ab-kicker { color: #7a2964; font-size: 13px; font-weight: 700; letter-spacing: .08em; margin-bottom: 10px; text-transform: uppercase; }
+.ab-h2 { font-size: 32px; font-weight: 700; color: #1f1f24; margin-bottom: 18px; }
+.ab-lead { font-size: 17px; line-height: 1.75; color: #444; margin-bottom: 0; }
+.ab-sub { font-size: 15px; color: #6b6b75; margin: -6px 0 26px; }
+.ab-facts { list-style: none; padding: 0; margin: 28px 0 0; display: flex; gap: 0; border-top: 1px solid #e4e0e4; }
+.ab-facts li { flex: 1; padding: 16px 12px 0 0; }
+.ab-facts strong { display: block; font-size: 24px; color: #7a2964; line-height: 1.2; }
+.ab-facts span { font-size: 14px; color: #555; }
+.ab-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; display: block; }
+.ab-photo-tall { aspect-ratio: 3 / 4; }
+.ab-quote { font-size: 21px; line-height: 1.65; color: #1f1f24; font-weight: 500; margin-bottom: 16px; }
+.ab-name { font-size: 16px; font-weight: 700; color: #555; margin-bottom: 26px; }
+.ab-btn { display: inline-block; background: #7a2964; color: #fff; padding: 11px 26px; border-radius: 6px; font-weight: 600; font-size: 15px; }
+.ab-btn:hover { background: #5f1f4e; color: #fff; }
+.ab-fig { margin: 0; }
+.ab-fig figcaption { font-size: 14px; color: #555; margin-top: 8px; }
+.ab-card { background: #fff; border-radius: 8px; padding: 26px 24px; height: 100%; border: 1px solid #ebe6eb; }
+.ab-num { color: #7a2964; font-weight: 700; font-size: 14px; }
+.ab-card h3 { font-size: 18px; font-weight: 700; color: #1f1f24; margin: 8px 0 10px; }
+.ab-card p { font-size: 15px; line-height: 1.7; color: #555; margin: 0; }
+@media (max-width: 767px) {
+  .ab-sec { padding: 52px 0; }
+  .ab-h2 { font-size: 26px; }
+  .ab-quote { font-size: 18px; }
+  .ab-facts strong { font-size: 20px; }
+}
