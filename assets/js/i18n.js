@@ -193,6 +193,12 @@
       "product.cat.mct": "MCT machined part",
       "product.cat.cnc": "CNC turned part",
       "product.cat.gundrill": "Gun-drilled part",
+      // Owner (2026-11)
+      "about.owner.kicker": "Who you talk to",
+      "about.owner.title": "Run by the owner. Answered by the owner.",
+      "about.owner.body": "Seung Soo Kim runs both ASTM Engineering and BSTM himself. He answers quote requests and technical questions personally, so when you send a drawing you talk straight to the person who decides.",
+      "about.owner.name": "Seung Soo Kim · CEO",
+      "home.owner.line": "Runs both shops and answers quote requests himself.",
     },
     ko: {
       "ui.language": "언어",
@@ -374,6 +380,12 @@
       "product.cat.mct": "MCT 가공 부품",
       "product.cat.cnc": "CNC 선반 가공 부품",
       "product.cat.gundrill": "건드릴 가공 부품",
+      // Owner (2026-11)
+      "about.owner.kicker": "대표",
+      "about.owner.title": "대표가 직접 운영하고, 직접 답합니다",
+      "about.owner.body": "김승수 대표가 ASTM엔지니어링과 BSTM을 직접 운영합니다. 견적 문의와 기술 질문에는 대표가 직접 답장 드리므로, 도면을 보내 주시면 중간 단계 없이 바로 이야기할 수 있습니다.",
+      "about.owner.name": "김승수 · 대표",
+      "home.owner.line": "두 회사를 직접 운영하고, 견적 문의에 직접 답합니다.",
     },
     ja: {
       "ui.language": "言語",
@@ -555,6 +567,12 @@
       "product.cat.mct": "MCT加工部品",
       "product.cat.cnc": "CNC旋盤加工部品",
       "product.cat.gundrill": "ガンドリル加工部品",
+      // Owner (2026-11)
+      "about.owner.kicker": "代表",
+      "about.owner.title": "代表が自ら運営し、自ら返信します",
+      "about.owner.body": "キム・スンス代表がASTMエンジニアリングとBSTMを自ら運営しています。見積りや技術的なご質問には代表が直接お答えするので、図面をお送りいただければ、間に人を挟まずにすぐご相談いただけます。",
+      "about.owner.name": "キム・スンス · 代表",
+      "home.owner.line": "2社を自ら運営し、見積りのお問い合わせに直接お答えします。",
     },
   };
 

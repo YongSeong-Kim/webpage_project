@@ -266,7 +266,7 @@
   aspect-ratio: 4 / 3;
   object-fit: contain;
   padding: 20px;
-  background: #f2f0f1;
+  background: #fff;
   display: block;
 }
 
@@ -538,7 +538,7 @@ body.site .portfolio .portfolio-wrap {
 }
 
 body.site .portfolio .img-fluid-container--contain {
-  background: #f2f0f1;
+  background: #fff;
 }
 
 body.site .portfolio .portfolio-caption {
@@ -680,4 +680,51 @@ body.site .contact .php-email-form button[type=submit]:hover { background: var(-
   .header .container { padding-left: 12px; padding-right: 12px; }
   .header .logo .logo-img--astm { height: 28px; }
   .header .logo .logo-img--bstm { height: 34px; }
+}
+
+/* Owner (about page + home strip) */
+.owner {
+  display: grid;
+  grid-template-columns: minmax(260px, 420px) minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.owner-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 60% 30%;
+  display: block;
+}
+
+.owner-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--astm-strong);
+  margin: -24px 0 32px;
+}
+
+.owner-strip {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.owner-strip img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 62% 25%;
+  flex: none;
+}
+
+.owner-strip p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--astm-text-2); }
+.owner-strip strong { display: block; color: var(--astm-strong); font-size: 17px; }
+
+@media (max-width: 768px) {
+  .owner { grid-template-columns: 1fr; gap: 32px; }
+  .owner-photo { max-width: 420px; }
 }
