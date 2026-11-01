@@ -97,6 +97,9 @@
       "about.quality.3.title": "Continuous Quality Improvement",
       "about.quality.3.body":
         "We are committed to the continuous improvement of quality. We promote research and development to enhance products and processes, leveraging customer feedback to enhance quality.",
+      "about.ceo.title": "CEO",
+      "about.ceo.body": "Seung Soo Kim runs ASTM Engineering and BSTM. Quote requests and technical questions are answered by the CEO directly, so you can talk about your drawing with the person who makes the decisions.",
+      "about.ceo.name": "Seung Soo Kim, CEO",
 
       "product.filter.all": "All",
       "product.filter.astm": "ASTM",
@@ -202,6 +205,9 @@
       "about.quality.3.title": "지속적인 품질 개선",
       "about.quality.3.body":
         "지속적인 품질 개선을 위해 연구개발을 추진하고, 고객 피드백을 반영하여 제품과 공정을 개선합니다.",
+      "about.ceo.title": "대표",
+      "about.ceo.body": "김승수 대표가 ASTM엔지니어링과 BSTM을 운영합니다. 견적 문의와 기술 질문에는 대표가 직접 답변드립니다. 도면을 보내 주시면 결정하는 사람과 바로 이야기하실 수 있습니다.",
+      "about.ceo.name": "김승수 대표",
 
       "product.filter.all": "전체",
       "product.filter.astm": "ASTM",
@@ -307,6 +313,9 @@
       "about.quality.3.title": "継続的な品質改善",
       "about.quality.3.body":
         "品質の継続的改善に取り組み、研究開発を推進し、お客様のフィードバックを活用して製品とプロセスを改善します。",
+      "about.ceo.title": "代表",
+      "about.ceo.body": "キム・スンス代表がASTMエンジニアリングとBSTMを運営しています。お見積りや技術的なご質問には代表が直接お答えします。図面をお送りいただければ、決定権を持つ本人とすぐにご相談いただけます。",
+      "about.ceo.name": "代表 キム・スンス",
 
       "product.filter.all": "すべて",
       "product.filter.astm": "ASTM",

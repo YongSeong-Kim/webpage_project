@@ -956,7 +956,7 @@ section {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(68, 65, 65, 0.6);
+  background-color: rgba(25, 22, 25, 0.62);
   position: absolute;
   top: 0;
   right: 0;
