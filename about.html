@@ -36,6 +36,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css?v=20261101" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link href="assets/css/site.css?v=20261101e" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Yummy
@@ -46,7 +48,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body class="site inner">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -91,89 +93,74 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2 data-i18n="breadcrumb.about">About</h2>
-          <ol>
-            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-            <li data-i18n="breadcrumb.about">About</li>
-          </ol>
-        </div>
-
+    <!-- ======= Page hero ======= -->
+    <section class="page-hero" style="background-image: linear-gradient(180deg, rgba(19, 18, 21, 0.55) 0%, rgba(19, 18, 21, 0.92) 85%), url(assets/img/factory/floor.jpg);">
+      <div class="home-wrap">
+        <p class="page-hero-crumb"><a href="index.html" data-i18n="nav.home">Home</a> / <span data-i18n="breadcrumb.about">회사소개</span></p>
+        <h1 data-i18n="breadcrumb.about">회사소개</h1>
+        <p data-i18n="page.about.lead"></p>
       </div>
-    </div><!-- End Breadcrumbs -->
+    </section><!-- End Page hero -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2 data-i18n="about.intro.title">About</h2>
-          <p class="introduction" data-i18n="about.intro.body"> Our company is a manufacturing firm that specializes in meeting various customer demands by producing and
-            processing parts for  various applications. We utilize a range of techniques, including sheet
-            metal fabrication and machining, to create high-quality components and provide customized solutions for our
-            customers' projects. With our expertise and know-how, we establish efficient and precise production
-            processes to support our customers' business success. We are committed to quality and innovation, driving
-            continuous growth and development in the manufacturing sector.</p>
+    <!-- ======= About intro ======= -->
+    <section class="home-section">
+      <div class="home-wrap">
+        <p class="about-intro" data-i18n="about.intro.body">Our company is a manufacturing firm that specializes in meeting various customer demands by producing and processing parts for various applications.</p>
+        <div class="home-about-grid" style="margin-top: 56px;">
+          <article class="home-co">
+            <img src="assets/img/company_logo/ASTM_LOGO_copy_trim.png" alt="ASTM Engineering" class="home-co-logo" loading="lazy">
+            <h3 data-i18n="home.about.astm.title">ASTM엔지니어링 · 정밀 가공</h3>
+            <p data-i18n="home.about.astm.body">CNC 선반, 머시닝센터(MCT), 건드릴 가공.</p>
+          </article>
+          <article class="home-co">
+            <img src="assets/img/company_logo/bstm_sheetmetal.png" alt="BSTM Sheet Metal" class="home-co-logo" loading="lazy">
+            <h3 data-i18n="home.about.bstm.title">BSTM · 판금</h3>
+            <p data-i18n="home.about.bstm.body">레이저 절단, 터렛 펀칭, 절곡, PEM 압입, 용접, 도장.</p>
+          </article>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2 data-i18n="about.quality.title">Quality Policy</h2>
+    <!-- ======= Factory photos ======= -->
+    <section class="home-section home-section-tint">
+      <div class="home-wrap">
+        <h2 class="home-h2" data-i18n="about.photos.title">공장 모습</h2>
+        <p class="home-lead" data-i18n="about.photos.lead">인천 남동구 공장에서 2026년 10월에 찍은 사진입니다.</p>
+        <div class="about-photos">
+          <figure><img src="assets/img/factory/cnc_row.jpg" alt="" loading="lazy"><figcaption data-i18n="about.photos.cnc">CNC 가공 현장</figcaption></figure>
+          <figure><img src="assets/img/factory/lathe.jpg" alt="" loading="lazy"><figcaption data-i18n="about.photos.lathe">CNC 선반 내부</figcaption></figure>
+          <figure><img src="assets/img/factory/pega357.jpg" alt="" loading="lazy"><figcaption>AMADA PEGA-357</figcaption></figure>
+          <figure><img src="assets/img/factory/press_brake.jpg" alt="" loading="lazy"><figcaption data-i18n="about.photos.brake">AMADA 절곡기</figcaption></figure>
+          <figure><img src="assets/img/factory/pem_press.jpg" alt="" loading="lazy"><figcaption data-i18n="home.eq.pem">PEM 프레스</figcaption></figure>
+          <figure><img src="assets/img/factory/boat.jpg" alt="" loading="lazy"><figcaption data-i18n="home.prod.boat">알루미늄 용접 보트</figcaption></figure>
         </div>
-
-        <div class="quality-title">
-          <h6 data-i18n="about.quality.1.title">Customer-Centric Quality</h6>
-          <p data-i18n="about.quality.1.body">Our company places the customer at the forefront of our operations, striving to manufacture products that
-            meet and exceed their expectations. Quality is one of our core values.</p>
-        </div>
-
-        <div class="quality-title">
-          <h6 data-i18n="about.quality.2.title">Adherence to Stringent Quality Standards</h6>
-          <p data-i18n="about.quality.2.body">All products undergo rigorous testing and inspection to comply with strict quality standards and
-            regulations. This ensures the delivery of reliable products to our customers and prevents unnecessary
-            defects.</p>
-        </div>
-
-        <div class="quality-title">
-          <h6 data-i18n="about.quality.3.title">Continuous Quality Improvement</h6>
-          <p data-i18n="about.quality.3.body">We are committed to the continuous improvement of quality. We promote research and development to enhance
-            products and processes, leveraging customer feedback to enhance quality.</p>
-        </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- <section id="history" class="history">  
-      <div class="section-header">
-        <h2>History</h2>
-      </div>
-      
-      <div class="timeline">
-
-        <div class="container left">
-          <div class="content">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
+    <!-- ======= Quality policy ======= -->
+    <section class="home-section">
+      <div class="home-wrap">
+        <h2 class="home-h2" data-i18n="about.quality.title">품질 방침</h2>
+        <div class="quality-grid">
+          <div class="quality-card"><span class="num">01</span><h3 data-i18n="about.quality.1.title">Customer-Centric Quality</h3><p data-i18n="about.quality.1.body"></p></div>
+          <div class="quality-card"><span class="num">02</span><h3 data-i18n="about.quality.2.title">Adherence to Stringent Quality Standards</h3><p data-i18n="about.quality.2.body"></p></div>
+          <div class="quality-card"><span class="num">03</span><h3 data-i18n="about.quality.3.title">Continuous Quality Improvement</h3><p data-i18n="about.quality.3.body"></p></div>
         </div>
-
-        <div class="container right">
-          <div class="content">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
       </div>
-  </section> -->
+    </section>
+
+    <!-- ======= What's next ======= -->
+    <section class="home-section home-section-dark">
+      <div class="home-wrap">
+        <h2 class="home-h2" data-i18n="home.next.title">지금 준비하고 있는 일</h2>
+        <ol class="home-road">
+          <li><span class="home-road-tag" data-i18n="home.next.s1.tag">지금</span><h3 data-i18n="home.next.s1.title">정밀 가공 + 판금</h3><p data-i18n="home.next.s1.body"></p></li>
+          <li><span class="home-road-tag" data-i18n="home.next.s2.tag">준비 중</span><h3 data-i18n="home.next.s2.title">우리 공장 자동화</h3><p data-i18n="home.next.s2.body"></p></li>
+          <li><span class="home-road-tag" data-i18n="home.next.s3.tag">다음</span><h3 data-i18n="home.next.s3.title">다른 가공 업체에 자동화 제공</h3><p data-i18n="home.next.s3.body"></p></li>
+        </ol>
+        <a href="contact.html#contact-form" class="home-btn home-btn-light" data-i18n="home.cta.btn">견적 문의하기</a>
+      </div>
+    </section>
 
   </main><!-- End #main -->
 
@@ -256,7 +243,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/i18n.js?v=20261101"></script>
+  <script src="assets/js/i18n.js?v=20261101c"></script>
   <script src="assets/js/main.js?v=20260115"></script>
 
 </body>
