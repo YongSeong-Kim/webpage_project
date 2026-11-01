@@ -1,15 +1,48 @@
-/* Site look (2026-11 redesign): dark shop-floor pages, ASTM purple, Pretendard. Loaded on every page. */
+/* Site look (2026-11 redesign): ASTM purple, Pretendard. Light by default, dark with the header toggle
+   (html[data-theme="dark"], set by assets/js/theme.js). Loaded on every page. */
 :root {
   --astm-purple: #7a2964;
   --astm-purple-bright: #b5508f;
   --astm-purple-soft: #e7bcd9;
+  --astm-bg: #ffffff;
+  --astm-bg-2: #f6f3f5;
+  --astm-card: #ffffff;
+  --astm-card-border: #e6dfe4;
+  --astm-text: #2a252b;
+  --astm-text-2: #5d5660;
+  --astm-strong: #1c1a1d;
+  --astm-accent-text: #7a2964;
+  --astm-pill: #f1ecef;
+  --astm-clients-bg: #f6f3f5;
+  --astm-input-bg: #ffffff;
+  --astm-input-border: #d9d2d7;
+  --astm-placeholder: #8f8892;
+  --home-display: Pretendard, "Noto Sans JP", "Apple SD Gothic Neo", sans-serif;
+  --home-body: Pretendard, "Noto Sans JP", "Apple SD Gothic Neo", sans-serif;
+}
+
+:root[data-theme="dark"] {
   --astm-bg: #131215;
   --astm-bg-2: #1b191e;
   --astm-card: #222026;
+  --astm-card-border: transparent;
   --astm-text: #ecebe8;
   --astm-text-2: #b8b4b9;
-  --home-display: Pretendard, "Noto Sans JP", "Apple SD Gothic Neo", sans-serif;
-  --home-body: Pretendard, "Noto Sans JP", "Apple SD Gothic Neo", sans-serif;
+  --astm-strong: #ffffff;
+  --astm-accent-text: #e7bcd9;
+  --astm-pill: #222026;
+  --astm-clients-bg: #ece8eb;
+  --astm-input-bg: #2b2830;
+  --astm-input-border: #3a363f;
+  --astm-placeholder: #9c96a0;
+}
+
+/* Bands that stay dark (or purple) in both themes */
+.home-section-dark,
+.home-cta {
+  --astm-strong: #ffffff;
+  --astm-text-2: #d8cbd4;
+  --astm-accent-text: #e7bcd9;
 }
 
 #main,
@@ -92,7 +125,7 @@
 .home-btn-ghost { border: 1px solid rgba(255, 255, 255, 0.7); color: #fff; }
 .home-btn-ghost:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); color: #fff; }
 .home-btn-purple { background: #fff; color: var(--astm-purple); }
-.home-btn-purple:hover { background: var(--astm-bg); color: #fff; }
+.home-btn-purple:hover { background: #1c1a1d; color: #fff; }
 
 /* Stats band */
 .home-stats {
@@ -136,7 +169,7 @@
   font-family: var(--home-display);
   font-size: 15px;
   font-weight: 600;
-  color: var(--astm-purple-soft);
+  color: var(--astm-accent-text);
   margin: 0 0 12px;
 }
 
@@ -149,7 +182,7 @@
   line-height: 1.2;
   letter-spacing: -1px;
   margin: 0 0 24px;
-  color: #fff;
+  color: var(--astm-strong);
 }
 
 .home-lead {
@@ -166,13 +199,13 @@
   font-family: var(--home-display);
   font-size: 18px;
   font-weight: 700;
-  color: var(--astm-purple-soft);
+  color: var(--astm-accent-text);
   text-decoration: none;
   border-bottom: 2px solid var(--astm-purple);
   padding-bottom: 4px;
 }
 
-.home-link:hover { color: #fff; border-color: #fff; }
+.home-link:hover { color: var(--astm-strong); border-color: var(--astm-strong); }
 .home-link-light { margin-top: 18px; }
 
 /* About */
@@ -184,6 +217,7 @@
 
 .home-co {
   background: var(--astm-card);
+  border: 1px solid var(--astm-card-border);
   border-top: 4px solid var(--astm-purple);
   padding: 36px;
 }
@@ -197,7 +231,7 @@
   border-radius: 2px;
 }
 
-.home-co h3 { font-size: 24px; font-weight: 700; margin: 0 0 12px; color: #fff; }
+.home-co h3 { font-size: 24px; font-weight: 700; margin: 0 0 12px; color: var(--astm-strong); }
 .home-co p { margin: 0; font-size: 16px; line-height: 1.7; color: var(--astm-text-2); }
 
 /* Products and equipment */
@@ -212,6 +246,7 @@
 .home-eq {
   margin: 0;
   background: var(--astm-card);
+  border: 1px solid var(--astm-card-border);
   overflow: hidden;
   transition: transform 0.2s;
 }
@@ -243,7 +278,7 @@
   gap: 12px;
   padding: 16px 18px;
   font-size: 16px;
-  color: #fff;
+  color: var(--astm-strong);
 }
 
 .home-prod figcaption span:first-child,
@@ -251,7 +286,7 @@
   font-family: var(--home-display);
   font-size: 14px;
   font-weight: 700;
-  color: var(--astm-purple-soft);
+  color: var(--astm-accent-text);
 }
 
 .home-eq figcaption strong { font-weight: 600; }
@@ -275,10 +310,10 @@
   font-family: var(--home-display);
   font-size: 15px;
   font-weight: 700;
-  color: var(--astm-purple-soft);
+  color: var(--astm-accent-text);
 }
 
-.home-road h3 { font-size: 24px; font-weight: 700; margin: 12px 0 10px; color: #fff; }
+.home-road h3 { font-size: 24px; font-weight: 700; margin: 12px 0 10px; color: var(--astm-strong); }
 .home-road p { margin: 0; font-size: 16px; line-height: 1.7; color: var(--astm-text-2); }
 
 .home-rnd {
@@ -297,7 +332,7 @@
 }
 
 .home-rnd > div { flex: 1 1 320px; }
-.home-rnd h3 { font-size: 24px; font-weight: 700; margin: 0 0 10px; color: #fff; }
+.home-rnd h3 { font-size: 24px; font-weight: 700; margin: 0 0 10px; color: var(--astm-strong); }
 .home-rnd p { margin: 0; font-size: 16px; line-height: 1.7; color: var(--astm-text-2); }
 
 /* Tour */
@@ -325,7 +360,7 @@
 
 /* Clients strip on the home page */
 #clients {
-  background: #ece8eb;
+  background: var(--astm-clients-bg);
   padding: 56px 0;
 }
 
@@ -383,6 +418,7 @@
 
 .home-loc-info {
   background: var(--astm-card);
+  border: 1px solid var(--astm-card-border);
   padding: 40px;
 }
 
@@ -391,12 +427,12 @@
   font-size: 28px;
   font-weight: 700;
   margin: 0 0 24px;
-  color: #fff;
+  color: var(--astm-strong);
 }
 
 .home-loc-info p { font-size: 16px; line-height: 1.7; margin: 0 0 18px; color: var(--astm-text-2); }
-.home-loc-info strong { color: #fff; font-weight: 600; }
-.home-loc-info a { color: var(--astm-purple-soft); }
+.home-loc-info strong { color: var(--astm-strong); font-weight: 600; }
+.home-loc-info a { color: var(--astm-accent-text); }
 
 @media (max-width: 768px) {
   .home-hero { min-height: 600px; padding: 120px 0 56px; }
@@ -461,7 +497,7 @@ body.site.inner #main section:not(.page-hero):not(.home-section) {
 
 body.site #main .section-header h1,
 body.site #main .section-header h2 {
-  color: #fff;
+  color: var(--astm-strong);
   font-weight: 700;
   font-size: clamp(28px, 3.5vw, 40px);
   letter-spacing: -1px;
@@ -481,7 +517,7 @@ body.site .portfolio #portfolio-flters {
 }
 
 body.site .portfolio #portfolio-flters li {
-  background: var(--astm-card);
+  background: var(--astm-pill);
   color: var(--astm-text-2);
   font-family: var(--home-body);
   font-weight: 600;
@@ -497,7 +533,7 @@ body.site .portfolio #portfolio-flters li.filter-active {
 
 body.site .portfolio .portfolio-wrap {
   background: var(--astm-card);
-  border: 0;
+  border: 1px solid var(--astm-card-border);
   border-radius: 0;
 }
 
@@ -506,7 +542,7 @@ body.site .portfolio .img-fluid-container--contain {
 }
 
 body.site .portfolio .portfolio-caption {
-  color: #fff;
+  color: var(--astm-strong);
   text-align: left;
   font-weight: 600;
   padding: 12px 2px 0;
@@ -554,6 +590,7 @@ body.site .portfolio .portfolio-wrap .portfolio-info h4 {
 
 .quality-card {
   background: var(--astm-card);
+  border: 1px solid var(--astm-card-border);
   padding: 32px;
   border-top: 4px solid var(--astm-purple);
 }
@@ -561,40 +598,41 @@ body.site .portfolio .portfolio-wrap .portfolio-info h4 {
 .quality-card .num {
   font-size: 15px;
   font-weight: 700;
-  color: var(--astm-purple-soft);
+  color: var(--astm-accent-text);
 }
 
-.quality-card h3 { font-size: 21px; font-weight: 700; color: #fff; margin: 10px 0 12px; }
+.quality-card h3 { font-size: 21px; font-weight: 700; color: var(--astm-strong); margin: 10px 0 12px; }
 .quality-card p { margin: 0; font-size: 16px; line-height: 1.7; color: var(--astm-text-2); }
 
 /* Contact page */
 body.site .contact .info-item {
   background: var(--astm-card);
-  border: 0;
+  border: 1px solid var(--astm-card-border);
   box-shadow: none;
   padding: 24px 28px;
   height: 100%;
 }
 
-body.site .contact .info-item h3 { color: #fff; font-family: var(--home-body); font-weight: 700; font-size: 18px; }
+body.site .contact .info-item h3 { color: var(--astm-strong); font-family: var(--home-body); font-weight: 700; font-size: 18px; }
 body.site .contact .info-item p,
 body.site .contact .info-item div { color: var(--astm-text-2); }
 
 body.site .contact .php-email-form {
   background: var(--astm-card);
+  border: 1px solid var(--astm-card-border);
   box-shadow: none;
 }
 
 body.site .contact .php-email-form input,
 body.site .contact .php-email-form textarea {
-  background: #2b2830;
-  border: 1px solid #3a363f;
-  color: #fff;
+  background: var(--astm-input-bg);
+  border: 1px solid var(--astm-input-border);
+  color: var(--astm-strong);
   font-family: var(--home-body);
 }
 
 body.site .contact .php-email-form input::placeholder,
-body.site .contact .php-email-form textarea::placeholder { color: #9c96a0; }
+body.site .contact .php-email-form textarea::placeholder { color: var(--astm-placeholder); }
 
 body.site .contact .php-email-form button[type=submit] {
   background: var(--astm-purple);
@@ -610,4 +648,36 @@ body.site .contact .php-email-form button[type=submit]:hover { background: var(-
 @media (max-width: 768px) {
   .page-hero { padding: 128px 0 48px; }
   body.site.inner #main section:not(.page-hero):not(.home-section) { padding: 56px 0; }
+}
+
+/* Theme toggle button in the header */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 8px;
+  border: 1px solid #e0d9de;
+  border-radius: 50%;
+  background: #fff;
+  color: #3a343b;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover { border-color: var(--astm-purple); color: var(--astm-purple); }
+.theme-toggle .bi-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .bi-sun { display: inline; }
+:root[data-theme="dark"] .theme-toggle .bi-moon { display: none; }
+
+@media (max-width: 768px) {
+  .theme-toggle { width: 36px; height: 36px; margin: 0 10px 0 2px; font-size: 16px; }
+  .home-stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .header .container { padding-left: 12px; padding-right: 12px; }
+  .header .logo .logo-img--astm { height: 28px; }
+  .header .logo .logo-img--bstm { height: 34px; }
 }

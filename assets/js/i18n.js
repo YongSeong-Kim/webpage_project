@@ -14,6 +14,7 @@
   const DICT = {
     en: {
       "ui.language": "Language",
+      "ui.theme": "Light / dark",
       "nav.home": "Home",
       "nav.about": "About",
       "nav.product": "Product",
@@ -195,6 +196,7 @@
     },
     ko: {
       "ui.language": "언어",
+      "ui.theme": "밝은 화면 / 어두운 화면",
       "nav.home": "홈",
       "nav.about": "회사소개",
       "nav.product": "제품",
@@ -375,6 +377,7 @@
     },
     ja: {
       "ui.language": "言語",
+      "ui.theme": "ライト / ダーク",
       "nav.home": "ホーム",
       "nav.about": "会社紹介",
       "nav.product": "製品",
