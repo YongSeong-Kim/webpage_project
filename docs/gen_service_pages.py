@@ -100,7 +100,7 @@ PAGES = [
         ("Past work", ["Server racks, liquid cooling racks", "Wireless repeater enclosures", "Parcel lockers", "Automation machine frames", "Pressure vessels"]),
         ("Also in house", ["CNC turning, milling, gun drilling (ASTM Engineering)"]),
       ])),
-  dict(slug="machining-and-sheet-metal", photos=["product/sheet-metal/automation_machine_frame.png", "product/sheet-metal/server_rack.jpg", "product/MCT/automation_machine.png", "factory/floor.jpg"],
+  dict(slug="machining-and-sheet-metal", photos=["product/MCT/automation_equipment.png", "product/sheet-metal/automation_machine_frame.png", "product/sheet-metal/server_rack.jpg", "factory/floor.jpg"],
     ko=dict(
       title="가공 · 판금 일괄 제작 - ASTM엔지니어링 · BSTM",
       desc="인천 남동공단 ASTM엔지니어링(가공)과 BSTM(판금). 장비 프레임, 랙, 함체처럼 가공품과 판금품이 같이 들어가는 제품을 일괄 제작합니다.",
