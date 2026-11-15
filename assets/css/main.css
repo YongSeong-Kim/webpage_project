@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #7B2B66;
   --color-secondary: #37373f;
   --color-company: #c87bdd;
   --color-balck: #000
@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-  color: #ec2727;
+  color: #94377D;
   text-decoration: none;
 }
 
@@ -189,7 +189,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ec2727;
+  background: #94377D;
   color: #fff;
 }
 
@@ -746,7 +746,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(206, 18, 18, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, rgba(123, 43, 102, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -767,7 +767,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(206, 18, 18, 0.7);
+  border: 5px solid rgba(123, 43, 102, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -1188,7 +1188,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #94377D;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1201,7 +1201,7 @@ section {
 .contact .php-email-form .captcha-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #94377D;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1269,7 +1269,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ec2727;
+  background: #94377D;
 }
 
 @keyframes animate-loading {
@@ -1867,7 +1867,7 @@ Make all right containers behave like the left ones
 }
 
 .quote-float:hover {
-  background: #ec2727;
+  background: #94377D;
   color: #fff;
 }
 
