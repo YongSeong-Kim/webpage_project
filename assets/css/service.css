@@ -4,7 +4,6 @@
 
 .svc { padding: 40px 0 60px; }
 .svc-lead { font-size: 18px; line-height: 1.75; margin-bottom: 20px; }
-.svc-lang { font-size: 14px; margin: 16px 0 0; }
 .svc-lang a { color: #676775; text-decoration: underline; }
 
 .svc-photo { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 6px; background: #f3f3f3; }
@@ -47,3 +46,10 @@
 .svc-tile-body small { font-size: 13px; color: #676775; line-height: 1.5; }
 .svc-tile-body em { font-style: normal; font-size: 13px; color: var(--color-primary); font-weight: 600; margin-top: 4px; }
 @media (max-width: 575px) { .svc-tile-body strong { font-size: 14px; } .svc-tile-body small { display: none; } }
+
+/* 흰 배경 장비 사진은 잘리지 않게 */
+.svc-photo img[src$=".png"], .svc-tile-img img[src$=".png"] { object-fit: contain; background: #fff; }
+
+/* 홈·제품의 가공 분야 카드: 언어에 맞는 것만 보이기 */
+html[lang="ko"] .only-en { display: none; }
+html:not([lang="ko"]) .only-ko { display: none; }

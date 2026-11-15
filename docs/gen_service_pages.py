@@ -75,7 +75,7 @@ PAGES = [
         ("Typical parts", ["Long plates drilled end to end", "Deep holes in blocks and shafts", "Gun drilled and milled parts"]),
         ("Also in house", ["CNC milling", "CNC turning", "Sheet metal (BSTM)"]),
       ])),
-  dict(slug="sheet-metal", photos=["factory/pega357.jpg", "factory/press_brake.jpg", "equipment/trumpf-laser_machine.png", "product/sheet-metal/wireless_repeater_enclosure.jpg"],
+  dict(slug="sheet-metal", photos=["factory/pega357.jpg", "equipment/amada-rg-100.png", "equipment/trumpf-laser_machine.png", "product/sheet-metal/wireless_repeater_enclosure.jpg"],
     ko=dict(
       title="인천 판금 가공 · 레이저 절단 · 절곡 - BSTM",
       desc="인천 남동공단 BSTM 판금. TRUMPF 레이저, AMADA PEGA-357 펀칭, AMADA RG-100 절곡, PEM 압입, 용접 로봇. 함체, 랙, 장비 프레임 제작.",
@@ -173,6 +173,7 @@ def page_head(lang, title, desc, me, ko_u, en_u, og_img, ld):
   <link rel="alternate" hreflang="ko" href="{ko_u}">
   <link rel="alternate" hreflang="en" href="{en_u}">
   <link rel="alternate" hreflang="x-default" href="{en_u}">
+  <meta name="astm-page-lang" content="{lang}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ASTM엔지니어링 · BSTM">
   <meta property="og:title" content="{esc(title)}">
@@ -209,14 +210,14 @@ def quote_box(lang):
     return f"""        <div class="svc-quote">
           <h2>{esc(n['quote_h'])}</h2>
           <p>{steps}</p>
-          <p class="svc-contact">{esc(n['mail'])}: <a href="mailto:astmengineering1@gmail.com">astmengineering1@gmail.com</a> · {esc(n['phone'])}: <a href="tel:+821090772445">{'010-9077-2445' if lang == 'ko' else '+82 10 9077 2445'}</a></p>
+          <p class="svc-contact">{esc(n['mail'])}: <a href="mailto:sskim@astm-eng.com">sskim@astm-eng.com</a> · {esc(n['phone'])}: <a href="tel:+821090772445">{'010-9077-2445' if lang == 'ko' else '+82 10 9077 2445'}</a></p>
           <a class="svc-btn" href="contact.html#contact-form">{esc(n['quote_btn'])}</a>
         </div>"""
 
 def provider():
     return {"@type": "LocalBusiness", "name": "ASTM엔지니어링 (ASTM Engineering)",
             "alternateName": ["ASTM Engineering", "BSTM Sheet Metal"], "url": SITE,
-            "email": "astmengineering1@gmail.com", "address": ADDR}
+            "email": "sskim@astm-eng.com", "address": ADDR}
 
 def build(p, lang):
     c = p[lang]; n = NAV[lang]; other = "en" if lang == "ko" else "ko"
@@ -256,7 +257,6 @@ def build(p, lang):
           <div class="col-lg-6">
             <p class="svc-lead">{esc(c['lead'])}</p>
             <a class="svc-btn" href="contact.html#contact-form">{esc(n['quote_btn'])}</a>
-            <p class="svc-lang"><a href="{alt}" hreflang="{other}">{esc(n['other_lang'])}</a></p>
           </div>
         </div>
 
@@ -300,7 +300,6 @@ def build_hub(lang):
     <section class="svc">
       <div class="container">
         <p class="svc-lead">{esc(n['hub_lead'])}</p>
-        <p class="svc-lang"><a href="{alt}" hreflang="{other}">{esc(n['other_lang'])}</a></p>
 {cards(lang)}
 {quote_box(lang)}
       </div>
@@ -321,8 +320,10 @@ if __name__ == "__main__":
     for f in ["index.html", "about.html", "product.html", "equipment.html", "research.html", "contact.html"]:
         fp = ROOT / f; s = fp.read_text(encoding="utf-8")
         s = nav_with_services(s, "ko")
+        both = cards("ko").replace('class="row g-3 svc-tiles"', 'class="row g-3 svc-tiles only-ko"', 1) + "\n" + \
+               cards("en").replace('class="row g-3 svc-tiles"', 'class="row g-3 svc-tiles only-en"', 1)
         s = re.sub(r"( *<!-- svc-cards:start -->\n).*?( *<!-- svc-cards:end -->)",
-                   lambda m: m.group(1) + cards("ko") + "\n" + m.group(2), s, flags=re.S)
+                   lambda m: m.group(1) + both + "\n" + m.group(2), s, flags=re.S)
         s = s.replace('service.css?v=20261115', 'service.css?v=20261116')
         fp.write_text(s, encoding="utf-8")
     print("done")
