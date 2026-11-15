@@ -20,119 +20,118 @@ ADDR = {"@type": "PostalAddress", "streetAddress": "140-25, Neungheodae-ro 625be
 PAGES = [
   dict(slug="cnc-turning", photos=["product/CNC/3.jpg", "product/CNC/2.jpg", "product/CNC/1.jpg", "factory/lathe.jpg"],
     ko=dict(
-      title="인천 CNC 선반 가공 | 축·핀·부싱 정밀가공 - ASTM엔지니어링",
-      desc="인천 남동구 ASTM엔지니어링의 CNC 선반 가공. 축, 핀, 부싱, 플랜지 같은 회전체 부품을 도면대로 가공합니다. 20년 가공 경력, 판금(BSTM)까지 한 곳에서.",
-      h1="CNC 선반 가공", crumb="CNC 선반 가공",
-      lead="축, 핀, 부싱, 플랜지처럼 둥근 부품을 CNC 선반으로 가공합니다. 인천 남동구에서 20년 동안 고객 도면대로 부품을 만들어 왔습니다.",
+      title="인천 CNC 선반 가공 - ASTM엔지니어링",
+      desc="인천 남동공단 ASTM엔지니어링. CNC 선반으로 축, 핀, 부싱, 플랜지 등 원형 부품 가공. 도면 주시면 견적드립니다.",
+      h1="CNC 선반 가공", crumb="CNC 선반",
+      lead="CNC 선반으로 축, 핀, 부싱, 플랜지 등 원형 부품을 가공합니다. 선반 후 MCT 2차 가공, 건드릴 작업까지 저희 공장에서 같이 합니다.",
       sections=[
-        ("이런 부품을 만듭니다", ["축(샤프트), 핀, 부싱", "플랜지, 커버, 링 같은 회전체 부품", "선반 가공 뒤 머시닝센터(MCT)로 구멍·홈을 더하는 복합 부품", "길고 깊은 구멍이 필요하면 건드릴 가공까지 한 곳에서"]),
-        ("함께 맡길 수 있는 일", ["머시닝센터(MCT) 가공", "건드릴(깊은 구멍) 가공", "판금 부품(레이저 절단·절곡·용접, BSTM)"]),
+        ("주요 가공품", ["축, 핀, 부싱", "플랜지, 커버, 링", "선반 + MCT 복합 가공품"]),
+        ("연계 작업", ["MCT 가공", "건드릴 가공", "판금 (BSTM)"]),
       ]),
     en=dict(
-      title="CNC Turning in Incheon, Korea | Shafts, Pins, Bushings - ASTM Engineering",
-      desc="CNC turning service in Incheon, Korea. ASTM Engineering machines shafts, pins, bushings and flanges to your drawing. 20 years in machining, sheet metal (BSTM) in the same place.",
+      title="CNC Turning in Incheon, Korea - ASTM Engineering",
+      desc="ASTM Engineering, Incheon, Korea. CNC turning of shafts, pins, bushings and flanges. Send us your drawing for a quote.",
       h1="CNC Turning", crumb="CNC Turning",
-      lead="We turn round parts like shafts, pins, bushings and flanges on CNC lathes. We have made parts to customer drawings in Incheon, Korea for 20 years.",
+      lead="We turn shafts, pins, bushings, flanges and other round parts. Second operations on our machining centers and gun drilling are done in the same shop.",
       sections=[
-        ("Parts we make", ["Shafts, pins and bushings", "Flanges, covers, rings and other round parts", "Turned parts that also need milled holes and slots on our machining centers", "Gun drilling for long, deep holes, in the same shop"]),
-        ("Also from us", ["Machining center (MCT) milling", "Gun drilling", "Sheet metal parts: laser cutting, bending, welding (BSTM)"]),
+        ("Typical parts", ["Shafts, pins, bushings", "Flanges, covers, rings", "Turned and milled parts"]),
+        ("Also in house", ["CNC milling", "Gun drilling", "Sheet metal (BSTM)"]),
       ])),
   dict(slug="mct-machining", photos=["product/MCT/4.jpg", "product/MCT/3.jpg", "product/MCT/5.jpg", "product/MCT/8.jpg", "factory/cnc_row.jpg"],
     ko=dict(
-      title="인천 MCT 가공 · 알루미늄 정밀가공 | 하우징·블록·브래킷 - ASTM엔지니어링",
-      desc="인천 남동구 ASTM엔지니어링의 머시닝센터(MCT) 가공. 알루미늄 하우징, 블록, 브래킷, 플레이트 같은 각형 부품을 도면대로 정밀가공합니다.",
-      h1="머시닝센터(MCT) 가공", crumb="MCT 가공",
-      lead="하우징, 블록, 브래킷, 플레이트 같은 각형 부품을 머시닝센터로 가공합니다. 알루미늄 하우징, 포켓과 구멍이 많은 판재 부품 등을 만들어 왔습니다.",
+      title="인천 MCT 가공 · 알루미늄 가공 - ASTM엔지니어링",
+      desc="인천 남동공단 ASTM엔지니어링. 머시닝센터(MCT)로 알루미늄 하우징, 블록, 브래킷, 플레이트 가공. 도면 주시면 견적드립니다.",
+      h1="MCT 가공", crumb="MCT",
+      lead="머시닝센터로 하우징, 블록, 브래킷, 플레이트 등을 가공합니다. 알루미늄 하우징과 포켓·홀이 많은 판재 가공을 주로 하고 있습니다.",
       sections=[
-        ("이런 부품을 만듭니다", ["알루미늄 하우징, 케이스", "블록, 브래킷, 베이스 플레이트", "구멍·포켓이 많은 판재 부품", "자동화 장비에 들어가는 가공 부품"]),
-        ("함께 맡길 수 있는 일", ["CNC 선반 가공", "건드릴(깊은 구멍) 가공", "장비 프레임·함체 같은 판금 부품(BSTM). 가공 부품과 판금 부품을 같은 곳에서 맞춰 보고 한 번에 납품합니다"]),
+        ("주요 가공품", ["알루미늄 하우징, 케이스", "블록, 브래킷, 베이스 플레이트", "포켓·홀 많은 판재", "자동화 장비 부품"]),
+        ("연계 작업", ["CNC 선반 가공", "건드릴 가공", "판금 프레임·함체 (BSTM)"]),
       ]),
     en=dict(
-      title="CNC Milling / Machining Center in Korea | Aluminum Housings, Blocks - ASTM Engineering",
-      desc="CNC milling on machining centers (MCT) in Incheon, Korea. ASTM Engineering machines aluminum housings, blocks, brackets and plates to your drawing.",
-      h1="CNC Milling (Machining Center)", crumb="CNC Milling",
-      lead="We mill prismatic parts like housings, blocks, brackets and plates on machining centers. Our work includes aluminum housings and plates with many pockets and holes.",
+      title="CNC Milling in Incheon, Korea - ASTM Engineering",
+      desc="ASTM Engineering, Incheon, Korea. CNC milling of aluminum housings, blocks, brackets and plates on machining centers. Send us your drawing for a quote.",
+      h1="CNC Milling", crumb="CNC Milling",
+      lead="We mill housings, blocks, brackets and plates on machining centers. A lot of our work is aluminum housings and plates with many pockets and holes.",
       sections=[
-        ("Parts we make", ["Aluminum housings and cases", "Blocks, brackets and base plates", "Plates with many holes and pockets", "Machined parts for automation equipment"]),
-        ("Also from us", ["CNC turning", "Gun drilling", "Sheet metal frames and enclosures (BSTM). Machined and sheet metal parts are checked together and shipped on one schedule"]),
+        ("Typical parts", ["Aluminum housings and cases", "Blocks, brackets, base plates", "Plates with many pockets and holes", "Parts for automation equipment"]),
+        ("Also in house", ["CNC turning", "Gun drilling", "Sheet metal frames and enclosures (BSTM)"]),
       ])),
   dict(slug="gun-drilling", photos=["product/Gundrill/1.jpg", "product/Gundrill/2.jpg", "equipment/gundrill.jpg"],
     ko=dict(
-      title="인천 건드릴 가공 | 깊은 구멍·긴 구멍 가공 - ASTM엔지니어링",
-      desc="인천 남동구 ASTM엔지니어링의 건드릴 가공. 일반 드릴로 어려운 길고 깊은 구멍을 건드릴 전용 장비로 가공합니다. 긴 플레이트·블록·축의 깊은 구멍.",
-      h1="건드릴 가공 (깊은 구멍)", crumb="건드릴 가공",
-      lead="일반 드릴로 뚫기 어려운 길고 깊은 구멍을 건드릴 전용 장비로 가공합니다. 긴 플레이트나 블록에 길이 방향으로 구멍을 내는 일을 해 왔습니다.",
+      title="인천 건드릴 가공 · 심공 가공 - ASTM엔지니어링",
+      desc="인천 남동공단 ASTM엔지니어링. 건드릴 전용기로 플레이트, 블록, 축의 길고 깊은 구멍 가공. 도면 주시면 견적드립니다.",
+      h1="건드릴 가공", crumb="건드릴",
+      lead="건드릴 전용기로 길고 깊은 구멍을 가공합니다. 긴 플레이트나 블록에 길이 방향으로 구멍 내는 작업을 하고 있고, 건드릴 후 MCT로 나머지 가공까지 합니다.",
       sections=[
-        ("이런 부품을 만듭니다", ["길이 방향으로 깊은 구멍이 들어가는 긴 플레이트", "긴 구멍이 필요한 블록·축", "건드릴 뒤 머시닝센터로 나머지 형상까지 가공하는 부품"]),
-        ("함께 맡길 수 있는 일", ["머시닝센터(MCT) 가공", "CNC 선반 가공", "판금 부품(BSTM)"]),
+        ("주요 가공품", ["긴 플레이트 길이 방향 홀", "블록, 축 심공", "건드릴 + MCT 복합 가공품"]),
+        ("연계 작업", ["MCT 가공", "CNC 선반 가공", "판금 (BSTM)"]),
       ]),
     en=dict(
-      title="Gun Drilling in Korea | Deep Hole Drilling - ASTM Engineering",
-      desc="Gun drilling (deep hole drilling) in Incheon, Korea. ASTM Engineering drills long, deep holes on a dedicated gun drill machine, in long plates, blocks and shafts.",
-      h1="Gun Drilling (Deep Holes)", crumb="Gun Drilling",
-      lead="We drill long, deep holes that normal drills cannot do well, on a dedicated gun drill machine. We have drilled holes along the length of long plates and blocks.",
+      title="Gun Drilling in Korea - ASTM Engineering",
+      desc="ASTM Engineering, Incheon, Korea. Deep hole gun drilling in plates, blocks and shafts. Send us your drawing for a quote.",
+      h1="Gun Drilling", crumb="Gun Drilling",
+      lead="We drill long, deep holes on a gun drilling machine, for example along the length of long plates and blocks. The rest of the part can be finished on our machining centers.",
       sections=[
-        ("Parts we make", ["Long plates with deep holes along their length", "Blocks and shafts with long holes", "Parts that are gun drilled first and then finished on our machining centers"]),
-        ("Also from us", ["Machining center (MCT) milling", "CNC turning", "Sheet metal parts (BSTM)"]),
+        ("Typical parts", ["Long plates drilled end to end", "Deep holes in blocks and shafts", "Gun drilled and milled parts"]),
+        ("Also in house", ["CNC milling", "CNC turning", "Sheet metal (BSTM)"]),
       ])),
   dict(slug="sheet-metal", photos=["factory/pega357.jpg", "factory/press_brake.jpg", "equipment/trumpf-laser_machine.png", "product/sheet-metal/wireless_repeater_enclosure.jpg"],
     ko=dict(
-      title="인천 판금 가공 | 레이저 절단·펀칭·절곡·용접 - BSTM",
-      desc="인천 남동구 BSTM의 판금 가공. TRUMPF 레이저 절단, AMADA PEGA-357 펀칭, AMADA RG-100 절곡, PEM 너트 압입, 용접 로봇. 함체, 랙, 장비 프레임 제작.",
-      h1="판금 가공 (BSTM)", crumb="판금 가공",
-      lead="BSTM은 레이저 절단부터 펀칭, 절곡, 너트 압입, 용접까지 판금 제작을 합니다. 함체, 랙, 장비 프레임처럼 판금으로 만드는 제품을 도면대로 만듭니다.",
+      title="인천 판금 가공 · 레이저 절단 · 절곡 - BSTM",
+      desc="인천 남동공단 BSTM 판금. TRUMPF 레이저, AMADA PEGA-357 펀칭, AMADA RG-100 절곡, PEM 압입, 용접 로봇. 함체, 랙, 장비 프레임 제작.",
+      h1="판금 가공 (BSTM)", crumb="판금",
+      lead="BSTM에서 레이저 절단, 펀칭, 절곡, PEM 압입, 용접까지 판금 작업을 합니다. 함체, 랙, 장비 프레임 등을 도면대로 제작합니다.",
       sections=[
-        ("설비", ["TRUMPF 레이저 절단기", "AMADA PEGA-357 펀칭", "AMADA RG-100 절곡기", "PEM 프레스 (너트·스터드 압입)", "용접 로봇"]),
-        ("만들어 온 것", ["서버 랙, 수냉 랙", "무선 중계기 함체", "무인 택배함", "자동화 장비 프레임", "압력 용기"]),
-        ("함께 맡길 수 있는 일", ["가공 부품(CNC 선반·MCT·건드릴, ASTM엔지니어링). 판금과 가공 부품을 같은 곳에서 맞춰 보고 한 번에 납품합니다"]),
+        ("보유 설비", ["TRUMPF 레이저", "AMADA PEGA-357 펀칭", "AMADA RG-100 절곡기", "PEM 프레스", "용접 로봇"]),
+        ("제작 실적", ["서버 랙, 수냉 랙", "무선 중계기 함체", "무인 택배함", "자동화 장비 프레임", "압력 용기"]),
+        ("연계 작업", ["CNC 선반, MCT, 건드릴 가공 (ASTM엔지니어링)"]),
       ]),
     en=dict(
-      title="Sheet Metal Fabrication in Korea | Laser Cutting, Punching, Bending, Welding - BSTM",
-      desc="Sheet metal fabrication in Incheon, Korea by BSTM: TRUMPF laser cutting, AMADA PEGA-357 punching, AMADA RG-100 bending, PEM insertion and robotic welding. Enclosures, racks, machine frames.",
-      h1="Sheet Metal Fabrication (BSTM)", crumb="Sheet Metal",
-      lead="BSTM does sheet metal work from laser cutting to punching, bending, PEM insertion and welding. We build enclosures, racks and machine frames to your drawing.",
+      title="Sheet Metal Fabrication in Korea - BSTM",
+      desc="BSTM Sheet Metal, Incheon, Korea. TRUMPF laser cutting, AMADA PEGA-357 punching, AMADA RG-100 bending, PEM insertion, robotic welding. Enclosures, racks, machine frames.",
+      h1="Sheet Metal (BSTM)", crumb="Sheet Metal",
+      lead="BSTM does laser cutting, punching, bending, PEM insertion and welding. We build enclosures, racks and machine frames to drawing.",
       sections=[
-        ("Equipment", ["TRUMPF laser cutting machine", "AMADA PEGA-357 punch press", "AMADA RG-100 press brake", "PEM press (self-clinching nuts and studs)", "Welding robot"]),
-        ("What we have made", ["Server racks and liquid cooling racks", "Wireless repeater enclosures", "Parcel lockers", "Frames for automation equipment", "Pressure vessels"]),
-        ("Also from us", ["Machined parts: CNC turning, milling, gun drilling (ASTM Engineering). Sheet metal and machined parts are checked together and shipped on one schedule"]),
+        ("Equipment", ["TRUMPF laser", "AMADA PEGA-357 punch", "AMADA RG-100 press brake", "PEM press", "Welding robot"]),
+        ("Past work", ["Server racks, liquid cooling racks", "Wireless repeater enclosures", "Parcel lockers", "Automation machine frames", "Pressure vessels"]),
+        ("Also in house", ["CNC turning, milling, gun drilling (ASTM Engineering)"]),
       ])),
   dict(slug="machining-and-sheet-metal", photos=["product/sheet-metal/automation_machine_frame.png", "product/sheet-metal/server_rack.jpg", "product/MCT/automation_machine.png", "factory/floor.jpg"],
     ko=dict(
-      title="가공 + 판금 한 곳에서 | 장비 프레임·랙·함체 제작 - ASTM엔지니어링 · BSTM",
-      desc="정밀가공(ASTM엔지니어링)과 판금(BSTM)을 인천 남동구 한 곳에서. 자동화 장비 프레임, 서버 랙, 함체처럼 가공·판금 부품이 함께 들어가는 제품을 한 업체에 맡기세요.",
-      h1="가공과 판금을 한 곳에서", crumb="가공 + 판금",
-      lead="장비 한 대에는 가공 부품과 판금 부품이 함께 들어갑니다. 따로 맡기면 업체 사이에서 치수와 일정을 맞추느라 시간이 듭니다. ASTM엔지니어링(가공)과 BSTM(판금)은 같은 곳에서 만들기 때문에, 맞물리는 부품을 바로 맞춰 보고 한 번에 납품합니다.",
+      title="가공 · 판금 일괄 제작 - ASTM엔지니어링 · BSTM",
+      desc="인천 남동공단 ASTM엔지니어링(가공)과 BSTM(판금). 장비 프레임, 랙, 함체처럼 가공품과 판금품이 같이 들어가는 제품을 일괄 제작합니다.",
+      h1="가공 · 판금 일괄 제작", crumb="일괄 제작",
+      lead="가공품과 판금품이 같이 들어가는 장비는 ASTM(가공)과 BSTM(판금)에서 같이 제작합니다. 같은 곳에서 만들기 때문에 조립 맞춤을 바로 확인하고 함께 납품합니다.",
       sections=[
-        ("이런 제품에 맞습니다", ["자동화 장비 프레임과 부품", "서버 랙, 수냉 랙", "통신 장비 함체", "판금 몸체에 가공 부품이 붙는 장비"]),
-        ("한 곳에서 하는 일", ["CNC 선반, 머시닝센터(MCT), 건드릴 가공", "레이저 절단, 펀칭, 절곡, PEM 압입, 용접", "가공 부품과 판금 부품 조립 확인 후 함께 납품"]),
+        ("제작 실적", ["자동화 장비 프레임 및 부품", "서버 랙, 수냉 랙", "통신 장비 함체"]),
+        ("작업 범위", ["CNC 선반, MCT, 건드릴", "레이저, 펀칭, 절곡, PEM 압입, 용접", "조립 확인 후 일괄 납품"]),
       ]),
     en=dict(
-      title="Machining and Sheet Metal Under One Roof | Frames, Racks, Enclosures - ASTM Engineering · BSTM",
-      desc="Precision machining (ASTM Engineering) and sheet metal fabrication (BSTM) in one place in Incheon, Korea. Machine frames, server racks and enclosures that need both, from one supplier.",
-      h1="Machining and Sheet Metal in One Place", crumb="Machining + Sheet Metal",
-      lead="Most machines have both machined parts and sheet metal parts. With two suppliers, time is lost matching dimensions and schedules between them. ASTM Engineering (machining) and BSTM (sheet metal) work side by side, so mating parts are checked against each other directly and shipped together.",
+      title="Machining and Sheet Metal from One Shop - ASTM Engineering · BSTM",
+      desc="ASTM Engineering (machining) and BSTM (sheet metal), Incheon, Korea. Machine frames, racks and enclosures with both machined and sheet metal parts, made and shipped together.",
+      h1="Machining + Sheet Metal", crumb="Machining + Sheet Metal",
+      lead="When a machine needs both machined and sheet metal parts, ASTM (machining) and BSTM (sheet metal) make them together. Because it is the same place, we check the fit before shipping and send everything at once.",
       sections=[
-        ("Good fit for", ["Frames and parts for automation equipment", "Server racks and liquid cooling racks", "Enclosures for telecom equipment", "Equipment with a sheet metal body and machined parts"]),
-        ("Done in one place", ["CNC turning, machining center (MCT) milling, gun drilling", "Laser cutting, punching, bending, PEM insertion, welding", "Fit check of machined and sheet metal parts, then one shipment"]),
+        ("Past work", ["Automation machine frames and parts", "Server racks, liquid cooling racks", "Telecom enclosures"]),
+        ("Scope", ["CNC turning, milling, gun drilling", "Laser cutting, punching, bending, PEM, welding", "Fit check, then one shipment"]),
       ])),
 ]
 
 NAV = {
-  "ko": dict(hub="가공 분야", hub_title="가공 분야 | CNC 선반·MCT·건드릴·판금 - ASTM엔지니어링 · BSTM", hub_desc="인천 남동구 ASTM엔지니어링·BSTM이 하는 일: CNC 선반 가공, 머시닝센터(MCT) 가공, 건드릴 가공, 레이저·절곡·용접 판금, 가공과 판금 일괄 제작.", hub_lead="도면 한 장으로 정밀가공과 판금을 한 곳에서 맡기실 수 있습니다. 필요한 가공을 눌러 자세히 보세요.", more="자세히 보기", home="홈", product="가공 제품", others="다른 가공 분야", quote_h="견적 받는 방법",
-             quote_steps=["도면(PDF, DWG, STEP 등)과 수량, 원하는 납기를 보내 주세요.", "도면을 보고 가공 방법과 금액을 검토해 회신드립니다.", "가공과 판금이 함께 필요한 제품도 한 번에 견적드립니다."],
-             quote_btn="도면 보내고 견적 받기", mail="메일", phone="전화", other_lang="English", inlang="ko"),
-  "en": dict(hub="Services", hub_title="Services | CNC Turning, Milling, Gun Drilling, Sheet Metal - ASTM Engineering · BSTM", hub_desc="What ASTM Engineering and BSTM do in Incheon, Korea: CNC turning, CNC milling, gun drilling, sheet metal fabrication, and machining with sheet metal in one place.", hub_lead="Send one drawing and get precision machining and sheet metal from one shop. Pick a service to see more.", more="See more", home="Home", product="Products", others="Other services", quote_h="How to get a quote",
-             quote_steps=["Send us your drawing (PDF, DWG, STEP etc.), quantity and the delivery date you need.", "We review the drawing and reply with our price and how we will make it.", "If your product needs both machined and sheet metal parts, we quote them together."],
-             quote_btn="Send a drawing for a quote", mail="Email", phone="Phone", other_lang="한국어", inlang="en"),
+  "ko": dict(hub="가공 분야", hub_title="가공 분야 - ASTM엔지니어링 · BSTM", hub_desc="인천 남동공단 ASTM엔지니어링·BSTM. CNC 선반, MCT, 건드릴, 판금, 가공·판금 일괄 제작.", hub_lead="ASTM엔지니어링(가공)과 BSTM(판금)에서 하는 작업입니다.", more="자세히 보기", home="홈", product="제품", others="다른 작업", quote_h="견적 문의",
+             quote_steps=["도면(PDF, DWG, STEP 등), 수량, 납기를 메일로 보내 주시면 검토 후 견적드립니다."],
+             quote_btn="견적 문의하기", mail="메일", phone="전화", other_lang="English", inlang="ko"),
+  "en": dict(hub="Services", hub_title="Services - ASTM Engineering · BSTM", hub_desc="ASTM Engineering and BSTM, Incheon, Korea. CNC turning, CNC milling, gun drilling, sheet metal, machining and sheet metal together.", hub_lead="What we do at ASTM Engineering (machining) and BSTM (sheet metal).", more="See more", home="Home", product="Products", others="Other services", quote_h="Request a quote",
+             quote_steps=["Email us your drawing (PDF, DWG, STEP etc.), quantity and delivery date. We will check it and send a quote."],
+             quote_btn="Request a quote", mail="Email", phone="Phone", other_lang="한국어", inlang="en"),
 }
 
-
 CARD_TEXT = {  # 카드에 쓰는 짧은 설명
-  "cnc-turning": ("축·핀·부싱·플랜지 같은 둥근 부품", "Shafts, pins, bushings, flanges"),
-  "mct-machining": ("알루미늄 하우징·블록·브래킷", "Aluminum housings, blocks, brackets"),
-  "gun-drilling": ("길고 깊은 구멍 가공", "Long, deep holes"),
-  "sheet-metal": ("레이저 절단·펀칭·절곡·용접 (BSTM)", "Laser cutting, punching, bending, welding (BSTM)"),
-  "machining-and-sheet-metal": ("장비 프레임·랙·함체를 한 업체에서", "Frames, racks, enclosures from one shop"),
+  "cnc-turning": ("축, 핀, 부싱, 플랜지", "Shafts, pins, bushings, flanges"),
+  "mct-machining": ("알루미늄 하우징, 블록, 브래킷", "Aluminum housings, blocks, brackets"),
+  "gun-drilling": ("길고 깊은 구멍", "Long, deep holes"),
+  "sheet-metal": ("레이저, 펀칭, 절곡, 용접", "Laser, punching, bending, welding"),
+  "machining-and-sheet-metal": ("장비 프레임, 랙, 함체", "Machine frames, racks, enclosures"),
 }
 
 def url(slug, lang):
@@ -206,13 +205,11 @@ def crumbs(lang, h1, items):
 
 def quote_box(lang):
     n = NAV[lang]
-    steps = "\n".join(f"            <li>{esc(s)}</li>" for s in n["quote_steps"])
+    steps = " ".join(esc(s) for s in n["quote_steps"])
     return f"""        <div class="svc-quote">
           <h2>{esc(n['quote_h'])}</h2>
-          <ol>
-{steps}
-          </ol>
-          <p class="svc-contact">{esc(n['mail'])}: <a href="mailto:astmengineering1@gmail.com">astmengineering1@gmail.com</a> · {esc(n['phone'])}: <a href="tel:+821090772445">+82 10 9077 2445</a></p>
+          <p>{steps}</p>
+          <p class="svc-contact">{esc(n['mail'])}: <a href="mailto:astmengineering1@gmail.com">astmengineering1@gmail.com</a> · {esc(n['phone'])}: <a href="tel:+821090772445">{'010-9077-2445' if lang == 'ko' else '+82 10 9077 2445'}</a></p>
           <a class="svc-btn" href="contact.html#contact-form">{esc(n['quote_btn'])}</a>
         </div>"""
 
