@@ -50,6 +50,7 @@
 /* 흰 배경 장비 사진은 잘리지 않게 */
 .svc-photo img[src$=".png"], .svc-tile-img img[src$=".png"] { object-fit: contain; background: #fff; }
 
-/* 홈·제품의 가공 분야 카드: 언어에 맞는 것만 보이기 */
-html[lang="ko"] .only-en { display: none; }
+/* 홈·제품의 가공 분야 카드: 언어에 맞는 것만 보이기 (그 밖의 언어는 영어) */
 html:not([lang="ko"]) .only-ko { display: none; }
+html:not([lang="ja"]) .only-ja { display: none; }
+html[lang="ko"] .only-en, html[lang="ja"] .only-en { display: none; }

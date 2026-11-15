@@ -14,7 +14,7 @@
 ## Pages
 - [Home](https://astm-eng.com/): overview
 - [About](https://astm-eng.com/about.html): company introduction and quality policy
-- [Services / 가공 분야](https://astm-eng.com/services-en.html): all services (Korean: https://astm-eng.com/services.html)
+- [Services / 가공 분야](https://astm-eng.com/services-en.html): all services (Korean: https://astm-eng.com/services.html, Japanese: https://astm-eng.com/services-ja.html)
 - [Products](https://astm-eng.com/product.html): machined and sheet metal parts
 - [Equipment](https://astm-eng.com/equipment.html): machine list
 - [R&D](https://astm-eng.com/research.html): gear reducer development

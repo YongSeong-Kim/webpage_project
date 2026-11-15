@@ -441,7 +441,7 @@
   }
 
   function alternateFor(lang) {
-    const want = lang === "ko" ? "ko" : "en";
+    const want = ["ko", "en", "ja"].includes(lang) ? lang : "en";
     const link = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
     if (!link) return null;
     const url = new URL(link.getAttribute("href"), location.href);

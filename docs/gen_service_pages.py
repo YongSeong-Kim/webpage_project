@@ -28,6 +28,7 @@ PAGES = [
         ("주요 가공품", ["축, 핀, 부싱", "플랜지, 커버, 링", "선반 + MCT 복합 가공품"]),
         ("연계 작업", ["MCT 가공", "건드릴 가공", "판금 (BSTM)"]),
       ]),
+    ja={'title': 'CNC旋盤加工（韓国・仁川）- ASTMエンジニアリング', 'desc': '韓国・仁川のASTMエンジニアリング。CNC旋盤でシャフト、ピン、ブッシュ、フランジなどの丸物部品を加工します。図面をお送りいただければお見積りします。', 'h1': 'CNC旋盤加工', 'crumb': 'CNC旋盤', 'lead': 'CNC旋盤でシャフト、ピン、ブッシュ、フランジなどの丸物部品を加工します。旋盤後のマシニング二次加工やガンドリル加工も自社工場で行います。', 'sections': [('主な加工品', ['シャフト、ピン、ブッシュ', 'フランジ、カバー、リング', '旋盤＋マシニング複合加工品']), ('関連作業', ['マシニング加工', 'ガンドリル加工', '板金（BSTM）'])]},
     en=dict(
       title="CNC Turning in Incheon, Korea - ASTM Engineering",
       desc="ASTM Engineering, Incheon, Korea. CNC turning of shafts, pins, bushings and flanges. Send us your drawing for a quote.",
@@ -47,6 +48,7 @@ PAGES = [
         ("주요 가공품", ["알루미늄 하우징, 케이스", "블록, 브래킷, 베이스 플레이트", "포켓·홀 많은 판재", "자동화 장비 부품"]),
         ("연계 작업", ["CNC 선반 가공", "건드릴 가공", "판금 프레임·함체 (BSTM)"]),
       ]),
+    ja={'title': 'マシニング加工・アルミ加工（韓国・仁川）- ASTMエンジニアリング', 'desc': '韓国・仁川のASTMエンジニアリング。マシニングセンタでアルミハウジング、ブロック、ブラケット、プレートを加工します。図面をお送りいただければお見積りします。', 'h1': 'マシニング加工', 'crumb': 'マシニング', 'lead': 'マシニングセンタでハウジング、ブロック、ブラケット、プレートなどを加工します。アルミハウジングやポケット・穴の多いプレートの加工が中心です。', 'sections': [('主な加工品', ['アルミハウジング、ケース', 'ブロック、ブラケット、ベースプレート', 'ポケット・穴の多いプレート', '自動化装置の部品']), ('関連作業', ['CNC旋盤加工', 'ガンドリル加工', '板金フレーム・筐体（BSTM）'])]},
     en=dict(
       title="CNC Milling in Incheon, Korea - ASTM Engineering",
       desc="ASTM Engineering, Incheon, Korea. CNC milling of aluminum housings, blocks, brackets and plates on machining centers. Send us your drawing for a quote.",
@@ -66,6 +68,7 @@ PAGES = [
         ("주요 가공품", ["긴 플레이트 길이 방향 홀", "블록, 축 심공", "건드릴 + MCT 복합 가공품"]),
         ("연계 작업", ["MCT 가공", "CNC 선반 가공", "판금 (BSTM)"]),
       ]),
+    ja={'title': 'ガンドリル加工・深穴加工（韓国）- ASTMエンジニアリング', 'desc': '韓国・仁川のASTMエンジニアリング。ガンドリル専用機でプレート、ブロック、シャフトの長く深い穴を加工します。図面をお送りいただければお見積りします。', 'h1': 'ガンドリル加工', 'crumb': 'ガンドリル', 'lead': 'ガンドリル専用機で長く深い穴を加工します。長いプレートやブロックの長手方向の穴あけを行っており、ガンドリル後の残りの加工もマシニングで行います。', 'sections': [('主な加工品', ['長いプレートの長手方向の穴', 'ブロック、シャフトの深穴', 'ガンドリル＋マシニング複合加工品']), ('関連作業', ['マシニング加工', 'CNC旋盤加工', '板金（BSTM）'])]},
     en=dict(
       title="Gun Drilling in Korea - ASTM Engineering",
       desc="ASTM Engineering, Incheon, Korea. Deep hole gun drilling in plates, blocks and shafts. Send us your drawing for a quote.",
@@ -86,6 +89,7 @@ PAGES = [
         ("제작 실적", ["서버 랙, 수냉 랙", "무선 중계기 함체", "무인 택배함", "자동화 장비 프레임", "압력 용기"]),
         ("연계 작업", ["CNC 선반, MCT, 건드릴 가공 (ASTM엔지니어링)"]),
       ]),
+    ja={'title': '板金加工・レーザー切断・曲げ（韓国・仁川）- BSTM', 'desc': '韓国・仁川のBSTM板金。TRUMPFレーザー、AMADA PEGA-357パンチング、AMADA RG-100曲げ、PEM圧入、溶接ロボット。筐体、ラック、装置フレームを製作します。', 'h1': '板金加工（BSTM）', 'crumb': '板金', 'lead': 'BSTMではレーザー切断、パンチング、曲げ、PEM圧入、溶接まで板金作業を行います。筐体、ラック、装置フレームなどを図面どおりに製作します。', 'sections': [('保有設備', ['TRUMPFレーザー', 'AMADA PEGA-357 パンチング', 'AMADA RG-100 ベンダー', 'PEMプレス', '溶接ロボット']), ('製作実績', ['サーバーラック、水冷ラック', '無線中継器の筐体', '宅配ロッカー', '自動化装置のフレーム', '圧力容器']), ('関連作業', ['CNC旋盤、マシニング、ガンドリル加工（ASTMエンジニアリング）'])]},
     en=dict(
       title="Sheet Metal Fabrication in Korea - BSTM",
       desc="BSTM Sheet Metal, Incheon, Korea. TRUMPF laser cutting, AMADA PEGA-357 punching, AMADA RG-100 bending, PEM insertion, robotic welding. Enclosures, racks, machine frames.",
@@ -106,6 +110,7 @@ PAGES = [
         ("제작 실적", ["자동화 장비 프레임 및 부품", "서버 랙, 수냉 랙", "통신 장비 함체"]),
         ("작업 범위", ["CNC 선반, MCT, 건드릴", "레이저, 펀칭, 절곡, PEM 압입, 용접", "조립 확인 후 일괄 납품"]),
       ]),
+    ja={'title': '加工・板金の一括製作 - ASTMエンジニアリング・BSTM', 'desc': '韓国・仁川のASTMエンジニアリング（機械加工）とBSTM（板金）。装置フレーム、ラック、筐体など、加工品と板金品の両方が入る製品を一括で製作します。', 'h1': '加工・板金の一括製作', 'crumb': '一括製作', 'lead': '加工品と板金品の両方が入る装置は、ASTM（機械加工）とBSTM（板金）で一緒に製作します。同じ場所で作るので、組み付けの確認をしてからまとめて納品します。', 'sections': [('製作実績', ['自動化装置のフレームと部品', 'サーバーラック、水冷ラック', '通信機器の筐体']), ('作業範囲', ['CNC旋盤、マシニング、ガンドリル', 'レーザー、パンチング、曲げ、PEM圧入、溶接', '組み付け確認後に一括納品'])]},
     en=dict(
       title="Machining and Sheet Metal from One Shop - ASTM Engineering · BSTM",
       desc="ASTM Engineering (machining) and BSTM (sheet metal), Incheon, Korea. Machine frames, racks and enclosures with both machined and sheet metal parts, made and shipped together.",
@@ -124,18 +129,21 @@ NAV = {
   "en": dict(hub="Services", hub_title="Services - ASTM Engineering · BSTM", hub_desc="ASTM Engineering and BSTM, Incheon, Korea. CNC turning, CNC milling, gun drilling, sheet metal, machining and sheet metal together.", hub_lead="What we do at ASTM Engineering (machining) and BSTM (sheet metal).", more="See more", home="Home", product="Products", others="Other services", quote_h="Request a quote",
              quote_steps=["Email us your drawing (PDF, DWG, STEP etc.), quantity and delivery date. We will check it and send a quote."],
              quote_btn="Request a quote", mail="Email", phone="Phone", other_lang="한국어", inlang="en"),
+  "ja": dict(hub="加工分野", hub_title="加工分野 - ASTMエンジニアリング・BSTM", hub_desc="韓国・仁川のASTMエンジニアリング・BSTM。CNC旋盤、マシニング、ガンドリル、板金、加工・板金の一括製作。", hub_lead="ASTMエンジニアリング（機械加工）とBSTM（板金）で行っている作業です。", more="詳しく見る", home="ホーム", product="製品", others="その他の作業", quote_h="お見積り",
+             quote_steps=["図面（PDF、DWG、STEPなど）、数量、納期をメールでお送りください。確認のうえお見積りします。"],
+             quote_btn="お見積り依頼", mail="メール", phone="電話", other_lang="", inlang="ja"),
 }
 
 CARD_TEXT = {  # 카드에 쓰는 짧은 설명
-  "cnc-turning": ("축, 핀, 부싱, 플랜지", "Shafts, pins, bushings, flanges"),
-  "mct-machining": ("알루미늄 하우징, 블록, 브래킷", "Aluminum housings, blocks, brackets"),
-  "gun-drilling": ("길고 깊은 구멍", "Long, deep holes"),
-  "sheet-metal": ("레이저, 펀칭, 절곡, 용접", "Laser, punching, bending, welding"),
-  "machining-and-sheet-metal": ("장비 프레임, 랙, 함체", "Machine frames, racks, enclosures"),
+  "cnc-turning": ("축, 핀, 부싱, 플랜지", "Shafts, pins, bushings, flanges", "シャフト、ピン、ブッシュ、フランジ"),
+  "mct-machining": ("알루미늄 하우징, 블록, 브래킷", "Aluminum housings, blocks, brackets", "アルミハウジング、ブロック、ブラケット"),
+  "gun-drilling": ("길고 깊은 구멍", "Long, deep holes", "長く深い穴"),
+  "sheet-metal": ("레이저, 펀칭, 절곡, 용접", "Laser, punching, bending, welding", "レーザー、パンチング、曲げ、溶接"),
+  "machining-and-sheet-metal": ("장비 프레임, 랙, 함체", "Machine frames, racks, enclosures", "装置フレーム、ラック、筐体"),
 }
 
 def url(slug, lang):
-    return f"{slug}.html" if lang == "ko" else f"{slug}-en.html"
+    return f"{slug}.html" if lang == "ko" else f"{slug}-{lang}.html"
 
 def esc(s): return html.escape(s, quote=True)
 
@@ -144,7 +152,7 @@ def cards(lang, exclude=None):
     out = []
     for q in PAGES:
         if q["slug"] == exclude: continue
-        name = q[lang]["h1"]; sub = CARD_TEXT[q["slug"]][0 if lang == "ko" else 1]
+        name = q[lang]["h1"]; sub = CARD_TEXT[q["slug"]][{"ko": 0, "en": 1, "ja": 2}[lang]]
         out.append(f"""          <div class="col-6 col-md-4 col-lg">
             <a class="svc-tile" href="{url(q['slug'], lang)}">
               <span class="svc-tile-img"><img src="assets/img/{q['photos'][0]}" alt="{esc(name)}" loading="lazy"></span>
@@ -155,7 +163,7 @@ def cards(lang, exclude=None):
 
 NAV_OLD = '<li><a href="product.html" data-i18n="nav.product">'
 def nav_with_services(s, lang):
-    link = f'<li><a href="{url("services", lang)}" data-i18n="nav.services">{"가공 분야" if lang == "ko" else "Services"}</a></li>\n          '
+    link = f'<li><a href="{url("services", lang)}" data-i18n="nav.services">{ {"ko": "가공 분야", "en": "Services", "ja": "加工分野"}[lang] }</a></li>\n          '
     if 'data-i18n="nav.services">' in s.split('<nav id="navbar"', 1)[-1].split("</nav>", 1)[0]: return s
     return s.replace(NAV_OLD, link + NAV_OLD, 1)
 
@@ -172,6 +180,7 @@ def page_head(lang, title, desc, me, ko_u, en_u, og_img, ld):
   <link rel="canonical" href="{SITE}{me}">
   <link rel="alternate" hreflang="ko" href="{ko_u}">
   <link rel="alternate" hreflang="en" href="{en_u}">
+  <link rel="alternate" hreflang="ja" href="{ko_u[:-5]}-ja.html">
   <link rel="alternate" hreflang="x-default" href="{en_u}">
   <meta name="astm-page-lang" content="{lang}">
   <meta property="og:type" content="website">
@@ -312,16 +321,17 @@ def build_hub(lang):
 
 if __name__ == "__main__":
     for p_ in PAGES:
-        for lang in ("ko", "en"):
+        for lang in ("ko", "en", "ja"):
             (ROOT / url(p_["slug"], lang)).write_text(build(p_, lang), encoding="utf-8")
-    for lang in ("ko", "en"):
+    for lang in ("ko", "en", "ja"):
         (ROOT / url("services", lang)).write_text(build_hub(lang), encoding="utf-8")
     # 다른 페이지: 메뉴에 '가공 분야' 넣기, 홈·제품의 카드 영역 갈아 끼우기
     for f in ["index.html", "about.html", "product.html", "equipment.html", "research.html", "contact.html"]:
         fp = ROOT / f; s = fp.read_text(encoding="utf-8")
         s = nav_with_services(s, "ko")
         both = cards("ko").replace('class="row g-3 svc-tiles"', 'class="row g-3 svc-tiles only-ko"', 1) + "\n" + \
-               cards("en").replace('class="row g-3 svc-tiles"', 'class="row g-3 svc-tiles only-en"', 1)
+               cards("en").replace('class="row g-3 svc-tiles"', 'class="row g-3 svc-tiles only-en"', 1) + "\n" + \
+               cards("ja").replace('class="row g-3 svc-tiles"', 'class="row g-3 svc-tiles only-ja"', 1)
         s = re.sub(r"( *<!-- svc-cards:start -->\n).*?( *<!-- svc-cards:end -->)",
                    lambda m: m.group(1) + both + "\n" + m.group(2), s, flags=re.S)
         s = s.replace('service.css?v=20261115', 'service.css?v=20261116')
