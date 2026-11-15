@@ -448,7 +448,9 @@
     if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.protocol === "file:") {
       url.protocol = location.protocol; url.host = location.host;   // 로컬 확인용
     }
-    return url.pathname === location.pathname ? null : url.href;
+    // 실제 사이트는 /sheet-metal.html 을 /sheet-metal 로 보여 준다. 같은 페이지끼리 계속 옮기지 않게 .html·index를 떼고 비교
+    const norm = (p) => p.replace(/\.html$/, "").replace(/\/index$/, "/");
+    return norm(url.pathname) === norm(location.pathname) ? null : url.href;
   }
 
   function wireLanguageMenu() {
