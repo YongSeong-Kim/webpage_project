@@ -3,8 +3,8 @@
 @media (max-width: 992px) { .breadcrumbs h1.svc-h1 { margin-bottom: 10px; } }
 
 .svc { padding: 40px 0 60px; }
-.svc-lead { font-size: 18px; line-height: 1.7; max-width: 860px; margin-bottom: 8px; }
-.svc-lang { font-size: 14px; margin-bottom: 24px; }
+.svc-lead { font-size: 18px; line-height: 1.75; margin-bottom: 20px; }
+.svc-lang { font-size: 14px; margin: 16px 0 0; }
 .svc-lang a { color: #676775; text-decoration: underline; }
 
 .svc-photo { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 6px; background: #f3f3f3; }
@@ -28,9 +28,22 @@
 .svc-others a { display: inline-block; padding: 8px 16px; border: 1px solid #ddd; border-radius: 50px; color: var(--color-default); }
 .svc-others a:hover { border-color: var(--color-primary); color: var(--color-primary); }
 
-/* 홈·제품 페이지의 가공 분야 링크 띠 */
-.svc-links { padding: 24px 0 8px; }
-.svc-links ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; list-style: none; padding: 0; margin: 0 0 8px; }
-.svc-links a { display: inline-block; padding: 6px 14px; border: 1px solid #ddd; border-radius: 50px; font-size: 14px; color: var(--color-default); }
-.svc-links a:hover { border-color: var(--color-primary); color: var(--color-primary); }
-.svc-links-en a { font-size: 13px; color: #676775; }
+
+.svc-photo-main { aspect-ratio: 4 / 3; }
+.svc-photos { margin-top: 12px; }
+.svc-sections { margin-top: 24px; }
+.svc-quote, .svc-others { margin-top: 40px; }
+.svc-others h2 { margin-bottom: 16px; }
+
+/* 가공 분야 사진 카드 (홈·제품·분야 안내·각 분야 페이지) */
+.svc-home { padding: 40px 0 20px; }
+.svc-tile { display: flex; flex-direction: column; height: 100%; border: 1px solid #e6e6e6; border-radius: 8px; overflow: hidden; background: #fff; color: var(--color-default); transition: box-shadow .2s, border-color .2s; }
+.svc-tile:hover { border-color: var(--color-primary); box-shadow: 0 6px 18px rgba(0,0,0,.08); color: var(--color-default); }
+.svc-tile-img { display: block; aspect-ratio: 4 / 3; background: #f3f3f3; overflow: hidden; }
+.svc-tile-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.svc-tile:hover .svc-tile-img img { transform: scale(1.05); }
+.svc-tile-body { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px 16px; }
+.svc-tile-body strong { font-size: 16px; }
+.svc-tile-body small { font-size: 13px; color: #676775; line-height: 1.5; }
+.svc-tile-body em { font-style: normal; font-size: 13px; color: var(--color-primary); font-weight: 600; margin-top: 4px; }
+@media (max-width: 575px) { .svc-tile-body strong { font-size: 14px; } .svc-tile-body small { display: none; } }

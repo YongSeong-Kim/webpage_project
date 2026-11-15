@@ -118,12 +118,21 @@ PAGES = [
 ]
 
 NAV = {
-  "ko": dict(home="홈", product="가공 제품", others="다른 가공 분야", quote_h="견적 받는 방법",
+  "ko": dict(hub="가공 분야", hub_title="가공 분야 | CNC 선반·MCT·건드릴·판금 - ASTM엔지니어링 · BSTM", hub_desc="인천 남동구 ASTM엔지니어링·BSTM이 하는 일: CNC 선반 가공, 머시닝센터(MCT) 가공, 건드릴 가공, 레이저·절곡·용접 판금, 가공과 판금 일괄 제작.", hub_lead="도면 한 장으로 정밀가공과 판금을 한 곳에서 맡기실 수 있습니다. 필요한 가공을 눌러 자세히 보세요.", more="자세히 보기", home="홈", product="가공 제품", others="다른 가공 분야", quote_h="견적 받는 방법",
              quote_steps=["도면(PDF, DWG, STEP 등)과 수량, 원하는 납기를 보내 주세요.", "도면을 보고 가공 방법과 금액을 검토해 회신드립니다.", "가공과 판금이 함께 필요한 제품도 한 번에 견적드립니다."],
              quote_btn="도면 보내고 견적 받기", mail="메일", phone="전화", other_lang="English", inlang="ko"),
-  "en": dict(home="Home", product="Products", others="Other services", quote_h="How to get a quote",
+  "en": dict(hub="Services", hub_title="Services | CNC Turning, Milling, Gun Drilling, Sheet Metal - ASTM Engineering · BSTM", hub_desc="What ASTM Engineering and BSTM do in Incheon, Korea: CNC turning, CNC milling, gun drilling, sheet metal fabrication, and machining with sheet metal in one place.", hub_lead="Send one drawing and get precision machining and sheet metal from one shop. Pick a service to see more.", more="See more", home="Home", product="Products", others="Other services", quote_h="How to get a quote",
              quote_steps=["Send us your drawing (PDF, DWG, STEP etc.), quantity and the delivery date you need.", "We review the drawing and reply with our price and how we will make it.", "If your product needs both machined and sheet metal parts, we quote them together."],
              quote_btn="Send a drawing for a quote", mail="Email", phone="Phone", other_lang="한국어", inlang="en"),
+}
+
+
+CARD_TEXT = {  # 카드에 쓰는 짧은 설명
+  "cnc-turning": ("축·핀·부싱·플랜지 같은 둥근 부품", "Shafts, pins, bushings, flanges"),
+  "mct-machining": ("알루미늄 하우징·블록·브래킷", "Aluminum housings, blocks, brackets"),
+  "gun-drilling": ("길고 깊은 구멍 가공", "Long, deep holes"),
+  "sheet-metal": ("레이저 절단·펀칭·절곡·용접 (BSTM)", "Laser cutting, punching, bending, welding (BSTM)"),
+  "machining-and-sheet-metal": ("장비 프레임·랙·함체를 한 업체에서", "Frames, racks, enclosures from one shop"),
 }
 
 def url(slug, lang):
@@ -131,44 +140,48 @@ def url(slug, lang):
 
 def esc(s): return html.escape(s, quote=True)
 
-def build(p, lang):
-    c = p[lang]; n = NAV[lang]; other = "en" if lang == "ko" else "ko"
-    me, alt = url(p["slug"], lang), url(p["slug"], other)
-    ko_u, en_u = SITE + url(p["slug"], "ko"), SITE + url(p["slug"], "en")
-    og_img = SITE + "assets/img/" + p["photos"][0]
-    ld = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {"@type": "Service", "name": c["h1"], "serviceType": c["crumb"], "description": c["desc"], "url": SITE + me,
-         "areaServed": "Worldwide",
-         "provider": {"@type": "LocalBusiness", "name": "ASTM엔지니어링 (ASTM Engineering)",
-                      "alternateName": ["ASTM Engineering", "BSTM Sheet Metal"], "url": SITE,
-                      "email": "astmengineering1@gmail.com", "address": ADDR}},
-        {"@type": "BreadcrumbList", "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": n["home"], "item": SITE},
-          {"@type": "ListItem", "position": 2, "name": c["crumb"], "item": SITE + me}]},
-      ]}
-    head = f"""<!DOCTYPE html>
+def cards(lang, exclude=None):
+    """가공 분야 사진 카드 (홈·제품·분야 안내 페이지에서 같이 씀)"""
+    out = []
+    for q in PAGES:
+        if q["slug"] == exclude: continue
+        name = q[lang]["h1"]; sub = CARD_TEXT[q["slug"]][0 if lang == "ko" else 1]
+        out.append(f"""          <div class="col-6 col-md-4 col-lg">
+            <a class="svc-tile" href="{url(q['slug'], lang)}">
+              <span class="svc-tile-img"><img src="assets/img/{q['photos'][0]}" alt="{esc(name)}" loading="lazy"></span>
+              <span class="svc-tile-body"><strong>{esc(name)}</strong><small>{esc(sub)}</small><em>{esc(NAV[lang]['more'])} &rsaquo;</em></span>
+            </a>
+          </div>""")
+    return '        <div class="row g-3 svc-tiles">\n' + "\n".join(out) + "\n        </div>"
+
+NAV_OLD = '<li><a href="product.html" data-i18n="nav.product">'
+def nav_with_services(s, lang):
+    link = f'<li><a href="{url("services", lang)}" data-i18n="nav.services">{"가공 분야" if lang == "ko" else "Services"}</a></li>\n          '
+    if 'data-i18n="nav.services">' in s.split('<nav id="navbar"', 1)[-1].split("</nav>", 1)[0]: return s
+    return s.replace(NAV_OLD, link + NAV_OLD, 1)
+
+def page_head(lang, title, desc, me, ko_u, en_u, og_img, ld):
+    return f"""<!DOCTYPE html>
 <html lang="{lang}">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>{esc(c['title'])}</title>
-  <meta content="{esc(c['desc'])}" name="description">
+  <title>{esc(title)}</title>
+  <meta content="{esc(desc)}" name="description">
   <link rel="canonical" href="{SITE}{me}">
   <link rel="alternate" hreflang="ko" href="{ko_u}">
   <link rel="alternate" hreflang="en" href="{en_u}">
   <link rel="alternate" hreflang="x-default" href="{en_u}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ASTM엔지니어링 · BSTM">
-  <meta property="og:title" content="{esc(c['title'])}">
-  <meta property="og:description" content="{esc(c['desc'])}">
+  <meta property="og:title" content="{esc(title)}">
+  <meta property="og:description" content="{esc(desc)}">
   <meta property="og:url" content="{SITE}{me}">
   <meta property="og:image" content="{og_img}">
 
-{head_assets}  <link href="assets/css/service.css?v=20261115" rel="stylesheet">
+{head_assets}  <link href="assets/css/service.css?v=20261116" rel="stylesheet">
 
   <script type="application/ld+json">
 {json.dumps(ld, ensure_ascii=False, indent=2)}
@@ -176,13 +189,56 @@ def build(p, lang):
 </head>
 
 """
-    # 사진
-    alt_base = c["h1"]
+
+def crumbs(lang, h1, items):
+    lis = "\n".join(f'            <li><a href="{u}">{esc(n)}</a></li>' if u else f"            <li>{esc(n)}</li>" for n, u in items)
+    return f"""    <div class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="svc-h1">{esc(h1)}</h1>
+          <ol>
+{lis}
+          </ol>
+        </div>
+      </div>
+    </div><!-- End Breadcrumbs -->
+"""
+
+def quote_box(lang):
+    n = NAV[lang]
+    steps = "\n".join(f"            <li>{esc(s)}</li>" for s in n["quote_steps"])
+    return f"""        <div class="svc-quote">
+          <h2>{esc(n['quote_h'])}</h2>
+          <ol>
+{steps}
+          </ol>
+          <p class="svc-contact">{esc(n['mail'])}: <a href="mailto:astmengineering1@gmail.com">astmengineering1@gmail.com</a> · {esc(n['phone'])}: <a href="tel:+821090772445">+82 10 9077 2445</a></p>
+          <a class="svc-btn" href="contact.html#contact-form">{esc(n['quote_btn'])}</a>
+        </div>"""
+
+def provider():
+    return {"@type": "LocalBusiness", "name": "ASTM엔지니어링 (ASTM Engineering)",
+            "alternateName": ["ASTM Engineering", "BSTM Sheet Metal"], "url": SITE,
+            "email": "astmengineering1@gmail.com", "address": ADDR}
+
+def build(p, lang):
+    c = p[lang]; n = NAV[lang]; other = "en" if lang == "ko" else "ko"
+    me, alt = url(p["slug"], lang), url(p["slug"], other)
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "Service", "name": c["h1"], "serviceType": c["crumb"], "description": c["desc"], "url": SITE + me,
+         "areaServed": "Worldwide", "provider": provider()},
+        {"@type": "BreadcrumbList", "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": n["home"], "item": SITE},
+          {"@type": "ListItem", "position": 2, "name": n["hub"], "item": SITE + url("services", lang)},
+          {"@type": "ListItem", "position": 3, "name": c["crumb"], "item": SITE + me}]}]}
+    head = page_head(lang, c["title"], c["desc"], me, SITE + url(p["slug"], "ko"), SITE + url(p["slug"], "en"),
+                     SITE + "assets/img/" + p["photos"][0], ld)
+    main_ph, rest = p["photos"][0], p["photos"][1:4]
     photos = "\n".join(
-      f'          <div class="col-6 col-lg-3"><a href="assets/img/{ph}" class="glightbox svc-photo"><img src="assets/img/{ph}" alt="{esc(alt_base)} - ASTM" loading="lazy"></a></div>'
-      for ph in p["photos"][:4])
+      f'          <div class="col-4"><a href="assets/img/{ph}" class="glightbox svc-photo"><img src="assets/img/{ph}" alt="{esc(c["h1"])} - ASTM" loading="lazy"></a></div>'
+      for ph in rest)
     secs = "\n".join(
-      f"""          <div class="col-lg-{12 // max(1, min(3, len(c['sections'])))}">
+      f"""          <div class="col-md-6 col-lg">
             <div class="svc-card">
               <h2>{esc(h)}</h2>
               <ul>
@@ -190,54 +246,36 @@ def build(p, lang):
               </ul>
             </div>
           </div>""" for h, items in c["sections"])
-    others = "\n".join(
-      f'            <li><a href="{url(q["slug"], lang)}">{esc(q[lang]["crumb"])}</a></li>'
-      for q in PAGES if q["slug"] != p["slug"])
-    steps = "\n".join(f"                <li>{esc(s)}</li>" for s in n["quote_steps"])
     main = f"""  <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h1 class="svc-h1">{esc(c['h1'])}</h1>
-          <ol>
-            <li><a href="index.html">{esc(n['home'])}</a></li>
-            <li><a href="product.html">{esc(n['product'])}</a></li>
-            <li>{esc(c['crumb'])}</li>
-          </ol>
-        </div>
-      </div>
-    </div><!-- End Breadcrumbs -->
-
+{crumbs(lang, c['h1'], [(n['home'], 'index.html'), (n['hub'], url('services', lang)), (c['crumb'], None)])}
     <section class="svc">
       <div class="container">
 
-        <p class="svc-lead">{esc(c['lead'])}</p>
-        <p class="svc-lang"><a href="{alt}" hreflang="{other}">{esc(n['other_lang'])}</a></p>
+        <div class="row g-4 align-items-center svc-top">
+          <div class="col-lg-6">
+            <a href="assets/img/{main_ph}" class="glightbox svc-photo svc-photo-main"><img src="assets/img/{main_ph}" alt="{esc(c['h1'])} - ASTM"></a>
+          </div>
+          <div class="col-lg-6">
+            <p class="svc-lead">{esc(c['lead'])}</p>
+            <a class="svc-btn" href="contact.html#contact-form">{esc(n['quote_btn'])}</a>
+            <p class="svc-lang"><a href="{alt}" hreflang="{other}">{esc(n['other_lang'])}</a></p>
+          </div>
+        </div>
 
         <div class="row g-3 svc-photos">
 {photos}
         </div>
 
-        <div class="row g-4 mt-2">
+        <div class="row g-4 svc-sections">
 {secs}
         </div>
 
-        <div class="svc-quote mt-5">
-          <h2>{esc(n['quote_h'])}</h2>
-          <ol>
-{steps}
-          </ol>
-          <p class="svc-contact">{esc(n['mail'])}: <a href="mailto:astmengineering1@gmail.com">astmengineering1@gmail.com</a> · {esc(n['phone'])}: <a href="tel:+821090772445">+82 10 9077 2445</a></p>
-          <a class="btn-book-a-table svc-btn" href="contact.html#contact-form">{esc(n['quote_btn'])}</a>
-        </div>
+{quote_box(lang)}
 
-        <div class="svc-others mt-5">
+        <div class="svc-others">
           <h2>{esc(n['others'])}</h2>
-          <ul>
-{others}
-          </ul>
+{cards(lang, exclude=p['slug'])}
         </div>
 
       </div>
@@ -246,12 +284,48 @@ def build(p, lang):
   </main><!-- End #main -->
 
 """
-    return head + body_top + main + footer + "</body>\n\n</html>\n"
+    return head + nav_with_services(body_top, lang) + main + footer + "</body>\n\n</html>\n"
 
-for p in PAGES:
+def build_hub(lang):
+    n = NAV[lang]; other = "en" if lang == "ko" else "ko"
+    me, alt = url("services", lang), url("services", other)
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "ItemList", "name": n["hub"], "itemListElement": [
+          {"@type": "ListItem", "position": i + 1, "name": q[lang]["h1"], "url": SITE + url(q["slug"], lang)} for i, q in enumerate(PAGES)]},
+        {"@type": "BreadcrumbList", "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": n["home"], "item": SITE},
+          {"@type": "ListItem", "position": 2, "name": n["hub"], "item": SITE + me}]}]}
+    head = page_head(lang, n["hub_title"], n["hub_desc"], me, SITE + url("services", "ko"), SITE + url("services", "en"),
+                     SITE + "assets/img/factory/floor.jpg", ld)
+    main = f"""  <main id="main">
+
+{crumbs(lang, n['hub'], [(n['home'], 'index.html'), (n['hub'], None)])}
+    <section class="svc">
+      <div class="container">
+        <p class="svc-lead">{esc(n['hub_lead'])}</p>
+        <p class="svc-lang"><a href="{alt}" hreflang="{other}">{esc(n['other_lang'])}</a></p>
+{cards(lang)}
+{quote_box(lang)}
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+"""
+    return head + nav_with_services(body_top, lang) + main + footer + "</body>\n\n</html>\n"
+
+if __name__ == "__main__":
+    for p_ in PAGES:
+        for lang in ("ko", "en"):
+            (ROOT / url(p_["slug"], lang)).write_text(build(p_, lang), encoding="utf-8")
     for lang in ("ko", "en"):
-        (ROOT / url(p["slug"], lang)).write_text(build(p, lang), encoding="utf-8")
-        print("wrote", url(p["slug"], lang))
-
-# 다른 곳에서 쓰도록 목록 출력
-print(json.dumps([[p["slug"], p["ko"]["crumb"], p["en"]["crumb"]] for p in PAGES], ensure_ascii=False))
+        (ROOT / url("services", lang)).write_text(build_hub(lang), encoding="utf-8")
+    # 다른 페이지: 메뉴에 '가공 분야' 넣기, 홈·제품의 카드 영역 갈아 끼우기
+    for f in ["index.html", "about.html", "product.html", "equipment.html", "research.html", "contact.html"]:
+        fp = ROOT / f; s = fp.read_text(encoding="utf-8")
+        s = nav_with_services(s, "ko")
+        s = re.sub(r"( *<!-- svc-cards:start -->\n).*?( *<!-- svc-cards:end -->)",
+                   lambda m: m.group(1) + cards("ko") + "\n" + m.group(2), s, flags=re.S)
+        s = s.replace('service.css?v=20261115', 'service.css?v=20261116')
+        fp.write_text(s, encoding="utf-8")
+    print("done")

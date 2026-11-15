@@ -27,7 +27,7 @@ main에 올리면 GitHub Actions(`.github/workflows/deploy.yml`)가 Cloudflare P
 
 ## 변경 이력
 
-- 2026-11-15: 검색으로 손님이 들어오게 가공 분야별 페이지 5개를 한·영으로 추가 (`cnc-turning`, `mct-machining`, `gun-drilling`, `sheet-metal`, `machining-and-sheet-metal`, 영어는 `-en.html`). TW하이텍이 11/12 홈페이지 문의 양식으로 들어온 것을 보고, 검색어마다 페이지를 늘리기로 함. 한국어 본문을 HTML에 그대로 써서 검색에 잡히게 했고(i18n 전환 안 씀), hreflang으로 한·영을 묶음. 내용은 홈페이지·회사소개에 이미 있는 사실만 씀. 페이지는 `docs/gen_service_pages.py`로 만든다(product.html의 머리·꼬리를 가져옴). 홈·제품 페이지에 링크 띠, sitemap·llms.txt에 추가.
+- 2026-11-15: 검색으로 손님이 들어오게 가공 분야별 페이지 5개를 한·영으로 추가 (`cnc-turning`, `mct-machining`, `gun-drilling`, `sheet-metal`, `machining-and-sheet-metal`, 영어는 `-en.html`). TW하이텍이 11/12 홈페이지 문의 양식으로 들어온 것을 보고, 검색어마다 페이지를 늘리기로 함. 한국어 본문을 HTML에 그대로 써서 검색에 잡히게 했고(i18n 전환 안 씀), hreflang으로 한·영을 묶음. 내용은 홈페이지·회사소개에 이미 있는 사실만 씀. 페이지는 `docs/gen_service_pages.py`로 만든다(product.html의 머리·꼬리를 가져옴). 홈·제품 페이지에 링크 띠, sitemap·llms.txt에 추가. 같은 날 사용자 의견("들어가기 힘들다")으로 고침: 상단 메뉴에 '가공 분야'(services.html·services-en.html, 메뉴 키 nav.services), 홈·제품의 알약 링크 띠를 사진 카드로(`<!-- svc-cards:start/end -->` 사이를 생성기가 채움), 분야 페이지는 큰 사진 + 소개 + 견적 버튼을 맨 위에.
 - 2026-10-19: 무료로 https를 쓰려고 Cloudflare(DNS·Pages)로 옮김. 사이트 안의 주소를 모두 https로 바꿈. Firebase Hosting도 비교했지만 전송량 제한(월 10GB)이 있고, 메일 전달·Workers를 같은 곳에서 무료로 쓸 수 있어 Cloudflare로 정함.
 - 2026-10-03: 문의 폼을 Web3Forms로 교체 (#27). 템플릿 PHP 폼(`forms/contact.php`)은 받는 주소가 `contact@example.com`이고 라이브러리가 없어 처음부터 동작하지 않았다(실사이트 502). PHP를 쓰지 않고 스팸도 막으려고 Web3Forms + 허니팟 + hCaptcha를 골랐다. `forms/` 폴더 삭제.
 - 2026-10-03: 배포 스크립트 `deploy.sh` 추가 (#28). 그 전에는 파일을 손으로 올렸다.

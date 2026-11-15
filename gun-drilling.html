@@ -37,9 +37,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css?v=20261011" rel="stylesheet">
-  <link href="assets/css/service.css?v=20261115" rel="stylesheet">
+  <link href="assets/css/service.css?v=20261116" rel="stylesheet">
 
-  <link href="assets/css/service.css?v=20261115" rel="stylesheet">
+  <link href="assets/css/service.css?v=20261116" rel="stylesheet">
 
   <script type="application/ld+json">
 {
@@ -82,6 +82,12 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "가공 분야",
+          "item": "https://astm-eng.com/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "건드릴 가공",
           "item": "https://astm-eng.com/gun-drilling.html"
         }
@@ -107,6 +113,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="services.html" data-i18n="nav.services">가공 분야</a></li>
           <li><a href="product.html" data-i18n="nav.product">Product</a></li>
           <li><a href="research.html" data-i18n="nav.research">R&amp;D</a></li>
           <li><a href="equipment.html" data-i18n="nav.equipment">Equipment</a></li>
@@ -137,14 +144,13 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
           <h1 class="svc-h1">건드릴 가공 (깊은 구멍)</h1>
           <ol>
             <li><a href="index.html">홈</a></li>
-            <li><a href="product.html">가공 제품</a></li>
+            <li><a href="services.html">가공 분야</a></li>
             <li>건드릴 가공</li>
           </ol>
         </div>
@@ -154,17 +160,24 @@
     <section class="svc">
       <div class="container">
 
-        <p class="svc-lead">일반 드릴로 뚫기 어려운 길고 깊은 구멍을 건드릴 전용 장비로 가공합니다. 긴 플레이트나 블록에 길이 방향으로 구멍을 내는 일을 해 왔습니다.</p>
-        <p class="svc-lang"><a href="gun-drilling-en.html" hreflang="en">English</a></p>
-
-        <div class="row g-3 svc-photos">
-          <div class="col-6 col-lg-3"><a href="assets/img/product/Gundrill/1.jpg" class="glightbox svc-photo"><img src="assets/img/product/Gundrill/1.jpg" alt="건드릴 가공 (깊은 구멍) - ASTM" loading="lazy"></a></div>
-          <div class="col-6 col-lg-3"><a href="assets/img/product/Gundrill/2.jpg" class="glightbox svc-photo"><img src="assets/img/product/Gundrill/2.jpg" alt="건드릴 가공 (깊은 구멍) - ASTM" loading="lazy"></a></div>
-          <div class="col-6 col-lg-3"><a href="assets/img/equipment/gundrill.jpg" class="glightbox svc-photo"><img src="assets/img/equipment/gundrill.jpg" alt="건드릴 가공 (깊은 구멍) - ASTM" loading="lazy"></a></div>
+        <div class="row g-4 align-items-center svc-top">
+          <div class="col-lg-6">
+            <a href="assets/img/product/Gundrill/1.jpg" class="glightbox svc-photo svc-photo-main"><img src="assets/img/product/Gundrill/1.jpg" alt="건드릴 가공 (깊은 구멍) - ASTM"></a>
+          </div>
+          <div class="col-lg-6">
+            <p class="svc-lead">일반 드릴로 뚫기 어려운 길고 깊은 구멍을 건드릴 전용 장비로 가공합니다. 긴 플레이트나 블록에 길이 방향으로 구멍을 내는 일을 해 왔습니다.</p>
+            <a class="svc-btn" href="contact.html#contact-form">도면 보내고 견적 받기</a>
+            <p class="svc-lang"><a href="gun-drilling-en.html" hreflang="en">English</a></p>
+          </div>
         </div>
 
-        <div class="row g-4 mt-2">
-          <div class="col-lg-6">
+        <div class="row g-3 svc-photos">
+          <div class="col-4"><a href="assets/img/product/Gundrill/2.jpg" class="glightbox svc-photo"><img src="assets/img/product/Gundrill/2.jpg" alt="건드릴 가공 (깊은 구멍) - ASTM" loading="lazy"></a></div>
+          <div class="col-4"><a href="assets/img/equipment/gundrill.jpg" class="glightbox svc-photo"><img src="assets/img/equipment/gundrill.jpg" alt="건드릴 가공 (깊은 구멍) - ASTM" loading="lazy"></a></div>
+        </div>
+
+        <div class="row g-4 svc-sections">
+          <div class="col-md-6 col-lg">
             <div class="svc-card">
               <h2>이런 부품을 만듭니다</h2>
               <ul>
@@ -174,7 +187,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-6 col-lg">
             <div class="svc-card">
               <h2>함께 맡길 수 있는 일</h2>
               <ul>
@@ -186,25 +199,45 @@
           </div>
         </div>
 
-        <div class="svc-quote mt-5">
+        <div class="svc-quote">
           <h2>견적 받는 방법</h2>
           <ol>
-                <li>도면(PDF, DWG, STEP 등)과 수량, 원하는 납기를 보내 주세요.</li>
-                <li>도면을 보고 가공 방법과 금액을 검토해 회신드립니다.</li>
-                <li>가공과 판금이 함께 필요한 제품도 한 번에 견적드립니다.</li>
+            <li>도면(PDF, DWG, STEP 등)과 수량, 원하는 납기를 보내 주세요.</li>
+            <li>도면을 보고 가공 방법과 금액을 검토해 회신드립니다.</li>
+            <li>가공과 판금이 함께 필요한 제품도 한 번에 견적드립니다.</li>
           </ol>
           <p class="svc-contact">메일: <a href="mailto:astmengineering1@gmail.com">astmengineering1@gmail.com</a> · 전화: <a href="tel:+821090772445">+82 10 9077 2445</a></p>
-          <a class="btn-book-a-table svc-btn" href="contact.html#contact-form">도면 보내고 견적 받기</a>
+          <a class="svc-btn" href="contact.html#contact-form">도면 보내고 견적 받기</a>
         </div>
 
-        <div class="svc-others mt-5">
+        <div class="svc-others">
           <h2>다른 가공 분야</h2>
-          <ul>
-            <li><a href="cnc-turning.html">CNC 선반 가공</a></li>
-            <li><a href="mct-machining.html">MCT 가공</a></li>
-            <li><a href="sheet-metal.html">판금 가공</a></li>
-            <li><a href="machining-and-sheet-metal.html">가공 + 판금</a></li>
-          </ul>
+        <div class="row g-3 svc-tiles">
+          <div class="col-6 col-md-4 col-lg">
+            <a class="svc-tile" href="cnc-turning.html">
+              <span class="svc-tile-img"><img src="assets/img/product/CNC/3.jpg" alt="CNC 선반 가공" loading="lazy"></span>
+              <span class="svc-tile-body"><strong>CNC 선반 가공</strong><small>축·핀·부싱·플랜지 같은 둥근 부품</small><em>자세히 보기 &rsaquo;</em></span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg">
+            <a class="svc-tile" href="mct-machining.html">
+              <span class="svc-tile-img"><img src="assets/img/product/MCT/4.jpg" alt="머시닝센터(MCT) 가공" loading="lazy"></span>
+              <span class="svc-tile-body"><strong>머시닝센터(MCT) 가공</strong><small>알루미늄 하우징·블록·브래킷</small><em>자세히 보기 &rsaquo;</em></span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg">
+            <a class="svc-tile" href="sheet-metal.html">
+              <span class="svc-tile-img"><img src="assets/img/factory/pega357.jpg" alt="판금 가공 (BSTM)" loading="lazy"></span>
+              <span class="svc-tile-body"><strong>판금 가공 (BSTM)</strong><small>레이저 절단·펀칭·절곡·용접 (BSTM)</small><em>자세히 보기 &rsaquo;</em></span>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg">
+            <a class="svc-tile" href="machining-and-sheet-metal.html">
+              <span class="svc-tile-img"><img src="assets/img/product/sheet-metal/automation_machine_frame.png" alt="가공과 판금을 한 곳에서" loading="lazy"></span>
+              <span class="svc-tile-body"><strong>가공과 판금을 한 곳에서</strong><small>장비 프레임·랙·함체를 한 업체에서</small><em>자세히 보기 &rsaquo;</em></span>
+            </a>
+          </div>
+        </div>
         </div>
 
       </div>
@@ -293,7 +326,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/i18n.js?v=20261011"></script>
+  <script src="assets/js/i18n.js?v=20261116"></script>
   <script src="assets/js/main.js?v=20260115"></script>
 
 </body>
