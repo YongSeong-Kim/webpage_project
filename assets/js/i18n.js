@@ -481,8 +481,12 @@
       const target = alternateFor(lang);
       if (target) { location.replace(target); return; }
     }
-    // 언어가 정해진 페이지(영어판 등)는 메뉴·아래 연락처도 그 페이지 언어로
-    if (pageLang()) lang = pageLang();
+    // 언어가 정해진 페이지(영어판 등)는 메뉴·아래 연락처도 그 페이지 언어로.
+    // 아직 고른 언어가 없으면 이 페이지 언어를 기억해서, 다른 메뉴(연구개발 등)로 가도 같은 언어가 이어지게 한다
+    if (pageLang()) {
+      lang = pageLang();
+      if (!localStorage.getItem(STORAGE_KEY)) localStorage.setItem(STORAGE_KEY, lang);
+    }
     applyTranslations(lang);
     wireLanguageMenu();
   });
