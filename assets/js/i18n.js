@@ -472,12 +472,17 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    const lang = getInitialLang();
+    // 링크에 ?lang=en 처럼 붙어 오면 그 언어로 (예: 링크드인 영어 글의 홈페이지 링크)
+    const q = new URLSearchParams(location.search).get("lang");
+    if (q && SUPPORTED.includes(q.toLowerCase())) localStorage.setItem(STORAGE_KEY, q.toLowerCase());
+    let lang = getInitialLang();
     // 사용자가 언어를 직접 고른 적이 있으면, 그 언어의 짝 페이지로 옮긴다 (검색 로봇은 해당 없음)
     if (pageLang() && localStorage.getItem(STORAGE_KEY)) {
       const target = alternateFor(lang);
       if (target) { location.replace(target); return; }
     }
+    // 언어가 정해진 페이지(영어판 등)는 메뉴·아래 연락처도 그 페이지 언어로
+    if (pageLang()) lang = pageLang();
     applyTranslations(lang);
     wireLanguageMenu();
   });
