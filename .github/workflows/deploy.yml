@@ -11,7 +11,11 @@ on:
   workflow_dispatch:
 
 jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,7 +23,7 @@ jobs:
         run: |
           mkdir dist
           git archive HEAD | tar -x -C dist
-          rm -rf dist/.github dist/.gitignore dist/README.md dist/deploy.sh dist/docs
+          rm -rf dist/.github dist/.gitignore dist/README.md dist/deploy.sh dist/docs dist/tests
       - name: Pages 프로젝트가 없으면 만들기
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

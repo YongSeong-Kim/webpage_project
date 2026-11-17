@@ -1,0 +1,94 @@
+# services.html
+제목: 가공 분야 - ASTM엔지니어링 · BSTM
+설명: 인천 남동공단 ASTM엔지니어링·BSTM. CNC 선반, MCT, 건드릴, 판금, 가공·판금 일괄 제작.
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+About
+가공 분야
+Product
+R&D
+Equipment
+Contact
+Language
+Kor
+Eng
+Ja
+가공 분야
+홈
+가공 분야
+ASTM엔지니어링(가공)과 BSTM(판금)에서 하는 작업입니다.
+[사진 assets/img/product/CNC/3.jpg | CNC 선반 가공]
+CNC 선반 가공
+축, 핀, 부싱, 플랜지
+자세히 보기 ›
+[사진 assets/img/product/MCT/4.jpg | MCT 가공]
+MCT 가공
+알루미늄 하우징, 블록, 브래킷
+자세히 보기 ›
+[사진 assets/img/product/Gundrill/1.jpg | 건드릴 가공]
+건드릴 가공
+길고 깊은 구멍
+자세히 보기 ›
+[사진 assets/img/factory/pega357.jpg | 판금 가공 (BSTM)]
+판금 가공 (BSTM)
+레이저, 펀칭, 절곡, 용접
+자세히 보기 ›
+[사진 assets/img/product/MCT/automation_equipment.png | 가공 · 판금 일괄 제작]
+가공 · 판금 일괄 제작
+장비 프레임, 랙, 함체
+자세히 보기 ›
+견적 문의
+도면(PDF, DWG, STEP 등), 수량, 납기를 메일로 보내 주시면 검토 후 견적드립니다.
+메일:
+sskim@astm-eng.com
+· 전화:
+010-9077-2445
+견적 문의하기
+Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu
+Incheon, Republic of Korea
+Contact
+Phone
+:
++82 010 9077 2445
+Email
+:
+tedsskim@hanmail.net
+Email
+:
+sskim@astm-eng.com
+Opening Hours
+Mon-Sun
+:
+07AM- 08PM
+Follow Us
+© Copyright
+ASTM
+.
+All Rights Reserved
+Designed by Yongseong
+문의하기
+
+## 링크
+#
+about.html
+cnc-turning.html
+contact.html
+contact.html#contact-form
+equipment.html
+gun-drilling.html
+https://www.instagram.com/astm.engineering/
+https://www.linkedin.com/in/seungsoo-kim-92091b19
+https://www.threads.com/@astm.engineering
+https://www.youtube.com/@ASTMEngineering
+index.html
+machining-and-sheet-metal.html
+mailto:sskim@astm-eng.com
+mct-machining.html
+product.html
+research.html
+services.html
+sheet-metal.html
+tel:+821090772445
