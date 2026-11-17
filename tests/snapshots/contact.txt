@@ -1,0 +1,75 @@
+# contact.html
+제목: 가공 견적 문의 | ASTM엔지니어링 · BSTM 인천 CNC·판금
+설명: CNC 가공·판금 견적 문의. 문의를 남겨 주시면 회신드립니다. Contact us about CNC machining or sheet metal work.
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+About
+가공 분야
+Product
+R&D
+Equipment
+Contact
+Language
+Ko
+En
+Ja
+Contact
+Home
+Contact
+Contact
+Our Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea
+Email Us
+tedsskim@hanmail.net
+sskim@astm-eng.com
+Call Us
++82 10 9077 2445
+Opening Hours
+Mon-Sun
+:
+07AM - 08PM;
+Loading
+Please complete the captcha.
+Your message has been sent. Thank you!
+Send Message
+Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu
+Incheon, Republic of Korea
+Contact
+Phone
+:
++82 010 9077 2445
+Email
+:
+tedsskim@hanmail.net
+Email
+:
+sskim@astm-eng.com
+Opening Hours
+Mon-Sun
+:
+07AM- 08PM
+Follow Us
+© Copyright
+ASTM
+.
+All Rights Reserved
+Designed by
+Yongseong Kim
+
+## 링크
+#
+about.html
+contact.html
+equipment.html
+https://bootstrapmade.com/
+https://www.instagram.com/astm.engineering/
+https://www.linkedin.com/in/seungsoo-kim-92091b19
+https://www.threads.com/@astm.engineering
+https://www.youtube.com/@ASTMEngineering
+index.html
+product.html
+research.html
+services.html

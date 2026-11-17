@@ -1,0 +1,115 @@
+# sheet-metal-en.html
+제목: Sheet Metal Fabrication in Korea - BSTM
+설명: BSTM Sheet Metal, Incheon, Korea. TRUMPF laser cutting, AMADA PEGA-357 punching, AMADA RG-100 bending, PEM insertion, robotic welding. Enclosures, racks, machine frames.
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+About
+가공 분야
+Product
+R&D
+Equipment
+Contact
+Language
+Kor
+Eng
+Ja
+Sheet Metal (BSTM)
+Home
+Services
+Sheet Metal
+[사진 assets/img/factory/pega357.jpg | Sheet Metal (BSTM) - ASTM]
+BSTM does laser cutting, punching, bending, PEM insertion and welding. We build enclosures, racks and machine frames to drawing.
+Request a quote
+[사진 assets/img/equipment/amada-rg-100.png | Sheet Metal (BSTM) - ASTM]
+[사진 assets/img/equipment/trumpf-laser_machine.png | Sheet Metal (BSTM) - ASTM]
+[사진 assets/img/product/sheet-metal/wireless_repeater_enclosure.jpg | Sheet Metal (BSTM) - ASTM]
+Equipment
+TRUMPF laser
+AMADA PEGA-357 punch
+AMADA RG-100 press brake
+PEM press
+Welding robot
+Past work
+Server racks, liquid cooling racks
+Wireless repeater enclosures
+Parcel lockers
+Automation machine frames
+Pressure vessels
+Also in house
+CNC turning, milling, gun drilling (ASTM Engineering)
+Request a quote
+Email us your drawing (PDF, DWG, STEP etc.), quantity and delivery date. We will check it and send a quote.
+Email:
+sskim@astm-eng.com
+· Phone:
++82 10 9077 2445
+Request a quote
+Other services
+[사진 assets/img/product/CNC/3.jpg | CNC Turning]
+CNC Turning
+Shafts, pins, bushings, flanges
+See more ›
+[사진 assets/img/product/MCT/4.jpg | CNC Milling]
+CNC Milling
+Aluminum housings, blocks, brackets
+See more ›
+[사진 assets/img/product/Gundrill/1.jpg | Gun Drilling]
+Gun Drilling
+Long, deep holes
+See more ›
+[사진 assets/img/product/MCT/automation_equipment.png | Machining + Sheet Metal]
+Machining + Sheet Metal
+Machine frames, racks, enclosures
+See more ›
+Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu
+Incheon, Republic of Korea
+Contact
+Phone
+:
++82 010 9077 2445
+Email
+:
+tedsskim@hanmail.net
+Email
+:
+sskim@astm-eng.com
+Opening Hours
+Mon-Sun
+:
+07AM- 08PM
+Follow Us
+© Copyright
+ASTM
+.
+All Rights Reserved
+Designed by Yongseong
+문의하기
+
+## 링크
+#
+about.html
+assets/img/equipment/amada-rg-100.png
+assets/img/equipment/trumpf-laser_machine.png
+assets/img/factory/pega357.jpg
+assets/img/product/sheet-metal/wireless_repeater_enclosure.jpg
+cnc-turning-en.html
+contact.html
+contact.html#contact-form
+equipment.html
+gun-drilling-en.html
+https://www.instagram.com/astm.engineering/
+https://www.linkedin.com/in/seungsoo-kim-92091b19
+https://www.threads.com/@astm.engineering
+https://www.youtube.com/@ASTMEngineering
+index.html
+machining-and-sheet-metal-en.html
+mailto:sskim@astm-eng.com
+mct-machining-en.html
+product.html
+research.html
+services-en.html
+services.html
+tel:+821090772445

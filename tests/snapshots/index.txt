@@ -1,0 +1,175 @@
+# index.html
+제목: 인천 CNC·MCT 정밀가공 · 판금 | ASTM엔지니어링 · BSTM (ASTM Engineering)
+설명: 인천 남동구 20년 CNC 선반·MCT 정밀가공(ASTM엔지니어링)과 레이저·절곡·용접 판금(BSTM). CNC machining, CNC turning and sheet metal fabrication in Incheon, Korea.
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+About
+가공 분야
+Product
+R&D
+Equipment
+Contact
+Language
+Kor
+Eng
+Ja
+ASTM & BSTM에 오신 것을 환영합니다
+당사는 금속 생산·가공 전문 기업으로, 첨단 생산 및 가공 기술을 통해 다양한 고객 요구에 대응합니다.
+ASTM Engineering
+은 정밀 CNC 머시닝 및 CNC 선반(턴닝) 솔루션을 제공합니다.
+BSTM Sheet Metal
+은 판금 가공, 용접, 도장을 제공합니다.
+문의하기
+Read More
+20년 동안 고객과 함께 만들어 왔습니다
+CNC 선반, 머시닝센터, 건드릴 가공부터 레이저 절단, 절곡, 용접까지.
+가공 부품과 판금 부품을 한 곳에서 만들기 때문에 일정과 품질을 함께 챙깁니다.
+20년 동안 쌓아 온 경험으로, 처음 맡기시는 부품도 꼼꼼하게 만듭니다.
+문의하기
+About Us
+Our vision is to become a leader in innovation and quality in the global manufacturing industry.We aim to gain our customers' trust through a customer-centric approach and cutting-edge technology, leading industrial innovation, and pursuing sustainable growth.
+Maximize Customer Satisfaction
+Improve Production Efficiency
+Innovative Product Development
+가공 분야
+[사진 assets/img/product/CNC/3.jpg | CNC 선반 가공]
+CNC 선반 가공
+축, 핀, 부싱, 플랜지
+자세히 보기 ›
+[사진 assets/img/product/MCT/4.jpg | MCT 가공]
+MCT 가공
+알루미늄 하우징, 블록, 브래킷
+자세히 보기 ›
+[사진 assets/img/product/Gundrill/1.jpg | 건드릴 가공]
+건드릴 가공
+길고 깊은 구멍
+자세히 보기 ›
+[사진 assets/img/factory/pega357.jpg | 판금 가공 (BSTM)]
+판금 가공 (BSTM)
+레이저, 펀칭, 절곡, 용접
+자세히 보기 ›
+[사진 assets/img/product/MCT/automation_equipment.png | 가공 · 판금 일괄 제작]
+가공 · 판금 일괄 제작
+장비 프레임, 랙, 함체
+자세히 보기 ›
+[사진 assets/img/product/CNC/3.jpg | CNC Turning]
+CNC Turning
+Shafts, pins, bushings, flanges
+See more ›
+[사진 assets/img/product/MCT/4.jpg | CNC Milling]
+CNC Milling
+Aluminum housings, blocks, brackets
+See more ›
+[사진 assets/img/product/Gundrill/1.jpg | Gun Drilling]
+Gun Drilling
+Long, deep holes
+See more ›
+[사진 assets/img/factory/pega357.jpg | Sheet Metal (BSTM)]
+Sheet Metal (BSTM)
+Laser, punching, bending, welding
+See more ›
+[사진 assets/img/product/MCT/automation_equipment.png | Machining + Sheet Metal]
+Machining + Sheet Metal
+Machine frames, racks, enclosures
+See more ›
+[사진 assets/img/product/CNC/3.jpg | CNC旋盤加工]
+CNC旋盤加工
+シャフト、ピン、ブッシュ、フランジ
+詳しく見る ›
+[사진 assets/img/product/MCT/4.jpg | マシニング加工]
+マシニング加工
+アルミハウジング、ブロック、ブラケット
+詳しく見る ›
+[사진 assets/img/product/Gundrill/1.jpg | ガンドリル加工]
+ガンドリル加工
+長く深い穴
+詳しく見る ›
+[사진 assets/img/factory/pega357.jpg | 板金加工（BSTM）]
+板金加工（BSTM）
+レーザー、パンチング、曲げ、溶接
+詳しく見る ›
+[사진 assets/img/product/MCT/automation_equipment.png | 加工・板金の一括製作]
+加工・板金の一括製作
+装置フレーム、ラック、筐体
+詳しく見る ›
+Products
+CNC
+MCT
+Gundrill
+Sheet Metal
+Research & Development
+Harmonic Gear
+Cycloid Gear
+Planetary Gear
+Read More
+Equipments
+For CNC
+For Machining
+For Gundrill
+AMADA PEGA-357
+AMADA RG-100
+Clients
+[사진 assets/img/clients/toshiba.gif | ]
+[사진 assets/img/clients/rk_logo.png | ]
+[사진 assets/img/clients/harmo.svg | ]
+[사진 assets/img/clients/worldstartech.png | ]
+[사진 assets/img/clients/mini-circuits.png | ]
+[사진 assets/img/clients/pektron.png | ]
+[사진 assets/img/clients/grace-design.svg | ]
+Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu
+Incheon, Republic of Korea
+Contact
+Phone
+:
++82 010 9077 2445
+Email
+:
+tedsskim@hanmail.net
+Email
+:
+sskim@astm-eng.com
+Opening Hours
+Mon-Sun
+:
+07AM- 08PM
+Follow Us
+© Copyright
+ASTM
+.
+All Rights Reserved
+Designed by Yongseong
+문의하기
+
+## 링크
+#
+#heroCarousel
+about.html
+cnc-turning-en.html
+cnc-turning-ja.html
+cnc-turning.html
+contact.html
+contact.html#contact-form
+equipment.html
+gun-drilling-en.html
+gun-drilling-ja.html
+gun-drilling.html
+https://www.instagram.com/astm.engineering/
+https://www.linkedin.com/in/seungsoo-kim-92091b19
+https://www.threads.com/@astm.engineering
+https://www.youtube.com/@ASTMEngineering
+index.html
+machining-and-sheet-metal-en.html
+machining-and-sheet-metal-ja.html
+machining-and-sheet-metal.html
+mct-machining-en.html
+mct-machining-ja.html
+mct-machining.html
+product.html
+research.html
+services.html
+sheet-metal-en.html
+sheet-metal-ja.html
+sheet-metal.html

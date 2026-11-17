@@ -1,0 +1,89 @@
+# research.html
+제목: 연구개발 | 하모닉·사이클로이드·유성 감속기 - ASTM엔지니어링
+설명: ASTM엔지니어링의 정밀 감속기 연구개발: 하모닉 기어, 사이클로이드 기어, 유성 기어. Precision gear and reducer R&D.
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+About
+가공 분야
+Product
+R&D
+Equipment
+Contact
+Language
+Kor
+Eng
+Ja
+Research & Development
+Home
+Research & Development
+Precision Gear R&D
+We design and develop precision gear and reducer assemblies—harmonic, cycloid, and planetary—to meet demanding industrial applications.
+All
+Harmonic Gear
+Cycloid Gear
+Planetary Gear
+[사진 assets/img/research/harmonic_gear_1.PNG | Harmonic Gear 1]
+Harmonic Gear
+R&D
+[사진 assets/img/research/harmonic_gear_2.PNG | Harmonic Gear 2]
+Harmonic Gear
+R&D
+[사진 assets/img/research/20250120_cycloid_gear_1.PNG | Cycloid Gear 1]
+Cycloid Gear
+R&D
+[사진 assets/img/research/20250120-cycloid_gear_2.PNG | Cycloid Gear 2]
+Cycloid Gear
+R&D
+[사진 assets/img/research/planetary_gear_1.PNG | Planetary Gear 1]
+Planetary Gear
+R&D
+[사진 assets/img/research/planetary_gear_2.PNG | Planetary Gear 2]
+Planetary Gear
+R&D
+Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu
+Incheon, Republic of Korea
+Contact
+Phone
+:
++82 010 9077 2445
+Email
+:
+tedsskim@hanmail.net
+Email
+:
+sskim@astm-eng.com
+Opening Hours
+Mon-Sun
+:
+07AM- 08PM
+Follow Us
+© Copyright
+ASTM
+.
+All Rights Reserved
+Designed by Yongseong
+문의하기
+
+## 링크
+#
+about.html
+assets/img/research/20250120-cycloid_gear_2.PNG
+assets/img/research/20250120_cycloid_gear_1.PNG
+assets/img/research/harmonic_gear_1.PNG
+assets/img/research/harmonic_gear_2.PNG
+assets/img/research/planetary_gear_1.PNG
+assets/img/research/planetary_gear_2.PNG
+contact.html
+contact.html#contact-form
+equipment.html
+https://www.instagram.com/astm.engineering/
+https://www.linkedin.com/in/seungsoo-kim-92091b19
+https://www.threads.com/@astm.engineering
+https://www.youtube.com/@ASTMEngineering
+index.html
+product.html
+research.html
+services.html

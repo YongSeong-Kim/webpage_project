@@ -1,0 +1,40 @@
+# privacy.html
+제목: Privacy Policy - ASTM Engineering
+설명: Privacy policy for ASTM Engineering's social media publishing tools.
+
+## 글
+← ASTM Engineering
+Privacy Policy
+Last updated: October 18, 2026
+ASTM Engineering ("we") uses an internal tool, "ASTM Reels Uploader", to publish our own company videos to our YouTube, Instagram and Threads accounts. This policy explains what data that tool uses.
+What we access
+The tool signs in only with ASTM Engineering's own Google account and requests permission to upload videos to our own YouTube channel (YouTube Data API, upload scope). It reads videos only from a Google Drive folder that we created and shared with it.
+What we do not do
+The tool is not offered to the public. It does not collect, store, sell or share personal data of any other user, and it does not access YouTube or Google data beyond uploading our own videos.
+Storage and security
+The access token is stored as an encrypted secret in our private build system and is used only to upload videos we have approved. We can revoke access at any time from our Google account settings (myaccount.google.com/permissions).
+Google API Services
+Our use of information received from Google APIs adheres to the
+Google API Services User Data Policy
+, including the Limited Use requirements. Uploaded videos are subject to the
+YouTube Terms of Service
+and the
+Google Privacy Policy
+.
+Contact
+ASTM Engineering, 140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea
+Email:
+sskim@astm-eng.com
+개인정보처리방침
+최종 수정일: 2026년 10월 18일
+에이에스티엠 엔지니어링(ASTM Engineering)은 회사 영상을 회사 유튜브·인스타그램·스레드 계정에 올리기 위해 내부 도구 "ASTM Reels Uploader"를 사용합니다. 이 도구는 회사 구글 계정으로만 로그인하여 회사 유튜브 채널에 영상을 올리는 권한만 사용하며, 회사가 만든 구글 드라이브 폴더의 영상만 읽습니다.
+이 도구는 외부에 제공되지 않으며, 다른 사람의 개인정보를 수집·저장·판매·공유하지 않습니다. 접근 권한은 회사 구글 계정 설정에서 언제든 해제할 수 있습니다.
+문의:
+sskim@astm-eng.com
+
+## 링크
+https://developers.google.com/terms/api-services-user-data-policy
+https://policies.google.com/privacy
+https://www.youtube.com/t/terms
+index.html
+mailto:sskim@astm-eng.com

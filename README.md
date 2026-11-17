@@ -32,3 +32,10 @@ main에 올리면 GitHub Actions(`.github/workflows/deploy.yml`)가 Cloudflare P
 - 2026-10-03: 문의 폼을 Web3Forms로 교체 (#27). 템플릿 PHP 폼(`forms/contact.php`)은 받는 주소가 `contact@example.com`이고 라이브러리가 없어 처음부터 동작하지 않았다(실사이트 502). PHP를 쓰지 않고 스팸도 막으려고 Web3Forms + 허니팟 + hCaptcha를 골랐다. `forms/` 폴더 삭제.
 - 2026-10-03: 배포 스크립트 `deploy.sh` 추가 (#28). 그 전에는 파일을 손으로 올렸다.
 - 2026-10-03 확인: 이 시점에 레포 main과 실사이트 파일이 같았다 (#26 하모닉 R&D 페이지까지 반영).
+
+## 시험 (배포 전에 자동으로 돎)
+
+- `python3 tests/check_site.py` — 설치 없이 바로. 링크·사진 파일, 검색 설정(canonical·hreflang·사이트맵), 메뉴, 번역 빠짐, 보이는 글 스냅샷.
+- 글·사진·링크를 일부러 바꿨으면 `python3 tests/check_site.py --update` 로 스냅샷을 갱신해서 같이 올린다. PR에서 `tests/snapshots/` 바뀐 부분이 곧 "화면에서 바뀐 것"이다.
+- `tests/test_language.py` — 실제 브라우저로 언어 전환(한·영·일) 시험. GitHub Actions에서 돈다(맥에서는 선택).
+- `main`에 올리면 시험 → 통과해야 배포. 실패하면 배포 안 됨.

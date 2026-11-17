@@ -1,0 +1,61 @@
+# sample-inner-page.html
+제목: [Template] Sample Inner Page
+설명: 
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+Home
+About
+Menu
+Events
+Chefs
+Gallery
+Drop Down
+Drop Down 1
+Deep Drop Down
+Deep Drop Down 1
+Deep Drop Down 2
+Deep Drop Down 3
+Deep Drop Down 4
+Deep Drop Down 5
+Drop Down 2
+Drop Down 3
+Drop Down 4
+Contact
+Book a Table
+Sample Inner Page
+Home
+Sample Inner Page
+You can duplicate this sample page and create any number of inner pages you like!
+Address
+A108 Adam Street
+New York, NY 535022 - US
+Reservations
+Phone:
++1 5589 55488 55
+Email:
+info@example.com
+Opening Hours
+Mon-Sat: 11AM
+- 23PM
+Sunday: Closed
+Follow Us
+© Copyright
+Yummy
+. All Rights Reserved
+Designed by
+BootstrapMade
+
+## 링크
+#
+#about
+#book-a-table
+#chefs
+#contact
+#events
+#gallery
+#hero
+#menu
+https://bootstrapmade.com/
+index.html

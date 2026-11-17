@@ -1,0 +1,24 @@
+# 홈페이지 시험. PR마다, 그리고 배포 전에 돈다 (deploy.yml이 이걸 먼저 부름).
+name: test
+
+on:
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 파일 검사 (링크·사진·검색 설정·메뉴·번역·보이는 글)
+        run: python3 tests/check_site.py
+      - name: 브라우저 준비
+        run: |
+          pip install playwright==1.48.0
+          python -m playwright install --with-deps chromium
+      - name: 언어 전환 시험 (실제 브라우저)
+        run: python3 tests/test_language.py

@@ -1,0 +1,94 @@
+# services-ja.html
+제목: 加工分野 - ASTMエンジニアリング・BSTM
+설명: 韓国・仁川のASTMエンジニアリング・BSTM。CNC旋盤、マシニング、ガンドリル、板金、加工・板金の一括製作。
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+About
+가공 분야
+Product
+R&D
+Equipment
+Contact
+Language
+Kor
+Eng
+Ja
+加工分野
+ホーム
+加工分野
+ASTMエンジニアリング（機械加工）とBSTM（板金）で行っている作業です。
+[사진 assets/img/product/CNC/3.jpg | CNC旋盤加工]
+CNC旋盤加工
+シャフト、ピン、ブッシュ、フランジ
+詳しく見る ›
+[사진 assets/img/product/MCT/4.jpg | マシニング加工]
+マシニング加工
+アルミハウジング、ブロック、ブラケット
+詳しく見る ›
+[사진 assets/img/product/Gundrill/1.jpg | ガンドリル加工]
+ガンドリル加工
+長く深い穴
+詳しく見る ›
+[사진 assets/img/factory/pega357.jpg | 板金加工（BSTM）]
+板金加工（BSTM）
+レーザー、パンチング、曲げ、溶接
+詳しく見る ›
+[사진 assets/img/product/MCT/automation_equipment.png | 加工・板金の一括製作]
+加工・板金の一括製作
+装置フレーム、ラック、筐体
+詳しく見る ›
+お見積り
+図面（PDF、DWG、STEPなど）、数量、納期をメールでお送りください。確認のうえお見積りします。
+メール:
+sskim@astm-eng.com
+· 電話:
++82 10 9077 2445
+お見積り依頼
+Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu
+Incheon, Republic of Korea
+Contact
+Phone
+:
++82 010 9077 2445
+Email
+:
+tedsskim@hanmail.net
+Email
+:
+sskim@astm-eng.com
+Opening Hours
+Mon-Sun
+:
+07AM- 08PM
+Follow Us
+© Copyright
+ASTM
+.
+All Rights Reserved
+Designed by Yongseong
+문의하기
+
+## 링크
+#
+about.html
+cnc-turning-ja.html
+contact.html
+contact.html#contact-form
+equipment.html
+gun-drilling-ja.html
+https://www.instagram.com/astm.engineering/
+https://www.linkedin.com/in/seungsoo-kim-92091b19
+https://www.threads.com/@astm.engineering
+https://www.youtube.com/@ASTMEngineering
+index.html
+machining-and-sheet-metal-ja.html
+mailto:sskim@astm-eng.com
+mct-machining-ja.html
+product.html
+research.html
+services.html
+sheet-metal-ja.html
+tel:+821090772445

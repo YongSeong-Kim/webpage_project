@@ -1,0 +1,109 @@
+# machining-and-sheet-metal-ja.html
+제목: 加工・板金の一括製作 - ASTMエンジニアリング・BSTM
+설명: 韓国・仁川のASTMエンジニアリング（機械加工）とBSTM（板金）。装置フレーム、ラック、筐体など、加工品と板金品の両方が入る製品を一括で製作します。
+
+## 글
+[사진 assets/img/company_logo/ASTM_LOGO_copy_trim.png | ASTM Engineering]
+[사진 assets/img/company_logo/bstm_sheetmetal.png | BSTM Sheet Metal]
+About
+가공 분야
+Product
+R&D
+Equipment
+Contact
+Language
+Kor
+Eng
+Ja
+加工・板金の一括製作
+ホーム
+加工分野
+一括製作
+[사진 assets/img/product/MCT/automation_equipment.png | 加工・板金の一括製作 - ASTM]
+加工品と板金品の両方が入る装置は、ASTM（機械加工）とBSTM（板金）で一緒に製作します。同じ場所で作るので、組み付けの確認をしてからまとめて納品します。
+お見積り依頼
+[사진 assets/img/product/sheet-metal/automation_machine_frame.png | 加工・板金の一括製作 - ASTM]
+[사진 assets/img/product/sheet-metal/server_rack.jpg | 加工・板金の一括製作 - ASTM]
+[사진 assets/img/factory/floor.jpg | 加工・板金の一括製作 - ASTM]
+製作実績
+自動化装置のフレームと部品
+サーバーラック、水冷ラック
+通信機器の筐体
+作業範囲
+CNC旋盤、マシニング、ガンドリル
+レーザー、パンチング、曲げ、PEM圧入、溶接
+組み付け確認後に一括納品
+お見積り
+図面（PDF、DWG、STEPなど）、数量、納期をメールでお送りください。確認のうえお見積りします。
+メール:
+sskim@astm-eng.com
+· 電話:
++82 10 9077 2445
+お見積り依頼
+その他の作業
+[사진 assets/img/product/CNC/3.jpg | CNC旋盤加工]
+CNC旋盤加工
+シャフト、ピン、ブッシュ、フランジ
+詳しく見る ›
+[사진 assets/img/product/MCT/4.jpg | マシニング加工]
+マシニング加工
+アルミハウジング、ブロック、ブラケット
+詳しく見る ›
+[사진 assets/img/product/Gundrill/1.jpg | ガンドリル加工]
+ガンドリル加工
+長く深い穴
+詳しく見る ›
+[사진 assets/img/factory/pega357.jpg | 板金加工（BSTM）]
+板金加工（BSTM）
+レーザー、パンチング、曲げ、溶接
+詳しく見る ›
+Address
+140-25, Neungheodae-ro 625beon-gil, Namdong-gu
+Incheon, Republic of Korea
+Contact
+Phone
+:
++82 010 9077 2445
+Email
+:
+tedsskim@hanmail.net
+Email
+:
+sskim@astm-eng.com
+Opening Hours
+Mon-Sun
+:
+07AM- 08PM
+Follow Us
+© Copyright
+ASTM
+.
+All Rights Reserved
+Designed by Yongseong
+문의하기
+
+## 링크
+#
+about.html
+assets/img/factory/floor.jpg
+assets/img/product/MCT/automation_equipment.png
+assets/img/product/sheet-metal/automation_machine_frame.png
+assets/img/product/sheet-metal/server_rack.jpg
+cnc-turning-ja.html
+contact.html
+contact.html#contact-form
+equipment.html
+gun-drilling-ja.html
+https://www.instagram.com/astm.engineering/
+https://www.linkedin.com/in/seungsoo-kim-92091b19
+https://www.threads.com/@astm.engineering
+https://www.youtube.com/@ASTMEngineering
+index.html
+mailto:sskim@astm-eng.com
+mct-machining-ja.html
+product.html
+research.html
+services-ja.html
+services.html
+sheet-metal-ja.html
+tel:+821090772445
