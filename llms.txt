@@ -13,17 +13,17 @@
 
 ## Pages
 - [Home](https://astm-eng.com/): overview
-- [About](https://astm-eng.com/about.html): company introduction and quality policy
-- [Services / 가공 분야](https://astm-eng.com/services-en.html): all services (Korean: https://astm-eng.com/services.html, Japanese: https://astm-eng.com/services-ja.html)
-- [Products](https://astm-eng.com/product.html): machined and sheet metal parts
-- [Equipment](https://astm-eng.com/equipment.html): machine list
-- [R&D](https://astm-eng.com/research.html): gear reducer development
-- [CNC Turning / CNC 선반 가공](https://astm-eng.com/cnc-turning-en.html) (Korean: https://astm-eng.com/cnc-turning.html)
-- [CNC Milling / MCT 가공](https://astm-eng.com/mct-machining-en.html) (Korean: https://astm-eng.com/mct-machining.html)
-- [Gun Drilling / 건드릴 가공](https://astm-eng.com/gun-drilling-en.html) (Korean: https://astm-eng.com/gun-drilling.html)
-- [Sheet Metal / 판금 가공](https://astm-eng.com/sheet-metal-en.html) (Korean: https://astm-eng.com/sheet-metal.html)
-- [Machining + Sheet Metal / 가공 + 판금](https://astm-eng.com/machining-and-sheet-metal-en.html) (Korean: https://astm-eng.com/machining-and-sheet-metal.html)
-- [Contact / Request a quote](https://astm-eng.com/contact.html): inquiry form
+- [About](https://astm-eng.com/about): company introduction and quality policy
+- [Services / 가공 분야](https://astm-eng.com/services-en): all services (Korean: https://astm-eng.com/services, Japanese: https://astm-eng.com/services-ja)
+- [Products](https://astm-eng.com/product): machined and sheet metal parts
+- [Equipment](https://astm-eng.com/equipment): machine list
+- [R&D](https://astm-eng.com/research): gear reducer development
+- [CNC Turning / CNC 선반 가공](https://astm-eng.com/cnc-turning-en) (Korean: https://astm-eng.com/cnc-turning)
+- [CNC Milling / MCT 가공](https://astm-eng.com/mct-machining-en) (Korean: https://astm-eng.com/mct-machining)
+- [Gun Drilling / 건드릴 가공](https://astm-eng.com/gun-drilling-en) (Korean: https://astm-eng.com/gun-drilling)
+- [Sheet Metal / 판금 가공](https://astm-eng.com/sheet-metal-en) (Korean: https://astm-eng.com/sheet-metal)
+- [Machining + Sheet Metal / 가공 + 판금](https://astm-eng.com/machining-and-sheet-metal-en) (Korean: https://astm-eng.com/machining-and-sheet-metal)
+- [Contact / Request a quote](https://astm-eng.com/contact): inquiry form
 
 ## Contact
 - Address: 140-25, Neungheodae-ro 625beon-gil, Namdong-gu, Incheon, Republic of Korea

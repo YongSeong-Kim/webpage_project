@@ -13,6 +13,9 @@ body_top = src[src.index("<body>"):src.index('  <main id="main">')]
 footer = src[src.index('  <footer id="footer"'):src.index("</body>")]
 
 SITE = "https://astm-eng.com/"
+
+# Cloudflare Pages는 x.html을 x로 308 넘긴다. 검색엔진용 절대 주소(canonical·hreflang·og:url·구조화 데이터)는 넘겨지지 않는 주소로 쓴다.
+def clean_abs(s): return re.sub(r"(https://astm-eng\.com/[A-Za-z0-9_-]+)\.html", r"\1", s)
 ADDR = {"@type": "PostalAddress", "streetAddress": "140-25, Neungheodae-ro 625beon-gil",
         "addressLocality": "Namdong-gu", "addressRegion": "Incheon", "addressCountry": "KR"}
 
@@ -322,9 +325,9 @@ def build_hub(lang):
 if __name__ == "__main__":
     for p_ in PAGES:
         for lang in ("ko", "en", "ja"):
-            (ROOT / url(p_["slug"], lang)).write_text(build(p_, lang), encoding="utf-8")
+            (ROOT / url(p_["slug"], lang)).write_text(clean_abs(build(p_, lang)), encoding="utf-8")
     for lang in ("ko", "en", "ja"):
-        (ROOT / url("services", lang)).write_text(build_hub(lang), encoding="utf-8")
+        (ROOT / url("services", lang)).write_text(clean_abs(build_hub(lang)), encoding="utf-8")
     # 다른 페이지: 메뉴에 '가공 분야' 넣기, 홈·제품의 카드 영역 갈아 끼우기
     for f in ["index.html", "about.html", "product.html", "equipment.html", "research.html", "contact.html"]:
         fp = ROOT / f; s = fp.read_text(encoding="utf-8")
@@ -335,5 +338,5 @@ if __name__ == "__main__":
         s = re.sub(r"( *<!-- svc-cards:start -->\n).*?( *<!-- svc-cards:end -->)",
                    lambda m: m.group(1) + both + "\n" + m.group(2), s, flags=re.S)
         s = s.replace('service.css?v=20261115', 'service.css?v=20261116')
-        fp.write_text(s, encoding="utf-8")
+        fp.write_text(clean_abs(s), encoding="utf-8")
     print("done")
